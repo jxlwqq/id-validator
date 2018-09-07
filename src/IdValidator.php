@@ -28,7 +28,7 @@ class IdValidator
     {
         // 基础验证
         $code = $this->_checkIdArgument($id);
-        if (!$code) {
+        if (empty($code)) {
             return false;
         }
 
@@ -53,9 +53,7 @@ class IdValidator
         }
 
         // 验证：校验码
-        // 详细计算方法，点击百科：
-        // https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码
-        $checkBit = $this->generatorCheckBit($code['body']);
+        $checkBit = $this->_generatorCheckBit($code['body']);
 
         // 检查校验码
         if ($checkBit != $code['checkBit']) {
@@ -79,9 +77,10 @@ class IdValidator
             return false;
         }
         $code = $this->_checkIdArgument($id);
+        $addressInfo = $this->_getAddressInfo($code['addressCode']);
         $info = [];
         $info['addressCode'] = $code['addressCode'];
-        $info['address'] = implode($this->_getAddressInfo($code['addressCode']));
+        $info['address'] = is_array($addressInfo) ? implode($addressInfo) : '';
         $info['birthdayCode'] = date('Y-m-d', strtotime($code['birthdayCode']));
         $info['sex'] = ($code['order'] % 2 === 0 ? 0 : 1);
         $info['length'] = $code['type'];
@@ -112,7 +111,7 @@ class IdValidator
 
         $body = $addressCode.$birthdayCode.$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
 
-        $checkBit = $this->generatorCheckBit($body);
+        $checkBit = $this->_generatorCheckBit($body);
 
         return $body.$checkBit;
     }
@@ -295,12 +294,12 @@ class IdValidator
 
     /**
      * 生成校验码
-     *
+     * 详细计算方法 @lint https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码
      * @param $body
      *
      * @return int|string
      */
-    private function generatorCheckBit($body)
+    private function _generatorCheckBit($body)
     {
         // 位置加权
         $posWeight = $this->_getPosWeight();
