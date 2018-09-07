@@ -19,6 +19,8 @@ composer require "jxlwqq/id-validator"
 
 ## 使用
 
+> `440308199901101512` 和 `610104620927690` 示例身份证均为随机生成的假数据，如撞车，请联系删除。
+
 ### 验证身份证号合法性
 
 验证身份证号是否合法，合法返回 true，不合法返回 false：
@@ -27,7 +29,8 @@ composer require "jxlwqq/id-validator"
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->isValid('440308199901101512');
+$idValidator->isValid('440308199901101512'); // 18 位
+$idValidator->isValid('610104620927690'); // 15 位
 ```
 
 ### 获取身份证号信息
@@ -37,7 +40,8 @@ $idValidator->isValid('440308199901101512');
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->getInfo('440308199901101512');
+$idValidator->getInfo('440308199901101512'); // 18 位
+$idValidator->getInfo('610104620927690'); // 15 位
 ```
 
 ### 生成可通过校验的假数据
@@ -47,8 +51,8 @@ $idValidator->getInfo('440308199901101512');
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->fakeId(); // 默认 生成 18 位
-$idValidator->fakeId(true); // 生成 15 位
+$idValidator->fakeId(); // 18 位
+$idValidator->fakeId(false); // 15 位
 ```
 
 ## 参考资料
