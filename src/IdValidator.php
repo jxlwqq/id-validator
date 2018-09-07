@@ -136,8 +136,8 @@ class IdValidator
      * 获取数字补位.
      *
      * @param $str
-     * @param int    $len 长度
-     * @param string $chr 补位值
+     * @param int    $len   长度
+     * @param string $chr   补位值
      * @param bool   $right 左右
      *
      * @return string
