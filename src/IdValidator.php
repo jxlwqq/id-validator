@@ -3,8 +3,7 @@
 namespace Jxlwqq\IdValidator;
 
 /**
- * Class IdValidator
- * @package Jxlwqq\IdValidator
+ * Class IdValidator.
  */
 class IdValidator
 {
@@ -15,7 +14,7 @@ class IdValidator
      */
     public function __construct()
     {
-        $this->_addressCodeList = include __DIR__ . '/../data/addressCode.php';
+        $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
     }
 
     /**
@@ -107,15 +106,15 @@ class IdValidator
         $birthdayCode = $this->_generatorBirthdayCode();
 
         if (!$eighteen) {
-            return $addressCode . substr($birthdayCode, 2)
-                . $this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
+            return $addressCode.substr($birthdayCode, 2)
+                .$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
         }
 
-        $body = $addressCode . $birthdayCode . $this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
+        $body = $addressCode.$birthdayCode.$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
 
         $checkBit = $this->generatorCheckBit($body);
 
-        return $body . $checkBit;
+        return $body.$checkBit;
     }
 
     /**
@@ -138,9 +137,9 @@ class IdValidator
      * 获取数字补位.
      *
      * @param $str
-     * @param int $len
+     * @param int    $len
      * @param string $chr
-     * @param bool $right
+     * @param bool   $right
      *
      * @return string
      */
@@ -152,9 +151,9 @@ class IdValidator
         } else {
             for ($i = 0, $j = $len - strlen($str); $i < $j; $i++) {
                 if ($right) {
-                    $str = $str . $chr;
+                    $str = $str.$chr;
                 } else {
-                    $str = $chr . $str;
+                    $str = $chr.$str;
                 }
             }
 
@@ -173,11 +172,11 @@ class IdValidator
     {
         $addressInfo = [];
         // 省级信息
-        $provinceAddressCode = substr($addressCode, 0, 2) . '0000';
+        $provinceAddressCode = substr($addressCode, 0, 2).'0000';
         $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : '';
 
         // 市级信息
-        $cityAddressCode = substr($addressCode, 0, 4) . '00';
+        $cityAddressCode = substr($addressCode, 0, 4).'00';
         $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : '';
 
         // 县级信息
@@ -205,22 +204,22 @@ class IdValidator
         switch ($length) {
             case 18:
                 $code = [
-                    'body' => substr($id, 0, 17),
-                    'addressCode' => substr($id, 0, 6),
+                    'body'         => substr($id, 0, 17),
+                    'addressCode'  => substr($id, 0, 6),
                     'birthdayCode' => substr($id, 6, 8),
-                    'order' => substr($id, 14, 3),
-                    'checkBit' => substr($id, -1),
-                    'type' => 18,
+                    'order'        => substr($id, 14, 3),
+                    'checkBit'     => substr($id, -1),
+                    'type'         => 18,
                 ];
                 break;
             case 15:
                 $code = [
-                    'body' => $id,
-                    'addressCode' => substr($id, 0, 6),
-                    'birthdayCode' => '19' . substr($id, 6, 6),
-                    'order' => substr($id, 12, 3),
-                    'checkBit' => '',
-                    'type' => 15,
+                    'body'         => $id,
+                    'addressCode'  => substr($id, 0, 6),
+                    'birthdayCode' => '19'.substr($id, 6, 6),
+                    'order'        => substr($id, 12, 3),
+                    'checkBit'     => '',
+                    'type'         => 15,
                 ];
                 break;
         }
@@ -279,8 +278,6 @@ class IdValidator
         } else {
             return false;
         }
-
-
     }
 
     /**
@@ -339,7 +336,7 @@ class IdValidator
             $province = $this->_getStrPad($this->_generatorRandInt(66), 2, '0');
             $city = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
             $district = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
-            $fakeAddressCode = $province . $city . $district;
+            $fakeAddressCode = $province.$city.$district;
             if (isset($this->_addressCodeList[$fakeAddressCode])) {
                 $addressCode = $fakeAddressCode;
                 break;
@@ -359,8 +356,8 @@ class IdValidator
         $year = $this->_getStrPad($this->_generatorRandInt(99, 50), 2, '0');
         $month = $this->_getStrPad($this->_generatorRandInt(12, 1), 2, '0');
         $day = $this->_getStrPad($this->_generatorRandInt(28, 1), 2, '0');
-        $year = '19' . $year;
-        $birthdayCode = $year . $month . $day;
+        $year = '19'.$year;
+        $birthdayCode = $year.$month.$day;
 
         return $birthdayCode;
     }
