@@ -190,6 +190,11 @@ class IdValidator
         }
     }
 
+    /**
+     * 获取星座信息
+     * @param string $birthdayCode 出生日期码
+     * @return string
+     */
     public function _getConstellation($birthdayCode)
     {
         $constellationList = $this->_getConstellationList();
@@ -222,6 +227,11 @@ class IdValidator
         return '';
     }
 
+    /**
+     * 获取生肖信息
+     * @param string $birthdayCode 出生日期码
+     * @return mixed
+     */
     public function _getChineseZodiac($birthdayCode)
     {
         $chineseZodiacList = $this->_getChineseZodiacList();
@@ -408,6 +418,7 @@ class IdValidator
     }
 
     /**
+     * 获取生肖列表
      * @return array
      */
     private function _getChineseZodiacList()
@@ -416,6 +427,7 @@ class IdValidator
     }
 
     /**
+     * 获取星座列表
      * @return array
      */
     private function _getConstellationList()
