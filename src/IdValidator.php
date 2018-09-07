@@ -20,7 +20,7 @@ class IdValidator
     /**
      * 验证身份证号合法性.
      *
-     * @param string $id
+     * @param string $id 身份证号
      *
      * @return bool
      */
@@ -66,7 +66,7 @@ class IdValidator
     /**
      * 获取身份证信息.
      *
-     * @param $id
+     * @param string $id 身份证号
      *
      * @return array|bool
      */
@@ -92,7 +92,7 @@ class IdValidator
     /**
      * 生成假数据.
      *
-     * @param bool $eighteen
+     * @param bool $eighteen 是否为 18 位
      *
      * @return string
      */
@@ -136,9 +136,9 @@ class IdValidator
      * 获取数字补位.
      *
      * @param $str
-     * @param int    $len
-     * @param string $chr
-     * @param bool   $right
+     * @param int    $len 长度
+     * @param string $chr 补位值
+     * @param bool   $right 左右
      *
      * @return string
      */
@@ -163,7 +163,7 @@ class IdValidator
     /**
      * 获取地址码信息.
      *
-     * @param $addressCode
+     * @param string $addressCode 地址码
      *
      * @return bool|mixed|string
      */
@@ -191,7 +191,7 @@ class IdValidator
     /**
      * 检查并拆分身份证号.
      *
-     * @param $id
+     * @param string $id 身份证号
      *
      * @return array|bool
      */
@@ -229,7 +229,7 @@ class IdValidator
     /**
      * 检查地址码
      *
-     * @param $addressCode
+     * @param string $addressCode 地址码
      *
      * @return bool
      */
@@ -243,7 +243,7 @@ class IdValidator
     /**
      * 检查出生日期码
      *
-     * @param $birthdayCode
+     * @param string $birthdayCode 出生日期码
      *
      * @return bool
      */
@@ -266,7 +266,7 @@ class IdValidator
     /**
      * 检查顺序码
      *
-     * @param $orderCode
+     * @param string $orderCode 顺序码
      *
      * @return bool
      */
@@ -282,8 +282,8 @@ class IdValidator
     /**
      * 生成随机数.
      *
-     * @param $max
-     * @param int $min
+     * @param int $max 最大值
+     * @param int $min 最小值
      *
      * @return int
      */
@@ -296,7 +296,7 @@ class IdValidator
      * 生成校验码
      * 详细计算方法 @lint https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码
      *
-     * @param $body
+     * @param string $body 身份证号 body 部分
      *
      * @return int|string
      */
