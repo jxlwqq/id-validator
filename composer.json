@@ -1,0 +1,25 @@
+{
+    "name": "jxlwqq/id-validator",
+    "description": "Chinese Mainland Personal ID Card Validation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jxlwqq",
+            "email": "jxlwqq@gmail.com",
+            "homepage": "https://jxlwqq.github.io"
+
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jxlwqq\\IdValidator\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6"
+    }
+}
