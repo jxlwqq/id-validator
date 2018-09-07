@@ -3,7 +3,7 @@
 namespace Jxlwqq\IdValidator;
 
 /**
- * Trait Helper
+ * Trait Helper.
  */
 trait Helper
 {
@@ -80,8 +80,10 @@ trait Helper
     }
 
     /**
-     * 获取星座信息
+     * 获取星座信息.
+     *
      * @param string $birthdayCode 出生日期码
+     *
      * @return string
      */
     private function _getConstellation($birthdayCode)
@@ -115,8 +117,10 @@ trait Helper
     }
 
     /**
-     * 获取生肖信息
+     * 获取生肖信息.
+     *
      * @param string $birthdayCode 出生日期码
+     *
      * @return mixed
      */
     private function _getChineseZodiac($birthdayCode)
@@ -302,5 +306,4 @@ trait Helper
 
         return $birthdayCode;
     }
-
 }

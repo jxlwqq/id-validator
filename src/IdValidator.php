@@ -123,6 +123,4 @@ class IdValidator
 
         return $body.$checkBit;
     }
-
-
 }
