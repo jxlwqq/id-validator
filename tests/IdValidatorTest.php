@@ -15,13 +15,15 @@ class IdValidatorTest extends \PHPUnit_Framework_TestCase
         $idValidator = new IdValidator();
         $this->assertEquals(true, $idValidator->isValid('440308199901101512'));
         $this->assertEquals(false, $idValidator->isValid('440308199901101513'));
+        $this->assertEquals(true, $idValidator->isValid('610104620927690'));
+        $this->assertEquals(false, $idValidator->isValid('610104620932690'));
     }
 
     public function testFakeId()
     {
         $idValidator = new IdValidator();
         $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId()));
-        $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId(true)));
+        $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId(false)));
     }
 
     public function testGetInfo()
@@ -33,8 +35,20 @@ class IdValidatorTest extends \PHPUnit_Framework_TestCase
             'birthdayCode' => '1999-01-10',
             'sex'          => 1,
             'length'       => 18,
-            'checkBit'     => '2', ],
+            'checkBit'     => '2'],
             $idValidator->getInfo('440308199901101512'));
         $this->assertEquals(false, $idValidator->isValid('440308199901101513'));
+
+        $idValidator = new IdValidator();
+        $this->assertEquals([
+            'addressCode' => '610104',
+            'address' => '陕西省西安市莲湖区',
+            'birthdayCode' => '1962-09-27',
+            'sex' => 0,
+            'length' => 15,
+            'checkBit' => ''],
+            $idValidator->getInfo('610104620927690'));
+        $this->assertEquals(false, $idValidator->isValid('610104620932690'));
+
     }
 }
