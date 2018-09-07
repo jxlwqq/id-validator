@@ -1,14 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jxlwqq
- * Date: 2018/9/7
- * Time: 14:07
- */
 
 namespace Jxlwqq\IdValidator;
 
-
+/**
+ * Trait Helper
+ */
 trait Helper
 {
     /**
@@ -88,7 +84,7 @@ trait Helper
      * @param string $birthdayCode 出生日期码
      * @return string
      */
-    public function _getConstellation($birthdayCode)
+    private function _getConstellation($birthdayCode)
     {
         $time = strtotime($birthdayCode);
         $year = substr($birthdayCode, 0, 4);
@@ -123,7 +119,7 @@ trait Helper
      * @param string $birthdayCode 出生日期码
      * @return mixed
      */
-    public function _getChineseZodiac($birthdayCode)
+    private function _getChineseZodiac($birthdayCode)
     {
         $start = 1900; // 子鼠
         $end = substr($birthdayCode, 0, 4);
