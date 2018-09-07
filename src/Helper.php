@@ -103,11 +103,11 @@ trait Helper
         $day = substr($birthdayCode, 6, 2);
 
         // 1月份与12月份特殊处理
-        if (($month == 1 && $day < 20) || ($month == 12 && $day > 21)) {
+        if (($month == '01' && $day < 20) || ($month == '12' && $day > 21)) {
             return $this->_constellationList['12']['name'];
-        } elseif ($month == 1) {
+        } elseif ($month == '01') {
             return $this->_constellationList['01']['name'];
-        } elseif ($month == 12) {
+        } elseif ($month == '12') {
             return $this->_constellationList['12']['name'];
         }
 
@@ -116,10 +116,15 @@ trait Helper
         if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
             return $this->_constellationList[$month]['name'];
         }
-        $startDate = $year.'-'.$this->_constellationList[$month - 1]['start_date'];
-        $endDate = $year.'-'.$this->_constellationList[$month - 1]['end_date'];
+
+
+        $key = (int)$month - 1; // 1月份以特殊处理
+        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string)$key;
+
+        $startDate = $year.'-'.$this->_constellationList[$key]['start_date'];
+        $endDate = $year.'-'.$this->_constellationList[$key]['end_date'];
         if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
-            return $this->_constellationList[$month - 1]['name'];
+            return $this->_constellationList[$key]['name'];
         }
 
         return '';
