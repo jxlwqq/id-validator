@@ -61,18 +61,28 @@ trait Helper
     private function _getAddressInfo($addressCode)
     {
         $addressInfo = [];
+        $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
         // 省级信息
-        $provinceAddressCode = substr($addressCode, 0, 2).'0000';
+        $provinceAddressCode = substr($addressCode, 0, 2) . '0000';
         $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : '';
 
-        // 市级信息
-        $cityAddressCode = substr($addressCode, 0, 4).'00';
-        $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : '';
+        // 市级信息（港澳台居民居住证无市级信息）
+        if ($firstCharacter != '8') {
+            $cityAddressCode = substr($addressCode, 0, 4) . '00';
+            $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : '';
+        } else {
+            $addressInfo['city'] = '';
+        }
 
-        // 县级信息
-        $addressInfo['district'] = isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : '';
+        // 县级信息（港澳台居民居住证无县级信息）
+        if ($firstCharacter != '8') {
+            $addressInfo['district'] = isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : '';
+        } else {
+            $addressInfo['district'] = '';
+        }
 
-        if (empty($addressInfo)) {
+
+if (empty($addressInfo)) {
             return false;
         } else {
             return $addressInfo;
