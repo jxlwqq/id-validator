@@ -75,6 +75,11 @@ $idValidator->fakeId(false); // 15 位
 
 * [港澳台居民居住证](https://zh.wikipedia.org/wiki/港澳台居民居住证)
 
+## Change Log
+* 1.1.0 身份证号返回信息新增生肖和星座内容；
+
+* 1.2.0 支持港澳台居民居住证；
+
 ## License
 MIT
 
