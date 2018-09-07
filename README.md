@@ -76,6 +76,8 @@ $idValidator->fakeId(false); // 15 位
 
 * GB 2260-1995 中华人民共和国行政区划代码
 
+* [中华人民共和国民政部：行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/)
+
 * [港澳台居民居住证](https://zh.wikipedia.org/wiki/港澳台居民居住证)
 
 ## Change Log
