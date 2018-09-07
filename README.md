@@ -34,7 +34,7 @@ $idValidator->isValid('610104620927690'); // 15 位
 
 ### 获取身份证号信息
 
-当身份证号合法时，返回分析信息（地区、出生日期、性别、校验位），不合法返回 false：
+当身份证号合法时，返回分析信息（地区、出生日期、星座、生肖、性别、校验位），不合法返回 false：
 ```php
 use Jxlwqq\IdValidator\IdValidator;
 
