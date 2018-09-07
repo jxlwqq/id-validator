@@ -31,6 +31,20 @@ $idValidator = new IdValidator();
 $idValidator->isValid('440308199901101512'); // 18 位
 $idValidator->isValid('610104620927690'); // 15 位
 ```
+返回信息格式：
+
+```php
+[
+'addressCode'   => '440308',
+'address'       => '广东省深圳市盐田区',
+'birthdayCode'  => '1999-01-10',
+'constellation' => '水瓶座',
+'chineseZodiac' => '卯兔',
+'sex'           => 1,
+'length'        => 18,
+'checkBit'      => '2', 
+]
+```
 
 ### 获取身份证号信息
 

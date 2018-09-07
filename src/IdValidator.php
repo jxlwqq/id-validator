@@ -82,6 +82,8 @@ class IdValidator
         $info['addressCode'] = $code['addressCode'];
         $info['address'] = is_array($addressInfo) ? implode($addressInfo) : '';
         $info['birthdayCode'] = date('Y-m-d', strtotime($code['birthdayCode']));
+        $info['constellation'] = $this->_getConstellation($code['birthdayCode']);
+        $info['chineseZodiac'] = $this->_getChineseZodiac($code['birthdayCode']);
         $info['sex'] = ($code['order'] % 2 === 0 ? 0 : 1);
         $info['length'] = $code['type'];
         $info['checkBit'] = $code['checkBit'];
@@ -187,6 +189,51 @@ class IdValidator
             return $addressInfo;
         }
     }
+
+    public function _getConstellation($birthdayCode)
+    {
+
+        $constellationList = $this->_getConstellationList();
+
+        $time  = strtotime($birthdayCode);
+        $year = substr($birthdayCode, 0,4);
+        $month = substr($birthdayCode, 4, 2);
+        $day = substr($birthdayCode, 6,2);
+
+
+        // 1月份与12月份特殊处理
+        if( ( $month == 1 && $day < 20 ) || ( $month == 12 && $day > 21 ) ){
+            return $constellationList[12]['name'];
+        }else if( $month == 1 ){
+            return $constellationList[1]['name'];
+        }else if( $month == 12 ){
+            return $constellationList[12]['name'];
+        }
+
+        $startDate = $year.'-'.$constellationList[$month]['start_date'];
+        $endDate   = $year.'-'.$constellationList[$month]['end_date'];
+        if( strtotime( $startDate ) <= $time  && strtotime( $endDate ) >= $time ){
+            return $constellationList[$month]['name'];
+        }
+        $startDate = $year.'-'.$constellationList[$month-1]['start_date'];
+        $endDate   = $year.'-'.$constellationList[$month-1]['end_date'];
+        if( strtotime( $startDate ) <= $time  && strtotime( $endDate ) >= $time ){
+            return $constellationList[$month-1]['name'];
+        }
+
+        return '';
+    }
+
+    public function _getChineseZodiac($birthdayCode)
+    {
+        $chineseZodiacList = $this->_getChineseZodiacList();
+        $start = 1900; // 子鼠
+        $end = substr($birthdayCode, 0, 4);
+        $key = ($end - $start) % 12;
+        $key = $key >= 0 ? $key : ($key + 12);
+        return $chineseZodiacList[$key];
+    }
+
 
     /**
      * 检查并拆分身份证号.
@@ -360,5 +407,74 @@ class IdValidator
         $birthdayCode = $year.$month.$day;
 
         return $birthdayCode;
+    }
+
+    /**
+     * @return array
+     */
+    private function _getChineseZodiacList()
+    {
+        return ['子鼠', '丑牛', '寅虎', '卯兔', '辰龙', '巳蛇', '午马', '未羊', '申猴', '酉鸡', '戌狗', '亥猪'];
+    }
+
+    /**
+     * @return array
+     */
+    private function _getConstellationList()
+    {
+        return [
+            '01' => [
+                'name' => '水瓶座',
+                'start_date' => '01-20',
+                'end_date' => '02-18'
+            ],
+            '02' => [
+                'name' => '双鱼座',
+                'start_date' => '02-19',
+                'end_date' => '03-20'
+            ],
+            '03' => [
+                'name' => '白羊座',
+                'start_date' => '03-21',
+                'end_date' => '04-19'
+            ],
+            '04' => [
+                'name' => '金牛座',
+                'start_date' => '04-20',
+                'end_date' => '05-20'
+            ], '05' => [
+                'name' => '双子座',
+                'start_date' => '05-21',
+                'end_date' => '06-21'
+            ], '06' => [
+                'name' => '巨蟹座',
+                'start_date' => '06-22',
+                'end_date' => '07-22'
+            ], '07' => [
+                'name' => '狮子座',
+                'start_date' => '07-23',
+                'end_date' => '08-22'
+            ], '08' => [
+                'name' => '处女座',
+                'start_date' => '08-23',
+                'end_date' => '09-22'
+            ], '09' => [
+                'name' => '天秤座',
+                'start_date' => '09-23',
+                'end_date' => '10-23'
+            ], '10' => [
+                'name' => '天蝎座',
+                'start_date' => '10-24',
+                'end_date' => '11-22'
+            ], '11' => [
+                'name' => '射手座',
+                'start_date' => '11-23',
+                'end_date' => '12-21'
+            ], '12' => [
+                'name' => '水瓶座',
+                'start_date' => '12-22',
+                'end_date' => '01-19'
+            ]
+        ];
     }
 }
