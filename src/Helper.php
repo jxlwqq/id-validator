@@ -117,9 +117,8 @@ trait Helper
             return $this->_constellationList[$month]['name'];
         }
 
-
-        $key = (int)$month - 1; // 1月份以特殊处理
-        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string)$key;
+        $key = (int) $month - 1; // 1月份以特殊处理
+        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string) $key;
 
         $startDate = $year.'-'.$this->_constellationList[$key]['start_date'];
         $endDate = $year.'-'.$this->_constellationList[$key]['end_date'];
