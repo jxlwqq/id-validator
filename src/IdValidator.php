@@ -295,6 +295,7 @@ class IdValidator
     /**
      * 生成校验码
      * 详细计算方法 @lint https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码
+     *
      * @param $body
      *
      * @return int|string
