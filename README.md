@@ -31,6 +31,17 @@ $idValidator = new IdValidator();
 $idValidator->isValid('440308199901101512'); // 18 位
 $idValidator->isValid('610104620927690'); // 15 位
 ```
+
+### 获取身份证号信息
+
+当身份证号合法时，返回分析信息（地区、出生日期、性别、校验位），不合法返回 false：
+```php
+use Jxlwqq\IdValidator\IdValidator;
+
+$idValidator = new IdValidator();
+$idValidator->getInfo('440308199901101512'); // 18 位
+$idValidator->getInfo('610104620927690'); // 15 位
+```
 返回信息格式：
 
 ```php
@@ -44,17 +55,6 @@ $idValidator->isValid('610104620927690'); // 15 位
 'length'        => 18,
 'checkBit'      => '2', 
 ]
-```
-
-### 获取身份证号信息
-
-当身份证号合法时，返回分析信息（地区、出生日期、性别、校验位），不合法返回 false：
-```php
-use Jxlwqq\IdValidator\IdValidator;
-
-$idValidator = new IdValidator();
-$idValidator->getInfo('440308199901101512'); // 18 位
-$idValidator->getInfo('610104620927690'); // 15 位
 ```
 
 ### 生成可通过校验的假数据
