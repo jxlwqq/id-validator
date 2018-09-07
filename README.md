@@ -18,7 +18,8 @@ composer require "jxlwqq/id-validator"
 
 ## 使用
 
-> `440308199901101512` 和 `610104620927690` 示例身份证均为随机生成的假数据，如撞车，请联系删除。
+> `440308199901101512` 和 `610104620927690` 示例大陆居民身份证均为随机生成的假数据，如撞车，请联系删除。
+> `810000199408230021` 和 `830000199201300022` 示例港澳居民居住证为北京市公安局公布的居住证样式号码。
 
 ### 验证身份证号合法性
 
@@ -28,8 +29,10 @@ composer require "jxlwqq/id-validator"
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->isValid('440308199901101512'); // 18 位
-$idValidator->isValid('610104620927690'); // 15 位
+$idValidator->isValid('440308199901101512'); // 大陆居民身份证 18 位
+$idValidator->isValid('610104620927690');    // 大陆居民身份证 15 位
+$idValidator->isValid('810000199408230021'); // 港澳居民居住证 18 位
+$idValidator->isValid('830000199201300022'); // 台湾居民居住证 18 位
 ```
 
 ### 获取身份证号信息
