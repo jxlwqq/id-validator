@@ -80,6 +80,8 @@ $idValidator->fakeId(false); // 15 位
 
 * [中华人民共和国民政部：行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/)
 
+* [中华人民共和国行政区划代码历史数据集](https://github.com/jxlwqq/address-code-of-china)
+
 * [港澳台居民居住证](https://zh.wikipedia.org/wiki/港澳台居民居住证)
 
 ## Change Log
@@ -87,7 +89,9 @@ $idValidator->fakeId(false); // 15 位
 
 * 1.2.0 支持港澳台居民居住证；
 
-* 1.3.0 行政区划代码（地址码）数据改由从中华人民共和国民政部官方网站获取。
+* 1.3.0 行政区划代码（地址码）数据改由从中华人民共和国民政部官方网站获取；
+
+* 1.4.0 支持查询因行政区变更而废弃的地址码；
 
 ## License
 MIT
