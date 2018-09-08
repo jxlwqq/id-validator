@@ -9,16 +9,21 @@ class IdValidator
 {
     use Helper;
 
-    private $_addressCodeList = [];
+    private $_addressCodeList = []; // 所有地址码数据（现行+废弃）
+    private $_abandonedAddressCodeList = []; // 废弃地址码数据
     private $_constellationList = [];
     private $_chineseZodiacList = [];
+
 
     /**
      * IdValidator constructor.
      */
     public function __construct()
     {
-        $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
+        $addressCodeList = include __DIR__.'/../data/addressCode.php';
+        $abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
+        $this->_abandonedAddressCodeList = $abandonedAddressCodeList;
+        $this->_addressCodeList =$addressCodeList + $abandonedAddressCodeList;
         $this->_constellationList = include __DIR__.'/../data/constellation.php';
         $this->_chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
     }
@@ -86,6 +91,7 @@ class IdValidator
         $addressInfo = $this->_getAddressInfo($code['addressCode']);
         $info = [];
         $info['addressCode'] = $code['addressCode'];
+        $info['abandoned'] = isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0;
         $info['address'] = is_array($addressInfo) ? implode($addressInfo) : '';
         $info['birthdayCode'] = date('Y-m-d', strtotime($code['birthdayCode']));
         $info['constellation'] = $this->_getConstellation($code['birthdayCode']);

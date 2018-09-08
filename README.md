@@ -49,14 +49,15 @@ $idValidator->getInfo('610104620927690'); // 15 位
 
 ```php
 [
-'addressCode'   => '440308',
-'address'       => '广东省深圳市盐田区',
-'birthdayCode'  => '1999-01-10',
-'constellation' => '水瓶座',
-'chineseZodiac' => '卯兔',
-'sex'           => 1,
-'length'        => 18,
-'checkBit'      => '2', 
+'addressCode'   => '440308',          // 地址码   
+'abandoned'     => 0,                 // 地址码是否废弃，1 为废弃的，0 为正在使用的
+'address'       => '广东省深圳市盐田区', // 地址
+'birthdayCode'  => '1999-01-10',      // 出生日期
+'constellation' => '水瓶座',           // 星座
+'chineseZodiac' => '卯兔',             // 生肖
+'sex'           => 1,                 // 性别，1 为男性，0 为女性
+'length'        => 18,                // 号码长度
+'checkBit'      => '2',               // 校验码
 ]
 ```
 
