@@ -14,7 +14,6 @@ class IdValidator
     private $_constellationList = [];
     private $_chineseZodiacList = [];
 
-
     /**
      * IdValidator constructor.
      */
@@ -23,7 +22,7 @@ class IdValidator
         $addressCodeList = include __DIR__.'/../data/addressCode.php';
         $abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
         $this->_abandonedAddressCodeList = $abandonedAddressCodeList;
-        $this->_addressCodeList =$addressCodeList + $abandonedAddressCodeList;
+        $this->_addressCodeList = $addressCodeList + $abandonedAddressCodeList;
         $this->_constellationList = include __DIR__.'/../data/constellation.php';
         $this->_chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
     }
