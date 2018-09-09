@@ -43,7 +43,7 @@ use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
 $idValidator->getInfo('440308199901101512'); // 18 位
-$idValidator->getInfo('610104620927690'); // 15 位
+$idValidator->getInfo('610104620927690');    // 15 位
 ```
 返回信息格式：
 
@@ -74,11 +74,12 @@ $idValidator->getInfo('610104620927690'); // 15 位
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->fakeId(); // 18 位
-$idValidator->fakeId(false); // 15 位
-$idValidator->fakeId(true, '上海市', '2000', 1);
-$idValidator->fakeId(true, '江苏省', '200001', 1));
-$idValidator->fakeId(true, '台湾省', '20131010', 0);
+$idValidator->fakeId();                             // 18 位
+$idValidator->fakeId(false);                        // 15 位
+$idValidator->fakeId(true, '上海市', '2000', 1);     // 生成出生于 2000 年上海市的男性居民身份证
+$idValidator->fakeId(true, '南山区', '1999', 0);     // 生成出生于 1999 年深圳市南山区的女性居民身份证
+$idValidator->fakeId(true, '江苏省', '200001', 1));  // 生成出生于 2000 年 1 月江苏省的男性居民身份证
+$idValidator->fakeId(true, '台湾省', '20131010', 0); // 生成出生于 2013 年 10 月 10 日台湾省的女性居民居住证
 ```
 
 
