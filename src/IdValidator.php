@@ -9,7 +9,7 @@ class IdValidator
 {
     use Helper;
 
-    private $_addressCodeList = []; // 所有地址码数据（现行+废弃）
+    private $_addressCodeList = []; // 现行地址码数据
     private $_abandonedAddressCodeList = []; // 废弃地址码数据
     private $_constellationList = [];
     private $_chineseZodiacList = [];
@@ -19,10 +19,8 @@ class IdValidator
      */
     public function __construct()
     {
-        $addressCodeList = include __DIR__.'/../data/addressCode.php';
-        $abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
-        $this->_abandonedAddressCodeList = $abandonedAddressCodeList;
-        $this->_addressCodeList = $addressCodeList + $abandonedAddressCodeList;
+        $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
+        $this->_abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
         $this->_constellationList = include __DIR__.'/../data/constellation.php';
         $this->_chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
     }
@@ -103,29 +101,35 @@ class IdValidator
     }
 
     /**
-     * 生成假数据.
+     * * 生成假数据.
      *
      * @param bool $eighteen 是否为 18 位
+     * @param null|string|array $address 地址
+     * @param null|string|int $sex 性别（1为男性，0位女性）
+     * @param null|string|int|array $birthday 出生日期
      *
      * @return string
      */
-    public function fakeId($eighteen = true)
+    public function fakeId($eighteen = true, $address = null, $birthday = null, $sex = null)
     {
         // 生成地址码
-        $addressCode = $this->_generatorAddressCode();
+        $addressCode = $this->_generatorAddressCode($address);
 
         // 出生日期码
-        $birthdayCode = $this->_generatorBirthdayCode();
+        $birthdayCode = $this->_generatorBirthdayCode($birthday);
 
         if (!$eighteen) {
             return $addressCode.substr($birthdayCode, 2)
                 .$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
         }
 
-        $body = $addressCode.$birthdayCode.$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
+        $orderCode = $this->_generatorOrderCode($sex);
+
+        $body = $addressCode.$birthdayCode.$orderCode;
 
         $checkBit = $this->_generatorCheckBit($body);
 
         return $body.$checkBit;
     }
+
 }

@@ -64,19 +64,19 @@ trait Helper
         $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
         // 省级信息
         $provinceAddressCode = substr($addressCode, 0, 2).'0000';
-        $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : '';
+        $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : (isset($this->_abandonedAddressCodeList[$provinceAddressCode]) ? $this->_abandonedAddressCodeList[$provinceAddressCode] : '');
 
         // 市级信息（港澳台居民居住证无市级信息）
         if ($firstCharacter != '8') {
             $cityAddressCode = substr($addressCode, 0, 4).'00';
-            $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : '';
+            $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : (isset($this->_abandonedAddressCodeList[$cityAddressCode]) ? $this->_abandonedAddressCodeList[$cityAddressCode] : '');
         } else {
             $addressInfo['city'] = '';
         }
 
         // 县级信息（港澳台居民居住证无县级信息）
         if ($firstCharacter != '8') {
-            $addressInfo['district'] = isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : '';
+            $addressInfo['district'] = isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : (isset($this->_abandonedAddressCodeList[$addressCode]) ? $this->_abandonedAddressCodeList[$addressCode] : '');
         } else {
             $addressInfo['district'] = '';
         }
@@ -287,17 +287,41 @@ trait Helper
      *
      * @return string
      */
-    private function _generatorAddressCode()
+    private function _generatorAddressCode($address)
     {
-        $addressCode = '110100';
-        for ($i = 0; $i < 100; $i++) {
-            $province = $this->_getStrPad($this->_generatorRandInt(66), 2, '0');
-            $city = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
-            $district = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
-            $fakeAddressCode = $province.$city.$district;
-            if (isset($this->_addressCodeList[$fakeAddressCode])) {
-                $addressCode = $fakeAddressCode;
-                break;
+        $addressCode = '';
+        if ($address) {
+            $addressCode = array_search($address, $this->_addressCodeList);
+        }
+        if ($addressCode && substr($addressCode, 0, 1) != 8) {
+            // 台湾省、香港特别行政区和澳门特别行政区（8字开头）暂缺地市和区县信息
+            // 省级
+            if (substr($addressCode, 2, 4) == '0000') {
+                $keys = array_keys($this->_addressCodeList);
+                $provinceCode = substr($addressCode, 0, 2);
+                $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
+                $result = preg_grep($pattern, $keys);
+                $addressCode = $result[array_rand($result)];
+            }
+            // 市级
+            if (substr($addressCode, 4, 2) == '00') {
+                $keys = array_keys($this->_addressCodeList);
+                $cityCode = substr($addressCode, 0, 4);
+                $pattern = '/^'.$cityCode.'[^0]{2}$/';
+                $result = preg_grep($pattern, $keys);
+                $addressCode = $result[array_rand($result)];
+            }
+        } else {
+            $addressCode = '110100'; // Default value
+            for ($i = 0; $i < 100; $i++) {
+                $province = $this->_getStrPad($this->_generatorRandInt(66), 2, '0');
+                $city = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
+                $district = $this->_getStrPad($this->_generatorRandInt(20), 2, '0');
+                $fakeAddressCode = $province.$city.$district;
+                if (isset($this->_addressCodeList[$fakeAddressCode])) {
+                    $addressCode = $fakeAddressCode;
+                    break;
+                }
             }
         }
 
@@ -309,14 +333,51 @@ trait Helper
      *
      * @return string
      */
-    private function _generatorBirthdayCode()
+    private function _generatorBirthdayCode($birthday)
     {
-        $year = $this->_getStrPad($this->_generatorRandInt(99, 50), 2, '0');
-        $month = $this->_getStrPad($this->_generatorRandInt(12, 1), 2, '0');
-        $day = $this->_getStrPad($this->_generatorRandInt(28, 1), 2, '0');
-        $year = '19'.$year;
+        if ($birthday && is_numeric($birthday)) {
+            $year = $this->_getStrPad(substr($birthday, 0,4), 4);
+            $month = $this->_getStrPad(substr($birthday, 4, 2), 2);
+            $day = $this->_getStrPad(substr($birthday, 6, 2), 2);
+
+        }
+        if (!isset($year) || empty($year) || $year < 1800 || $year > date('Y')) {
+            $year = $this->_getStrPad($this->_generatorRandInt(99, 50), 2, '0');
+            $year = '19'.$year;
+        }
+
+        if (!isset($month) || empty($month) || $month < 1 || $month > 12) {
+            $month = $this->_getStrPad($this->_generatorRandInt(12, 1), 2, '0');
+        }
+
+        if (!isset($day) || empty($day) || $day < 1 || $day > 31) {
+            $day = $this->_getStrPad($this->_generatorRandInt(28, 1), 2, '0');
+        }
+
+        if (!checkdate($month, $day, $year)) {
+            $year = $this->_getStrPad($this->_generatorRandInt(99, 50), 2, '0');
+            $month = $this->_getStrPad($this->_generatorRandInt(12, 1), 2, '0');
+            $day = $this->_getStrPad($this->_generatorRandInt(28, 1), 2, '0');
+        }
         $birthdayCode = $year.$month.$day;
 
         return $birthdayCode;
+    }
+
+    /**
+     * 生成顺序码
+     *
+     * @return string
+     */
+    private function _generatorOrderCode($sex)
+    {
+        $orderCode = $this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
+        if ($sex === 1) {
+            $orderCode = $orderCode % 2 === 0 ? $orderCode -1 : $orderCode;
+        }
+        if ($sex === 0) {
+            $orderCode = $orderCode % 2 === 0 ? $orderCode : $orderCode -1;
+        }
+        return $orderCode;
     }
 }
