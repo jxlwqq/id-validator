@@ -26,7 +26,7 @@ trait Helper
     /**
      * 获取数字补位.
      *
-     * @param $str
+     * @param string|int $str 字符串
      * @param int    $len   长度
      * @param string $chr   补位值
      * @param bool   $right 左右
@@ -285,7 +285,8 @@ trait Helper
     /**
      * 生成地址码
      *
-     * @return string
+     * @param string $address 地址（行政区全称）
+     * @return false|int|string
      */
     private function _generatorAddressCode($address)
     {
@@ -331,6 +332,8 @@ trait Helper
     /**
      * 生成出生日期码
      *
+     * @param int|string $birthday 出生日期
+     *
      * @return string
      */
     private function _generatorBirthdayCode($birthday)
@@ -366,7 +369,9 @@ trait Helper
     /**
      * 生成顺序码
      *
-     * @return string
+     * @param int $sex 性别
+     *
+     * @return int|string
      */
     private function _generatorOrderCode($sex)
     {
