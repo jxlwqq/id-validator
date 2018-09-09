@@ -7,8 +7,6 @@ namespace Jxlwqq\IdValidator;
  */
 trait Helper
 {
-
-
     /**
      * 获取地址码信息.
      *
@@ -24,7 +22,6 @@ trait Helper
         // 省级信息
         $provinceAddressCode = substr($addressCode, 0, 2).'0000';
         $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : (isset($this->_abandonedAddressCodeList[$provinceAddressCode]) ? $this->_abandonedAddressCodeList[$provinceAddressCode] : '');
-
 
         // 市级信息（港澳台居民居住证无市级信息）
         if ($firstCharacter != '8') {
@@ -106,7 +103,6 @@ trait Helper
         return $this->_chineseZodiacList[$key];
     }
 
-
     /**
      * 生成随机数.
      *
@@ -123,10 +119,10 @@ trait Helper
     /**
      * 获取数字补位.
      *
-     * @param string|int $str 字符串
-     * @param int    $len   长度
-     * @param string $chr   补位值
-     * @param bool   $right 左右
+     * @param string|int $str   字符串
+     * @param int        $len   长度
+     * @param string     $chr   补位值
+     * @param bool       $right 左右
      *
      * @return string
      */

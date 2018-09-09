@@ -1,12 +1,12 @@
 <?php
 
 namespace Jxlwqq\IdValidator;
+
 /**
- * Trait Checker
+ * Trait Checker.
  */
 trait Checker
 {
-
     /**
      * 检查并拆分身份证号.
      *

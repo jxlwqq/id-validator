@@ -103,10 +103,10 @@ class IdValidator
     /**
      * * 生成假数据.
      *
-     * @param bool                  $eighteen 是否为 18 位
-     * @param null|string           $address  地址
-     * @param null|string|int       $birthday 出生日期
-     * @param null|int              $sex      性别（1为男性，0位女性）
+     * @param bool            $eighteen 是否为 18 位
+     * @param null|string     $address  地址
+     * @param null|string|int $birthday 出生日期
+     * @param null|int        $sex      性别（1为男性，0位女性）
      *
      * @return string
      */
