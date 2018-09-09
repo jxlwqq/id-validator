@@ -3,7 +3,7 @@
 namespace Jxlwqq\IdValidator;
 
 /**
- * Trait Generator
+ * Trait Generator.
  */
 trait Generator
 {
@@ -68,6 +68,7 @@ trait Generator
      * 生成地址码
      *
      * @param string $address 地址（行政区全称）
+     *
      * @return false|int|string
      */
     private function _generatorAddressCode($address)
@@ -126,7 +127,7 @@ trait Generator
         for ($i = 18; $i > 1; $i--) {
             $weight = pow(2, $i - 1) % 11;
             $posWeight[$i] = $weight;
-        };
+        }
 
         // 累身份证号 body 部分与位置加权的积
         $bodySum = 0;
