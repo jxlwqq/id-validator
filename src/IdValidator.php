@@ -7,7 +7,7 @@ namespace Jxlwqq\IdValidator;
  */
 class IdValidator
 {
-    use Helper;
+    use Helper, Generator, Checker;
 
     private $_addressCodeList = []; // 现行地址码数据
     private $_abandonedAddressCodeList = []; // 废弃地址码数据
@@ -104,9 +104,9 @@ class IdValidator
      * * 生成假数据.
      *
      * @param bool                  $eighteen 是否为 18 位
-     * @param null|string|array     $address  地址
-     * @param null|string|int|array $birthday 出生日期
-     * @param null|string|int       $sex      性别（1为男性，0位女性）
+     * @param null|string           $address  地址
+     * @param null|string|int       $birthday 出生日期
+     * @param null|int              $sex      性别（1为男性，0位女性）
      *
      * @return string
      */
@@ -120,7 +120,7 @@ class IdValidator
 
         if (!$eighteen) {
             return $addressCode.substr($birthdayCode, 2)
-                .$this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
+                .$this->_getStrPad($this->_getRandInt(999, 1), 3, '1');
         }
 
         $orderCode = $this->_generatorOrderCode($sex);
