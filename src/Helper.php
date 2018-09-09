@@ -336,10 +336,9 @@ trait Helper
     private function _generatorBirthdayCode($birthday)
     {
         if ($birthday && is_numeric($birthday)) {
-            $year = $this->_getStrPad(substr($birthday, 0,4), 4);
+            $year = $this->_getStrPad(substr($birthday, 0, 4), 4);
             $month = $this->_getStrPad(substr($birthday, 4, 2), 2);
             $day = $this->_getStrPad(substr($birthday, 6, 2), 2);
-
         }
         if (!isset($year) || empty($year) || $year < 1800 || $year > date('Y')) {
             $year = $this->_getStrPad($this->_generatorRandInt(99, 50), 2, '0');
@@ -373,11 +372,12 @@ trait Helper
     {
         $orderCode = $this->_getStrPad($this->_generatorRandInt(999, 1), 3, '1');
         if ($sex === 1) {
-            $orderCode = $orderCode % 2 === 0 ? $orderCode -1 : $orderCode;
+            $orderCode = $orderCode % 2 === 0 ? $orderCode - 1 : $orderCode;
         }
         if ($sex === 0) {
-            $orderCode = $orderCode % 2 === 0 ? $orderCode : $orderCode -1;
+            $orderCode = $orderCode % 2 === 0 ? $orderCode : $orderCode - 1;
         }
+
         return $orderCode;
     }
 }
