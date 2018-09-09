@@ -27,8 +27,6 @@ class IdValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId(true, '上海市', '2000', 1)));
         $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId(true, '江苏省', '20000101', 1)));
         $this->assertEquals(true, $idValidator->isValid($idValidator->fakeId(true, '台湾省', '20131010', 0)));
-
-
     }
 
     public function testGetInfo()

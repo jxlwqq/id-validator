@@ -103,9 +103,9 @@ class IdValidator
     /**
      * * 生成假数据.
      *
-     * @param bool $eighteen 是否为 18 位
-     * @param null|string|array $address 地址
-     * @param null|string|int $sex 性别（1为男性，0位女性）
+     * @param bool                  $eighteen 是否为 18 位
+     * @param null|string|array     $address  地址
+     * @param null|string|int       $sex      性别（1为男性，0位女性）
      * @param null|string|int|array $birthday 出生日期
      *
      * @return string
@@ -131,5 +131,4 @@ class IdValidator
 
         return $body.$checkBit;
     }
-
 }
