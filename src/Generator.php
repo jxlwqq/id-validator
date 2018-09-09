@@ -78,7 +78,7 @@ trait Generator
             $addressCode = array_search($address, $this->_addressCodeList);
         }
 
-        if (substr($addressCode, 0, 1) == 8) {
+        if ($addressCode && substr($addressCode, 0, 1) == 8) {
             // 台湾省、香港特别行政区和澳门特别行政区（8字开头）暂缺地市和区县信息
             return $addressCode;
         }
