@@ -64,13 +64,24 @@ $idValidator->getInfo('610104620927690'); // 15 位
 ### 生成可通过校验的假数据
 伪造符合校验的身份证：
 
+`fakeId()` 方法有 4 个可选参数：
+* `$eighteen` 是否生成 18 位号码，默认为 `true`；
+* `$address` 地址，即省市县三级地区官方全称，如`北京市`、`台湾省`、`香港特别行政区`、`深圳市`、`黄浦区`等，默认或参数非法，则生成合法的随机地址；
+* `$birthday` 出生日期，如 `2000`、`198801`、`19990101` 等，默认或参数非法，则生成合法的随机出生日期；
+* `$sex` 性别，1 为男性，0 为女性，默认或参数非法，则生成合法的随机性别；
+
 ```php
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
 $idValidator->fakeId(); // 18 位
 $idValidator->fakeId(false); // 15 位
+$idValidator->fakeId(true, '上海市', '2000', 1);
+$idValidator->fakeId(true, '江苏省', '200001', 1));
+$idValidator->fakeId(true, '台湾省', '20131010', 0);
 ```
+
+
 
 ## 参考资料
 * ~~GB 11643-1999 公民身份证号码~~
