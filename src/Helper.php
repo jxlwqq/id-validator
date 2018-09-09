@@ -26,10 +26,10 @@ trait Helper
     /**
      * 获取数字补位.
      *
-     * @param string|int $str 字符串
-     * @param int    $len   长度
-     * @param string $chr   补位值
-     * @param bool   $right 左右
+     * @param string|int $str   字符串
+     * @param int        $len   长度
+     * @param string     $chr   补位值
+     * @param bool       $right 左右
      *
      * @return string
      */
@@ -286,6 +286,7 @@ trait Helper
      * 生成地址码
      *
      * @param string $address 地址（行政区全称）
+     *
      * @return false|int|string
      */
     private function _generatorAddressCode($address)
