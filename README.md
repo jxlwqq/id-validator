@@ -1,8 +1,6 @@
 # IdValidator.php
 
-`中华人民共和国居民身份证`、`中华人民共和国港澳居民居住证`以及`中华人民共和国台湾居民居住证`号码验证工具（PHP Composer 版）支持 15 位与 18 位身份证号。基于 [JavaScript 版本](https://github.com/mc-zone/IDValidator)。
-
-Chinese Mainland Personal ID Card Validation.
+`中华人民共和国居民身份证`、`中华人民共和国港澳居民居住证`以及`中华人民共和国台湾居民居住证`号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。基于 [JavaScript 版本](https://github.com/mc-zone/IDValidator)。
 
 
 [![Build Status](https://travis-ci.org/jxlwqq/id-validator.svg?branch=master)](https://travis-ci.org/jxlwqq/id-validator)
@@ -96,6 +94,8 @@ $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出
 * [中华人民共和国民政部：行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/)
 
 * [中华人民共和国行政区划代码历史数据集](https://github.com/jxlwqq/address-code-of-china)
+
+* [国务院办公厅关于印发《港澳台居民居住证申领发放办法》的通知](http://www.gov.cn/zhengce/content/2018-08/19/content_5314865.htm)
 
 * [港澳台居民居住证](https://zh.wikipedia.org/wiki/港澳台居民居住证)
 
