@@ -1,6 +1,6 @@
 # IdValidator.php
 
-`中华人民共和国居民身份证`、`中华人民共和国港澳居民居住证`以及`中华人民共和国台湾居民居住证`号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。基于 [JavaScript 版本](https://github.com/mc-zone/IDValidator)。
+**中华人民共和国居民身份证**、**中华人民共和国港澳居民居住证**以及**中华人民共和国台湾居民居住证**号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。基于 [JavaScript 版本](https://github.com/mc-zone/IDValidator)。
 
 
 [![Build Status](https://travis-ci.org/jxlwqq/id-validator.svg?branch=master)](https://travis-ci.org/jxlwqq/id-validator)
@@ -21,7 +21,7 @@ composer require "jxlwqq/id-validator"
 
 ### 验证身份证号合法性
 
-验证身份证号是否合法，合法返回 true，不合法返回 false：
+验证身份证号是否合法，合法返回 `true`，不合法返回 `false`：
 
 ```php
 use Jxlwqq\IdValidator\IdValidator;
@@ -35,7 +35,7 @@ $idValidator->isValid('830000199201300022'); // 台湾居民居住证 18 位
 
 ### 获取身份证号信息
 
-当身份证号合法时，返回分析信息（地区、出生日期、星座、生肖、性别、校验位），不合法返回 false：
+当身份证号合法时，返回分析信息（地区、出生日期、星座、生肖、性别、校验位），不合法返回 `false`：
 ```php
 use Jxlwqq\IdValidator\IdValidator;
 
@@ -43,7 +43,7 @@ $idValidator = new IdValidator();
 $idValidator->getInfo('440308199901101512'); // 18 位
 $idValidator->getInfo('610104620927690');    // 15 位
 ```
-返回信息格式：
+返回信息格式如下：
 
 ```php
 [
@@ -72,17 +72,15 @@ $idValidator->getInfo('610104620927690');    // 15 位
 use Jxlwqq\IdValidator\IdValidator;
 
 $idValidator = new IdValidator();
-$idValidator->fakeId();                             // 18 位
-$idValidator->fakeId(false);                        // 15 位
-$idValidator->fakeId(true, '上海市', '2000', 1);     // 生成出生于 2000 年上海市的男性居民身份证
-$idValidator->fakeId(true, '南山区', '1999', 0);     // 生成出生于 1999 年深圳市南山区的女性居民身份证
-$idValidator->fakeId(true, '江苏省', '200001', 1));  // 生成出生于 2000 年 1 月江苏省的男性居民身份证
-$idValidator->fakeId(true, '台湾省', '20131010', 0); // 生成出生于 2013 年 10 月 10 日台湾省的女性居民居住证
+$idValidator->fakeId();                                    // 18 位
+$idValidator->fakeId(false);                               // 15 位
+$idValidator->fakeId(true, '上海市', '2000', 1);            // 生成出生于 2000 年上海市的男性居民身份证
+$idValidator->fakeId(true, '南山区', '1999', 0);            // 生成出生于 1999 年广东省深圳市南山区的女性居民身份证
+$idValidator->fakeId(true, '江苏省', '200001', 1));         // 生成出生于 2000 年 1 月江苏省的男性居民身份证
+$idValidator->fakeId(true, '厦门市', '199701', 0));         // 生成出生于 2000 年 1 月福建省厦门市的女性居民身份证
+$idValidator->fakeId(true, '台湾省', '20131010', 0);        // 生成出生于 2013 年 10 月 10 日台湾省的女性居民居住证
 $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出生于 1997 年 7 月 1 日香港特别行政区的女性居民居住证
-
 ```
-
-
 
 ## 参考资料
 * ~~GB 11643-1999 公民身份证号码~~
@@ -108,7 +106,7 @@ $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出
 
 * 1.4.0 支持查询因行政区变更而废弃的地址码；
 
-* 1.4.2 fakeId() 方法增加可选参数；
+* 1.4.2 `fakeId()` 方法增加可选参数；
 
 ## License
 MIT
