@@ -14,6 +14,8 @@
 composer require "jxlwqq/id-validator"
 ```
 
+> 注：如果 require 失败，解决方案见[#13](https://github.com/jxlwqq/id-validator/pull/13)。
+
 ## 使用
 
 > `440308199901101512` 和 `610104620927690` 示例大陆居民身份证均为随机生成的假数据，如撞车，请联系删除。
