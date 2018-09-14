@@ -139,16 +139,12 @@ trait Generator
         $bodyArray = str_split($body);
         $count = count($bodyArray);
         for ($j = 0; $j < $count; $j++) {
-            $bodySum += (intval($bodyArray[$j], 10) * $posWeight[18 - $j]);
+            $bodySum += (intval($bodyArray[$j]) * $posWeight[18 - $j]);
         }
 
         // 生成校验码
-        $checkBit = 12 - ($bodySum % 11);
-        if ($checkBit == 10) {
-            $checkBit = 'X';
-        } elseif ($checkBit > 10) {
-            $checkBit = $checkBit % 11;
-        }
+        $checkBit = (12 - ($bodySum % 11)) % 11;
+        $checkBit = $checkBit == 10 ? 'X' : $checkBit;
 
         return $checkBit;
     }
