@@ -92,7 +92,7 @@ trait Checker
             return false;
         }
 
-        if(!checkdate($month, $day, $year)) {
+        if (!checkdate($month, $day, $year)) {
             return false;
         }
 
