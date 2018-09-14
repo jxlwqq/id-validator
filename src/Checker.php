@@ -91,7 +91,8 @@ trait Checker
         if ($year < 1800) {
             return false;
         }
-        if ($month > 12 || $month === 0 || $day > 31 || $day === 0) {
+
+        if(!checkdate($month, $day, $year)) {
             return false;
         }
 
