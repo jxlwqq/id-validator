@@ -83,10 +83,11 @@ trait Generator
             return $addressCode;
         }
 
+        $keys = array_keys($this->_addressCodeList);
+
         if ($addressCode) {
             // 省级
             if (substr($addressCode, 2, 4) == '0000') {
-                $keys = array_keys($this->_addressCodeList);
                 $provinceCode = substr($addressCode, 0, 2);
                 $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
                 $result = preg_grep($pattern, $keys);
@@ -94,24 +95,15 @@ trait Generator
             }
             // 市级
             if (substr($addressCode, 4, 2) == '00') {
-                $keys = array_keys($this->_addressCodeList);
                 $cityCode = substr($addressCode, 0, 4);
                 $pattern = '/^'.$cityCode.'[^0]{2}$/';
                 $result = preg_grep($pattern, $keys);
                 $addressCode = $result[array_rand($result)];
             }
         } else {
-            $addressCode = '110100'; // Default value
-            for ($i = 0; $i < 100; $i++) {
-                $province = $this->_getStrPad($this->_getRandInt(66), 2, '0');
-                $city = $this->_getStrPad($this->_getRandInt(20), 2, '0');
-                $district = $this->_getStrPad($this->_getRandInt(20), 2, '0');
-                $fakeAddressCode = $province.$city.$district;
-                if (isset($this->_addressCodeList[$fakeAddressCode])) {
-                    $addressCode = $fakeAddressCode;
-                    break;
-                }
-            }
+            $pattern = '/\d{4}[^0]{2}$/';
+            $result = preg_grep($pattern, $keys);
+            $addressCode = $result[array_rand($result)];
         }
 
         return $addressCode;
