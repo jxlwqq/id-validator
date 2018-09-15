@@ -1,6 +1,6 @@
 # IdValidator.php
 
-**中华人民共和国居民身份证**、**中华人民共和国港澳居民居住证**以及**中华人民共和国台湾居民居住证**号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。基于 [JavaScript 版本](https://github.com/mc-zone/IDValidator)。
+**中华人民共和国居民身份证**、**中华人民共和国港澳居民居住证**以及**中华人民共和国台湾居民居住证**号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。
 
 * [Python 版本](https://github.com/jxlwqq/id-validator.py)
 
@@ -92,6 +92,8 @@ $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出
 * ~~GB 11643-1999 公民身份证号码~~
 
 * ~~GB 2260-1995 中华人民共和国行政区划代码~~
+
+* [IDValidator JavaScript 版本](https://github.com/mc-zone/IDValidator)
 
 * [中华人民共和国公民身份号码](https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码)
 
