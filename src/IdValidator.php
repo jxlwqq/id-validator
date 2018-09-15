@@ -118,12 +118,12 @@ class IdValidator
         // 出生日期码
         $birthdayCode = $this->_generatorBirthdayCode($birthday);
 
-        if (!$eighteen) {
-            return $addressCode.substr($birthdayCode, 2)
-                .$this->_getStrPad($this->_getRandInt(999, 1), 3, '1');
-        }
-
+        // 顺序码
         $orderCode = $this->_generatorOrderCode($sex);
+
+        if (!$eighteen) {
+            return $addressCode.substr($birthdayCode, 2).$orderCode;
+        }
 
         $body = $addressCode.$birthdayCode.$orderCode;
 
