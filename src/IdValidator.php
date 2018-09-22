@@ -84,15 +84,15 @@ class IdValidator
         $addressInfo = $this->_getAddressInfo($code['addressCode']);
 
         return [
-            'addressCode' => $code['addressCode'],
-            'abandoned' => isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0,
-            'address' => is_array($addressInfo) ? implode($addressInfo) : '',
-            'birthdayCode' => date('Y-m-d', strtotime($code['birthdayCode'])),
+            'addressCode'   => $code['addressCode'],
+            'abandoned'     => isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0,
+            'address'       => is_array($addressInfo) ? implode($addressInfo) : '',
+            'birthdayCode'  => date('Y-m-d', strtotime($code['birthdayCode'])),
             'constellation' => $this->_getConstellation($code['birthdayCode']),
             'chineseZodiac' => $this->_getChineseZodiac($code['birthdayCode']),
-            'sex' => ($code['order'] % 2 === 0 ? 0 : 1),
-            'length' => $code['type'],
-            'checkBit' => $code['checkBit'],
+            'sex'           => ($code['order'] % 2 === 0 ? 0 : 1),
+            'length'        => $code['type'],
+            'checkBit'      => $code['checkBit'],
         ];
     }
 
