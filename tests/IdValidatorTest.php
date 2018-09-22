@@ -6,8 +6,9 @@
  * Time: 21:51.
  */
 
-namespace Jxlwqq\IdValidator;
+namespace Jxlwqq\IdValidator\Tests;
 
+use Jxlwqq\IdValidator\IdValidator;
 use PHPUnit\Framework\TestCase;
 
 class IdValidatorTest extends TestCase

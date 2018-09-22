@@ -19,6 +19,11 @@
             "Jxlwqq\\IdValidator\\": "src/"
         }
     },
+    "autoload-dev": {
+       "psr-4": {
+         "Jxlwqq\\IdValidator\\Tests\\" : "tests/"
+       }
+    },
     "require-dev": {
         "phpunit/phpunit": "^5.6"
     },
