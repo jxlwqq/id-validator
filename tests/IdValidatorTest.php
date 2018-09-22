@@ -43,7 +43,8 @@ class IdValidatorTest extends TestCase
 
     public function testGetInfo()
     {
-        $this->assertEquals([
+        $this->assertEquals(
+            [
             'addressCode'   => '440308',
             'abandoned'     => 0,
             'address'       => '广东省深圳市盐田区',
@@ -53,10 +54,12 @@ class IdValidatorTest extends TestCase
             'sex'           => 1,
             'length'        => 18,
             'checkBit'      => '2', ],
-            $this->idValidator->getInfo('440308199901101512'));
+            $this->idValidator->getInfo('440308199901101512')
+        );
         $this->assertFalse($this->idValidator->isValid('440308199901101513'));
 
-        $this->assertEquals([
+        $this->assertEquals(
+            [
             'addressCode'   => '610104',
             'abandoned'     => 0,
             'address'       => '陕西省西安市莲湖区',
@@ -66,7 +69,8 @@ class IdValidatorTest extends TestCase
             'sex'           => 0,
             'length'        => 15,
             'checkBit'      => '', ],
-            $this->idValidator->getInfo('610104620927690'));
+            $this->idValidator->getInfo('610104620927690')
+        );
         $this->assertFalse($this->idValidator->isValid('610104620932690'));
     }
 }
