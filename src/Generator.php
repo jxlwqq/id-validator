@@ -59,9 +59,8 @@ trait Generator
             $month = $this->_getStrPad($this->_getRandInt(12, 1), 2, '0');
             $day = $this->_getStrPad($this->_getRandInt(28, 1), 2, '0');
         }
-        $birthdayCode = $year.$month.$day;
 
-        return $birthdayCode;
+        return $year.$month.$day;
     }
 
     /**
@@ -136,8 +135,7 @@ trait Generator
 
         // 生成校验码
         $checkBit = (12 - ($bodySum % 11)) % 11;
-        $checkBit = $checkBit == 10 ? 'X' : $checkBit;
 
-        return $checkBit;
+        return $checkBit == 10 ? 'X' : $checkBit;
     }
 }

@@ -54,9 +54,7 @@ trait Checker
      */
     private function _checkAddressCode($addressCode)
     {
-        $addressInfo = $this->_getAddressInfo($addressCode);
-
-        return $addressInfo ? true : false;
+        return (bool) $this->_getAddressInfo($addressCode);
     }
 
     /**
@@ -68,11 +66,7 @@ trait Checker
      */
     private function _checkOrderCode($orderCode)
     {
-        if (strlen($orderCode) == 3) {
-            return true;
-        } else {
-            return false;
-        }
+        return strlen($orderCode) == 3;
     }
 
     /**
@@ -92,10 +86,6 @@ trait Checker
             return false;
         }
 
-        if (!checkdate($month, $day, $year)) {
-            return false;
-        }
-
-        return true;
+        return checkdate($month, $day, $year);
     }
 }
