@@ -64,11 +64,7 @@ class IdValidator
         $checkBit = $this->_generatorCheckBit($code['body']);
 
         // 检查校验码
-        if ($checkBit != $code['checkBit']) {
-            return false;
-        } else {
-            return true;
-        }
+        return $checkBit == $code['checkBit'];
     }
 
     /**
@@ -86,18 +82,18 @@ class IdValidator
         }
         $code = $this->_checkIdArgument($id);
         $addressInfo = $this->_getAddressInfo($code['addressCode']);
-        $info = [];
-        $info['addressCode'] = $code['addressCode'];
-        $info['abandoned'] = isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0;
-        $info['address'] = is_array($addressInfo) ? implode($addressInfo) : '';
-        $info['birthdayCode'] = date('Y-m-d', strtotime($code['birthdayCode']));
-        $info['constellation'] = $this->_getConstellation($code['birthdayCode']);
-        $info['chineseZodiac'] = $this->_getChineseZodiac($code['birthdayCode']);
-        $info['sex'] = ($code['order'] % 2 === 0 ? 0 : 1);
-        $info['length'] = $code['type'];
-        $info['checkBit'] = $code['checkBit'];
 
-        return $info;
+        return [
+            'addressCode' => $code['addressCode'],
+            'abandoned' => isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0,
+            'address' => is_array($addressInfo) ? implode($addressInfo) : '',
+            'birthdayCode' => date('Y-m-d', strtotime($code['birthdayCode'])),
+            'constellation' => $this->_getConstellation($code['birthdayCode']),
+            'chineseZodiac' => $this->_getChineseZodiac($code['birthdayCode']),
+            'sex' => ($code['order'] % 2 === 0 ? 0 : 1),
+            'length' => $code['type'],
+            'checkBit' => $code['checkBit'],
+        ];
     }
 
     /**
