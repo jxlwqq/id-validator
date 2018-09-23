@@ -105,8 +105,8 @@ trait Checker
      */
     private function _checkBirthdayCode($birthdayCode)
     {
-        $date = DateTime::createFromFormat('Ymd', $birthdayCode);
+        $date = DateTime::createFromFormat($format = 'Ymd', $birthdayCode);
 
-        return $date->format('Ymd') === $birthdayCode && (int) $date->format('Y') >= 1800;
+        return $date->format($format) === $birthdayCode && (int) $date->format('Y') >= 1800;
     }
 }
