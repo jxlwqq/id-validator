@@ -34,6 +34,7 @@ trait Checker
      * Generation for the short type.
      *
      * @param string $id
+     *
      * @return array
      */
     private function _generateShortType($id)
@@ -41,12 +42,12 @@ trait Checker
         preg_match('/(.{6})(.{6})(.{3})/', $id, $matches);
 
         return [
-            'body' => $matches[0],
-            'addressCode' => $matches[1],
+            'body'         => $matches[0],
+            'addressCode'  => $matches[1],
             'birthdayCode' => '19'.$matches[2],
-            'order' => $matches[3],
-            'checkBit' => '',
-            'type' => 15,
+            'order'        => $matches[3],
+            'checkBit'     => '',
+            'type'         => 15,
         ];
     }
 
@@ -54,6 +55,7 @@ trait Checker
      * Generation for the long type.
      *
      * @param string $id
+     *
      * @return array
      */
     private function _generateLongType($id)
@@ -61,12 +63,12 @@ trait Checker
         preg_match('/((.{6})(.{8})(.{3}))(.)/', $id, $matches);
 
         return [
-            'body' => $matches[1],
-            'addressCode' => $matches[2],
+            'body'         => $matches[1],
+            'addressCode'  => $matches[2],
             'birthdayCode' => $matches[3],
-            'order' => $matches[4],
-            'checkBit' => $matches[5],
-            'type' => 18,
+            'order'        => $matches[4],
+            'checkBit'     => $matches[5],
+            'type'         => 18,
         ];
     }
 
