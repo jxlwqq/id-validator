@@ -128,19 +128,6 @@ trait Helper
      */
     private function _getStrPad($str, $len = 2, $chr = '0', $right = false)
     {
-        $str = strval($str);
-        if (strlen($str) >= $len) {
-            return $str;
-        } else {
-            for ($i = 0, $j = $len - strlen($str); $i < $j; $i++) {
-                if ($right) {
-                    $str = $str.$chr;
-                } else {
-                    $str = $chr.$str;
-                }
-            }
-
-            return $str;
-        }
+        return str_pad((string) $str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
     }
 }
