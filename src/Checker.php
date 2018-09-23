@@ -2,6 +2,8 @@
 
 namespace Jxlwqq\IdValidator;
 
+use DateTime;
+
 /**
  * Trait Checker.
  */
@@ -18,31 +20,54 @@ trait Checker
     {
         $id = strtoupper($id);
         $length = strlen($id);
-        $code = false;
-        switch ($length) {
-            case 18:
-                $code = [
-                    'body'         => substr($id, 0, 17),
-                    'addressCode'  => substr($id, 0, 6),
-                    'birthdayCode' => substr($id, 6, 8),
-                    'order'        => substr($id, 14, 3),
-                    'checkBit'     => substr($id, -1),
-                    'type'         => 18,
-                ];
-                break;
-            case 15:
-                $code = [
-                    'body'         => $id,
-                    'addressCode'  => substr($id, 0, 6),
-                    'birthdayCode' => '19'.substr($id, 6, 6),
-                    'order'        => substr($id, 12, 3),
-                    'checkBit'     => '',
-                    'type'         => 15,
-                ];
-                break;
+
+        if ($length === 15) {
+            return $this->_generateShortType($id);
+        } elseif ($length === 18) {
+            return $this->_generatelongType($id);
         }
 
-        return $code;
+        return false;
+    }
+
+    /**
+     * Generation for the short type.
+     *
+     * @param string $id
+     * @return array
+     */
+    private function _generateShortType($id)
+    {
+        preg_match('/(.{6})(.{6})(.{3})/', $id, $matches);
+
+        return [
+            'body' => $matches[0],
+            'addressCode' => $matches[1],
+            'birthdayCode' => '19'.$matches[2],
+            'order' => $matches[3],
+            'checkBit' => '',
+            'type' => 15,
+        ];
+    }
+
+    /**
+     * Generation for the long type.
+     *
+     * @param string $id
+     * @return array
+     */
+    private function _generateLongType($id)
+    {
+        preg_match('/((.{6})(.{8})(.{3}))(.)/', $id, $matches);
+
+        return [
+            'body' => $matches[1],
+            'addressCode' => $matches[2],
+            'birthdayCode' => $matches[3],
+            'order' => $matches[4],
+            'checkBit' => $matches[5],
+            'type' => 18,
+        ];
     }
 
     /**
@@ -66,7 +91,7 @@ trait Checker
      */
     private function _checkOrderCode($orderCode)
     {
-        return strlen($orderCode) == 3;
+        return strlen($orderCode) === 3;
     }
 
     /**
@@ -78,14 +103,8 @@ trait Checker
      */
     private function _checkBirthdayCode($birthdayCode)
     {
-        $year = intval(substr($birthdayCode, 0, 4));
-        $month = intval(substr($birthdayCode, 4, 2));
-        $day = intval(substr($birthdayCode, -2));
+        $date = DateTime::createFromFormat('Ymd', $birthdayCode);
 
-        if ($year < 1800) {
-            return false;
-        }
-
-        return checkdate($month, $day, $year);
+        return $date->format('Ymd') === $birthdayCode && (int) $date->format('Y') >= 1800;
     }
 }
