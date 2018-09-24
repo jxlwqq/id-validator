@@ -18,7 +18,7 @@ trait Generator
     {
         $orderCode = $this->_getStrPad($this->_getRandInt(999, 1), 3, '1');
 
-        if ((bool) $sex && $orderCode % 2 === 0) {
+        if ($sex && $orderCode % 2) {
             $orderCode -= 1;
         }
 
