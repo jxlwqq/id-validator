@@ -33,7 +33,7 @@ trait Checker
     /**
      * Generation for the short type.
      *
-     * @param string $id
+     * @param string $id 身份证号
      *
      * @return array
      */
@@ -54,7 +54,7 @@ trait Checker
     /**
      * Generation for the long type.
      *
-     * @param string $id
+     * @param string $id 身份证号
      *
      * @return array
      */
