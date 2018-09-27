@@ -85,17 +85,17 @@ trait Generator
             if (substr($addressCode, 2, 4) == '0000') {
                 $provinceCode = substr($addressCode, 0, 2);
                 $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
-                $addressCode = $this->_get_rand_address_code($pattern);
+                $addressCode = $this->_getRandAddressCode($pattern);
             }
             // 市级
             if (substr($addressCode, 4, 2) == '00') {
                 $cityCode = substr($addressCode, 0, 4);
                 $pattern = '/^'.$cityCode.'[^0]{2}$/';
-                $addressCode = $this->_get_rand_address_code($pattern);
+                $addressCode = $this->_getRandAddressCode($pattern);
             }
         } else {
             $pattern = '/\d{4}[^0]{2}$/';
-            $addressCode = $this->_get_rand_address_code($pattern);
+            $addressCode = $this->_getRandAddressCode($pattern);
         }
 
         return $addressCode;
@@ -133,12 +133,12 @@ trait Generator
     }
 
     /**
-     * @param $pattern
-     * @param $keys
+     * 获取随机地址码.
+     * @param string $pattern 模式
      *
-     * @return array
+     * @return string
      */
-    private function _get_rand_address_code($pattern)
+    private function _getRandAddressCode($pattern)
     {
         $keys = array_keys($this->_addressCodeList);
         $result = preg_grep($pattern, $keys);
