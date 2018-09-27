@@ -80,13 +80,12 @@ trait Generator
             return $addressCode;
         }
 
-
         if ($addressCode) {
             // 省级
             if (substr($addressCode, 2, 4) == '0000') {
                 $provinceCode = substr($addressCode, 0, 2);
                 $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
-                $addressCode= $this->_get_rand_address_code($pattern);
+                $addressCode = $this->_get_rand_address_code($pattern);
             }
             // 市级
             if (substr($addressCode, 4, 2) == '00') {
@@ -136,12 +135,14 @@ trait Generator
     /**
      * @param $pattern
      * @param $keys
+     *
      * @return array
      */
     private function _get_rand_address_code($pattern)
     {
         $keys = array_keys($this->_addressCodeList);
         $result = preg_grep($pattern, $keys);
+
         return $result[array_rand($result)];
     }
 }
