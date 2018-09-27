@@ -20,8 +20,6 @@ class IdValidatorTest extends TestCase
 
     protected function setUp()
     {
-        parent::setUp();
-
         $this->idValidator = new IdValidator();
     }
 
