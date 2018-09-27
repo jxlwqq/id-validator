@@ -25,10 +25,13 @@ class IdValidatorTest extends TestCase
 
     public function testIsValid()
     {
+        $this->assertFalse($this->idValidator->isValid('44030819990110'));     // 号码位数不合法
+        $this->assertFalse($this->idValidator->isValid('111111199901101512')); // 地址码不合法
+        $this->assertFalse($this->idValidator->isValid('440308199902301512')); // 出生日期码错不合法
+        $this->assertFalse($this->idValidator->isValid('440308199901101513')); // 验证码不合法
+        $this->assertFalse($this->idValidator->isValid('610104620932690'));    // 验证码不合法
         $this->assertTrue($this->idValidator->isValid('440308199901101512'));
-        $this->assertFalse($this->idValidator->isValid('440308199901101513'));
         $this->assertTrue($this->idValidator->isValid('610104620927690'));
-        $this->assertFalse($this->idValidator->isValid('610104620932690'));
     }
 
     public function testFakeId()
@@ -36,8 +39,13 @@ class IdValidatorTest extends TestCase
         $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId()));
         $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(false)));
         $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '上海市', '2000', 1)));
-        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '江苏省', '20000101', 1)));
-        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '台湾省', '20131010', 0)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '黄浦区', '2001', 0)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '江苏省', '200001', 1)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '南京市', '2002', 0)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '秦淮区', '2003', 0)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '台湾省', '20181010', 0)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '香港特别行政区', '20181010', 1)));
+        $this->assertTrue($this->idValidator->isValid($this->idValidator->fakeId(true, '澳门特别行政区', '20181111', 0)));
     }
 
     public function testGetInfo()
