@@ -134,6 +134,7 @@ trait Generator
 
     /**
      * 获取随机地址码.
+     *
      * @param string $pattern 模式
      *
      * @return string
