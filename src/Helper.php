@@ -60,7 +60,7 @@ trait Helper
         $day = substr($birthdayCode, 6, 2);
 
         // 1月份与12月份特殊处理
-        if (($month == '01' && $day < 20) || ($month == '12' && $day > 21)) {
+        if (($month == '01' && $day < '20') || ($month == '12' && $day > '21')) {
             return $this->_constellationList['12']['name'];
         } elseif ($month == '01') {
             return $this->_constellationList['01']['name'];
