@@ -40,18 +40,8 @@ class IdValidator
             return false;
         }
 
-        // 验证：地址码
-        if (!$this->_checkAddressCode($code['addressCode'])) {
-            return false;
-        }
-
-        // 验证：出生日期码
-        if (!$this->_checkBirthdayCode($code['birthdayCode'])) {
-            return false;
-        }
-
-        // 验证：顺序码
-        if (!$this->_checkOrderCode($code['order'])) {
+        // 分别验证：*地址码*、*出生日期码*和*顺序码*
+        if (!$this->_checkAddressCode($code['addressCode']) || !$this->_checkBirthdayCode($code['birthdayCode']) || !$this->_checkOrderCode($code['order'])) {
             return false;
         }
 
