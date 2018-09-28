@@ -70,7 +70,6 @@ trait Generator
      */
     private function _generatorAddressCode($address)
     {
-
         $addressCode = array_search($address, $this->_addressCodeList);
         $classification = $this->_addressCodeClassification($addressCode);
         switch ($classification) {
@@ -89,6 +88,7 @@ trait Generator
                 $addressCode = $this->_getRandAddressCode($pattern);
                 break;
         }
+
         return $addressCode;
     }
 
