@@ -18,7 +18,7 @@ trait Helper
     {
         $addressInfo = [
             'province' => '',
-            'city' => '',
+            'city'     => '',
             'district' => '',
         ];
 
@@ -42,7 +42,6 @@ trait Helper
 
         return empty($addressInfo) ? false : $addressInfo;
     }
-
 
     private function _getAddress($addressCode)
     {
@@ -79,8 +78,8 @@ trait Helper
             return $constellationList[$month]['name'];
         }
 
-        $key = (int)$month - 1; // 1月份已特殊处理
-        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string)$key;
+        $key = (int) $month - 1; // 1月份已特殊处理
+        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string) $key;
 
         $startDate = $year.'-'.$constellationList[$key]['start_date'];
         $endDate = $year.'-'.$constellationList[$key]['end_date'];
@@ -125,15 +124,15 @@ trait Helper
     /**
      * 获取数字补位.
      *
-     * @param string|int $str 字符串
-     * @param int $len 长度
-     * @param string $chr 补位值
-     * @param bool $right 左右
+     * @param string|int $str   字符串
+     * @param int        $len   长度
+     * @param string     $chr   补位值
+     * @param bool       $right 左右
      *
      * @return string
      */
     private function _getStrPad($str, $len = 2, $chr = '0', $right = false)
     {
-        return str_pad((string)$str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
+        return str_pad((string) $str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
     }
 }
