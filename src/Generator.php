@@ -70,34 +70,25 @@ trait Generator
      */
     private function _generatorAddressCode($address)
     {
-        $addressCode = '';
-        if ($address) {
-            $addressCode = array_search($address, $this->_addressCodeList);
-        }
 
-        if ($addressCode && substr($addressCode, 0, 1) == 8) {
-            // 台湾省、香港特别行政区和澳门特别行政区（8字开头）暂缺地市和区县信息
-            return $addressCode;
-        }
-
-        if ($addressCode) {
-            // 省级
-            if (substr($addressCode, 2, 4) == '0000') {
+        $addressCode = array_search($address, $this->_addressCodeList);
+        $classification = $this->_addressCodeClassification($addressCode);
+        switch ($classification) {
+            case 'province':
                 $provinceCode = substr($addressCode, 0, 2);
                 $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
-            }
-            // 市级
-            if (substr($addressCode, 4, 2) == '00') {
+                break;
+            case 'city':
                 $cityCode = substr($addressCode, 0, 4);
                 $pattern = '/^'.$cityCode.'[^0]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
-            }
-        } else {
-            $pattern = '/\d{4}[^0]{2}$/';
-            $addressCode = $this->_getRandAddressCode($pattern);
+                break;
+            case 'random':
+                $pattern = '/\d{4}[^0]{2}$/';
+                $addressCode = $this->_getRandAddressCode($pattern);
+                break;
         }
-
         return $addressCode;
     }
 
@@ -130,6 +121,35 @@ trait Generator
         $checkBit = (12 - ($bodySum % 11)) % 11;
 
         return $checkBit == 10 ? 'X' : $checkBit;
+    }
+
+    /**
+     * 地址码分类.
+     *
+     * @param $addressCode
+     *
+     * @return string
+     */
+    protected function _addressCodeClassification($addressCode)
+    {
+        if (!$addressCode) {
+            // 全国
+            return 'country';
+        }
+        if (substr($addressCode, 0, 1) == 8) {
+            // 港澳台
+            return 'special';
+        }
+        if (substr($addressCode, 2, 4) == '0000') {
+            // 省级
+            return 'province';
+        }
+        if (substr($addressCode, 4, 2) == '00') {
+            // 市级
+            return 'city';
+        }
+        // 县级
+        return 'district';
     }
 
     /**
