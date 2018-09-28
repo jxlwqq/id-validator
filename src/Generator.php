@@ -74,6 +74,10 @@ trait Generator
         $addressCode = array_search($address, $this->_addressCodeList);
         $classification = $this->_addressCodeClassification($addressCode);
         switch ($classification) {
+            case 'country':
+                $pattern = '/\d{4}[^0]{2}$/';
+                $addressCode = $this->_getRandAddressCode($pattern);
+                break;
             case 'province':
                 $provinceCode = substr($addressCode, 0, 2);
                 $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
@@ -82,10 +86,6 @@ trait Generator
             case 'city':
                 $cityCode = substr($addressCode, 0, 4);
                 $pattern = '/^'.$cityCode.'[^0]{2}$/';
-                $addressCode = $this->_getRandAddressCode($pattern);
-                break;
-            case 'random':
-                $pattern = '/\d{4}[^0]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
                 break;
         }
