@@ -43,6 +43,13 @@ trait Helper
         return empty($addressInfo) ? false : $addressInfo;
     }
 
+    /**
+     * 获取省市区地址码.
+     * 
+     * @param string $addressCode 地址码
+     *
+     * @return string
+     */
     private function _getAddress($addressCode)
     {
         return isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : (isset($this->_abandonedAddressCodeList[$addressCode]) ? $this->_abandonedAddressCodeList[$addressCode] : '');
@@ -57,7 +64,7 @@ trait Helper
      */
     private function _getConstellation($birthdayCode)
     {
-        $constellationList = require __DIR__.'/../data/constellation.php';
+        $constellationList = include __DIR__.'/../data/constellation.php';
         $time = strtotime($birthdayCode);
         $year = substr($birthdayCode, 0, 4);
         $month = substr($birthdayCode, 4, 2);
@@ -99,7 +106,7 @@ trait Helper
      */
     private function _getChineseZodiac($birthdayCode)
     {
-        $chineseZodiacList = require __DIR__.'/../data/chineseZodiac.php';
+        $chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
         $start = 1900; // 子鼠
         $end = substr($birthdayCode, 0, 4);
         $key = ($end - $start) % 12;
