@@ -11,8 +11,6 @@ class IdValidator
 
     private $_addressCodeList = []; // 现行地址码数据
     private $_abandonedAddressCodeList = []; // 废弃地址码数据
-    private $_constellationList = [];
-    private $_chineseZodiacList = [];
 
     /**
      * IdValidator constructor.
@@ -21,8 +19,6 @@ class IdValidator
     {
         $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
         $this->_abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
-        $this->_constellationList = include __DIR__.'/../data/constellation.php';
-        $this->_chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
     }
 
     /**
