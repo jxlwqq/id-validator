@@ -16,33 +16,37 @@ trait Helper
      */
     private function _getAddressInfo($addressCode)
     {
-        $addressInfo = [];
-        $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
+        $addressInfo = [
+            'province' => '',
+            'city' => '',
+            'district' => '',
+        ];
 
         // 省级信息
         $provinceAddressCode = substr($addressCode, 0, 2).'0000';
-        $addressInfo['province'] = isset($this->_addressCodeList[$provinceAddressCode]) ? $this->_addressCodeList[$provinceAddressCode] : (isset($this->_abandonedAddressCodeList[$provinceAddressCode]) ? $this->_abandonedAddressCodeList[$provinceAddressCode] : '');
+        $addressInfo['province'] = $this->_getAddress($provinceAddressCode);
 
-        // 市级信息（港澳台居民居住证无市级信息）
-        if ($firstCharacter != '8') {
-            $cityAddressCode = substr($addressCode, 0, 4).'00';
-            $addressInfo['city'] = isset($this->_addressCodeList[$cityAddressCode]) ? $this->_addressCodeList[$cityAddressCode] : (isset($this->_abandonedAddressCodeList[$cityAddressCode]) ? $this->_abandonedAddressCodeList[$cityAddressCode] : '');
-        } else {
-            $addressInfo['city'] = '';
-        }
+        $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
 
-        // 县级信息（港澳台居民居住证无县级信息）
-        if ($firstCharacter != '8') {
-            $addressInfo['district'] = isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : (isset($this->_abandonedAddressCodeList[$addressCode]) ? $this->_abandonedAddressCodeList[$addressCode] : '');
-        } else {
-            $addressInfo['district'] = '';
-        }
-
-        if (empty($addressInfo)) {
-            return false;
-        } else {
+        // 港澳台居民居住证无市级、县级信息
+        if ($firstCharacter == '8') {
             return $addressInfo;
         }
+
+        // 市级信息
+        $cityAddressCode = substr($addressCode, 0, 4).'00';
+        $addressInfo['city'] = $this->_getAddress($cityAddressCode);
+
+        // 县级信息
+        $addressInfo['district'] = $this->_getAddress($addressCode);
+
+        return empty($addressInfo) ? false : $addressInfo;
+    }
+
+
+    private function _getAddress($addressCode)
+    {
+        return isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : (isset($this->_abandonedAddressCodeList[$addressCode]) ? $this->_abandonedAddressCodeList[$addressCode] : '');
     }
 
     /**

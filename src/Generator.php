@@ -130,7 +130,7 @@ trait Generator
      *
      * @return string
      */
-    protected function _addressCodeClassification($addressCode)
+    private function _addressCodeClassification($addressCode)
     {
         if (!$addressCode) {
             // 全国
