@@ -58,49 +58,37 @@ trait Helper
      */
     private function _getConstellation($birthdayCode)
     {
+        $constellationList = require __DIR__.'/../data/constellation.php';
+        $time = strtotime($birthdayCode);
+        $year = substr($birthdayCode, 0, 4);
         $month = substr($birthdayCode, 4, 2);
         $day = substr($birthdayCode, 6, 2);
-        switch ($month) {
-            case 1:
-                $constellation = $day >= 21 ? '水瓶座' : '摩羯座';
-                break;
-            case 2:
-                $constellation = $day >= 20 ? '双鱼座' : '水瓶座';
-                break;
-            case 3:
-                $constellation = $day >= 21 ? '白羊座' : '双鱼座';
-                break;
-            case 4:
-                $constellation = $day >= 21 ? '金牛座' : '白羊座';
-                break;
-            case 5:
-                $constellation = $day >= 22 ? '双子座' : '金牛座';
-                break;
-            case 6:
-                $constellation = $day >= 23 ? '巨蟹座' : '双子座';
-                break;
-            case 7:
-                $constellation = $day >= 24 ? '狮子座' : '巨蟹座';
-                break;
-            case 8:
-                $constellation = $day >= 24 ? '处女座' : '狮子座';
-                break;
-            case 9:
-                $constellation = $day >= 24 ? '天秤座' : '处女座';
-                break;
-            case 10:
-                $constellation = $day >= 24 ? '天蝎座' : '天秤座';
-                break;
-            case 11:
-                $constellation = $day >= 23 ? '射手座' : '天蝎座';
-                break;
-            case 12:
-                $constellation = $day >= 22 ? '摩羯座' : '射手座';
-                break;
-            default:
-                $constellation = '';
+
+        // 1月份与12月份特殊处理
+        if (($month == '01' && $day < '20') || ($month == '12' && $day > '21')) {
+            return $constellationList['12']['name'];
+        } elseif ($month == '01') {
+            return $constellationList['01']['name'];
+        } elseif ($month == '12') {
+            return $constellationList['12']['name'];
         }
-        return $constellation;
+
+        $startDate = $year.'-'.$constellationList[$month]['start_date'];
+        $endDate = $year.'-'.$constellationList[$month]['end_date'];
+        if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
+            return $constellationList[$month]['name'];
+        }
+
+        $key = (int)$month - 1; // 1月份已特殊处理
+        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string)$key;
+
+        $startDate = $year.'-'.$constellationList[$key]['start_date'];
+        $endDate = $year.'-'.$constellationList[$key]['end_date'];
+        if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
+            return $constellationList[$key]['name'];
+        }
+
+        return '';
     }
 
     /**
@@ -112,20 +100,7 @@ trait Helper
      */
     private function _getChineseZodiac($birthdayCode)
     {
-        $chineseZodiacList = [
-            '子鼠',
-            '丑牛',
-            '寅虎',
-            '卯兔',
-            '辰龙',
-            '巳蛇',
-            '午马',
-            '未羊',
-            '申猴',
-            '酉鸡',
-            '戌狗',
-            '亥猪',
-        ];
+        $chineseZodiacList = require __DIR__.'/../data/chineseZodiac.php';
         $start = 1900; // 子鼠
         $end = substr($birthdayCode, 0, 4);
         $key = ($end - $start) % 12;
