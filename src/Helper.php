@@ -58,32 +58,45 @@ trait Helper
         $day = substr($birthdayCode, 6, 2);
         switch ($month) {
             case 1:
-                return $day >= 21 ? '水瓶座' : '摩羯座';
+                $constellation = $day >= 21 ? '水瓶座' : '摩羯座';
+                break;
             case 2:
-                return $day >= 20 ? '双鱼座' : '水瓶座';
+                $constellation = $day >= 20 ? '双鱼座' : '水瓶座';
+                break;
             case 3:
-                return $day >= 21 ? '白羊座' : '双鱼座';
+                $constellation = $day >= 21 ? '白羊座' : '双鱼座';
+                break;
             case 4:
-                return $day >= 21 ? '金牛座' : '白羊座';
+                $constellation = $day >= 21 ? '金牛座' : '白羊座';
+                break;
             case 5:
-                return $day >= 22 ? '双子座' : '金牛座';
+                $constellation = $day >= 22 ? '双子座' : '金牛座';
+                break;
             case 6:
-                return $day >= 23 ? '巨蟹座' : '双子座';
+                $constellation = $day >= 23 ? '巨蟹座' : '双子座';
+                break;
             case 7:
-                return $day >= 24 ? '狮子座' : '巨蟹座';
+                $constellation = $day >= 24 ? '狮子座' : '巨蟹座';
+                break;
             case 8:
-                return $day >= 24 ? '处女座' : '狮子座';
+                $constellation = $day >= 24 ? '处女座' : '狮子座';
+                break;
             case 9:
-                return $day >= 24 ? '天秤座' : '处女座';
+                $constellation = $day >= 24 ? '天秤座' : '处女座';
+                break;
             case 10:
-                return $day >= 24 ? '天蝎座' : '天秤座';
+                $constellation = $day >= 24 ? '天蝎座' : '天秤座';
+                break;
             case 11:
-                return $day >= 23 ? '射手座' : '天蝎座';
+                $constellation = $day >= 23 ? '射手座' : '天蝎座';
+                break;
             case 12:
-                return $day >= 22 ? '摩羯座' : '射手座';
+                $constellation = $day >= 22 ? '摩羯座' : '射手座';
+                break;
             default:
-                return '';
+                $constellation = '';
         }
+        return $constellation;
     }
 
     /**
@@ -133,15 +146,15 @@ trait Helper
     /**
      * 获取数字补位.
      *
-     * @param string|int $str   字符串
-     * @param int        $len   长度
-     * @param string     $chr   补位值
-     * @param bool       $right 左右
+     * @param string|int $str 字符串
+     * @param int $len 长度
+     * @param string $chr 补位值
+     * @param bool $right 左右
      *
      * @return string
      */
     private function _getStrPad($str, $len = 2, $chr = '0', $right = false)
     {
-        return str_pad((string) $str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
+        return str_pad((string)$str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
     }
 }
