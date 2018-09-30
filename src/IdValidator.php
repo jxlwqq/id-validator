@@ -113,4 +113,21 @@ class IdValidator
 
         return $body.$checkBit;
     }
+
+    /**
+     * 15位升级18位号码.
+     *
+     * @param string $id 身份证号
+     *
+     * @return bool|string
+     */
+    public function upgradeId($id)
+    {
+        if (!$this->isValid($id)) {
+            return false;
+        }
+        $code = $this->_generateShortType($id);
+        return $code['addressCode'].$code['birthdayCode'].$code['order'].$this->_generatorCheckBit($code['body']);
+
+    }
 }

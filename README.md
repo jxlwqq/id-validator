@@ -88,6 +88,14 @@ $idValidator->fakeId(true, '台湾省', '20131010', 0);        // 生成出生�
 $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出生于 1997 年 7 月 1 日香港特别行政区的女性居民居住证
 ```
 
+### 15 位号码升级为 18 位
+```php
+use Jxlwqq\IdValidator\IdValidator;
+
+$idValidator = new IdValidator();
+$idValidator->upgradeId('610104620927690'); // 15 位号码升级为 18 位
+```
+
 ## 参考资料
 * ~~GB 11643-1999 公民身份证号码~~
 
