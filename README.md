@@ -16,7 +16,7 @@
 composer require "jxlwqq/id-validator"
 ```
 
-> 注：如果 require 失败，解决方案见[#13](https://github.com/jxlwqq/id-validator/pull/13)。
+> 注：如果 require 失败，解决方案见 [#13](https://github.com/jxlwqq/id-validator/pull/13)。
 
 ## 使用
 
@@ -88,7 +88,8 @@ $idValidator->fakeId(true, '台湾省', '20131010', 0);        // 生成出生�
 $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出生于 1997 年 7 月 1 日香港特别行政区的女性居民居住证
 ```
 
-### 15 位号码升级为 18 位
+### 升级身份证号码
+15 位号码升级为 18 位：
 ```php
 use Jxlwqq\IdValidator\IdValidator;
 
