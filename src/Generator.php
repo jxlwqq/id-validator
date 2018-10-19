@@ -74,17 +74,17 @@ trait Generator
         $classification = $this->_addressCodeClassification($addressCode);
         switch ($classification) {
             case 'country':
-                $pattern = '/\d{4}[^0]{2}$/';
+                $pattern = '/\d{4}(?!00)[0-9]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
                 break;
             case 'province':
                 $provinceCode = substr($addressCode, 0, 2);
-                $pattern = '/^'.$provinceCode.'\d{2}[^0]{2}$/';
+                $pattern = '/^'.$provinceCode.'\d{2}(?!00)[0-9]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
                 break;
             case 'city':
                 $cityCode = substr($addressCode, 0, 4);
-                $pattern = '/^'.$cityCode.'[^0]{2}$/';
+                $pattern = '/^'.$cityCode.'(?!00)[0-9]{2}$/';
                 $addressCode = $this->_getRandAddressCode($pattern);
                 break;
         }

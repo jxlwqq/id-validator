@@ -110,7 +110,6 @@ trait Helper
         $start = 1900; // 子鼠
         $end = substr($birthdayCode, 0, 4);
         $key = ($end - $start) % 12;
-        $key = $key >= 0 ? $key : ($key + 12);
 
         return $chineseZodiacList[$key];
     }
