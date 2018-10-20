@@ -83,6 +83,6 @@ class IdValidatorTest extends TestCase
 
     public function testUpgradeId()
     {
-        $this->assertEquals('610104196209276903', $this->idValidator->upgradeId('610104620927690'));
+        $this->assertEquals('610104196209276908', $this->idValidator->upgradeId('610104620927690'));
     }
 }
