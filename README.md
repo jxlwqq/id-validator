@@ -83,7 +83,7 @@ $idValidator->fakeId(false);                               // 15 位
 $idValidator->fakeId(true, '上海市', '2000', 1);            // 生成出生于 2000 年上海市的男性居民身份证
 $idValidator->fakeId(true, '南山区', '1999', 0);            // 生成出生于 1999 年广东省深圳市南山区的女性居民身份证
 $idValidator->fakeId(true, '江苏省', '200001', 1));         // 生成出生于 2000 年 1 月江苏省的男性居民身份证
-$idValidator->fakeId(true, '厦门市', '199701', 0));         // 生成出生于 2000 年 1 月福建省厦门市的女性居民身份证
+$idValidator->fakeId(true, '厦门市', '199701', 0));         // 生成出生于 1997 年 1 月福建省厦门市的女性居民身份证
 $idValidator->fakeId(true, '台湾省', '20131010', 0);        // 生成出生于 2013 年 10 月 10 日台湾省的女性居民居住证
 $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出生于 1997 年 7 月 1 日香港特别行政区的女性居民居住证
 ```
