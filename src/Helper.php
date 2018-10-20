@@ -65,36 +65,18 @@ trait Helper
     private function _getConstellation($birthdayCode)
     {
         $constellationList = include __DIR__.'/../data/constellation.php';
-        $time = strtotime($birthdayCode);
-        $year = substr($birthdayCode, 0, 4);
-        $month = substr($birthdayCode, 4, 2);
-        $day = substr($birthdayCode, 6, 2);
+        $month = (int)substr($birthdayCode, 4, 2);
+        $day = (int)substr($birthdayCode, 6, 2);
 
-        // 1月份与12月份特殊处理
-        if (($month == '01' && $day < '20') || ($month == '12' && $day > '21')) {
-            return $constellationList['12']['name'];
-        } elseif ($month == '01') {
-            return $constellationList['01']['name'];
-        } elseif ($month == '12') {
-            return $constellationList['12']['name'];
-        }
+        $start_date = $constellationList[$month]['start_date'];
+        $start_day = (int)explode('-', $start_date)[1];
 
-        $startDate = $year.'-'.$constellationList[$month]['start_date'];
-        $endDate = $year.'-'.$constellationList[$month]['end_date'];
-        if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
+        if ($day < $start_day) {
+            $tmp_month = $month == 1 ? 12 : $month - 1;
+            return $constellationList[$tmp_month]['name'];
+        } else {
             return $constellationList[$month]['name'];
         }
-
-        $key = (int) $month - 1; // 1月份已特殊处理
-        $key = strlen($key) == 1 ? $this->_getStrPad($key) : (string) $key;
-
-        $startDate = $year.'-'.$constellationList[$key]['start_date'];
-        $endDate = $year.'-'.$constellationList[$key]['end_date'];
-        if (strtotime($startDate) <= $time && strtotime($endDate) >= $time) {
-            return $constellationList[$key]['name'];
-        }
-
-        return '';
     }
 
     /**
