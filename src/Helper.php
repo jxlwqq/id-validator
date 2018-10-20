@@ -65,14 +65,15 @@ trait Helper
     private function _getConstellation($birthdayCode)
     {
         $constellationList = include __DIR__.'/../data/constellation.php';
-        $month = (int)substr($birthdayCode, 4, 2);
-        $day = (int)substr($birthdayCode, 6, 2);
+        $month = (int) substr($birthdayCode, 4, 2);
+        $day = (int) substr($birthdayCode, 6, 2);
 
         $start_date = $constellationList[$month]['start_date'];
-        $start_day = (int)explode('-', $start_date)[1];
+        $start_day = (int) explode('-', $start_date)[1];
 
         if ($day < $start_day) {
             $tmp_month = $month == 1 ? 12 : $month - 1;
+
             return $constellationList[$tmp_month]['name'];
         } else {
             return $constellationList[$month]['name'];
