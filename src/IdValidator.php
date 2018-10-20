@@ -128,7 +128,7 @@ class IdValidator
         }
         $code = $this->_generateShortType($id);
         $body = $code['addressCode'].$code['birthdayCode'].$code['order'];
-        
+
         return $body.$this->_generatorCheckBit($body);
     }
 }
