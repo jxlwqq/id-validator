@@ -55,19 +55,19 @@ trait Helper
     private function _getAddress($addressCode, $birthdayCode)
     {
         $year = substr($birthdayCode, 0, 4);
-
+        $address = '';
         if (isset($this->_addressCodeList[$addressCode])) {
-            return $this->_addressCodeList[$addressCode];
+            $address = $this->_addressCodeList[$addressCode];
         } else {
             if (isset($this->_addressCodeTimeline[$addressCode])) {
                 foreach ($this->_addressCodeTimeline[$addressCode] as $val) {
-                    if ($year >= $val['star_year'] && $year <= $val['end_year']) {
-                        return $val['address'];
+                    if ($year >= $val['star_year']) {
+                        $address = $val['address'];
                     }
                 }
             }
-            return '';
         }
+        return $address;
     }
 
     /**
