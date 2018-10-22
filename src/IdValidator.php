@@ -10,7 +10,7 @@ class IdValidator
     use Helper, Generator, Checker;
 
     private $_addressCodeList = []; // 现行地址码数据
-    private $_abandonedAddressCodeList = []; // 废弃地址码数据
+    private $_addressCodeTimeline = []; // 地址码变更时间线
 
     /**
      * IdValidator constructor.
@@ -18,7 +18,7 @@ class IdValidator
     public function __construct()
     {
         $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
-        $this->_abandonedAddressCodeList = include __DIR__.'/../data/abandonedAddressCode.php';
+        $this->_addressCodeTimeline = include __DIR__.'/../data/addressCodeTimeline.php';
     }
 
     /**
@@ -37,7 +37,7 @@ class IdValidator
         }
 
         // 分别验证：*地址码*、*出生日期码*和*顺序码*
-        if (!$this->_checkAddressCode($code['addressCode']) || !$this->_checkBirthdayCode($code['birthdayCode']) || !$this->_checkOrderCode($code['order'])) {
+        if (!$this->_checkAddressCode($code['addressCode'], $code['birthdayCode']) || !$this->_checkBirthdayCode($code['birthdayCode']) || !$this->_checkOrderCode($code['order'])) {
             return false;
         }
 
@@ -67,11 +67,11 @@ class IdValidator
             return false;
         }
         $code = $this->_checkIdArgument($id);
-        $addressInfo = $this->_getAddressInfo($code['addressCode']);
+        $addressInfo = $this->_getAddressInfo($code['addressCode'], $code['birthdayCode']);
 
         return [
             'addressCode'   => $code['addressCode'],
-            'abandoned'     => isset($this->_abandonedAddressCodeList[$code['addressCode']]) ? 1 : 0,
+            'abandoned'     => isset($this->_addressCodeList[$code['addressCode']]) ? 0 : 1,
             'address'       => is_array($addressInfo) ? implode($addressInfo) : '',
             'birthdayCode'  => date('Y-m-d', strtotime($code['birthdayCode'])),
             'constellation' => $this->_getConstellation($code['birthdayCode']),

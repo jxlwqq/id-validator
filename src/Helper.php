@@ -11,10 +11,11 @@ trait Helper
      * 获取地址码信息.
      *
      * @param string $addressCode 地址码
+     * @param string $birthdayCode 出生日期码
      *
      * @return bool|mixed|string
      */
-    private function _getAddressInfo($addressCode)
+    private function _getAddressInfo($addressCode, $birthdayCode)
     {
         $addressInfo = [
             'province' => '',
@@ -24,7 +25,7 @@ trait Helper
 
         // 省级信息
         $provinceAddressCode = substr($addressCode, 0, 2).'0000';
-        $addressInfo['province'] = $this->_getAddress($provinceAddressCode);
+        $addressInfo['province'] = $this->_getAddress($provinceAddressCode, $birthdayCode);
 
         $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
 
@@ -35,10 +36,10 @@ trait Helper
 
         // 市级信息
         $cityAddressCode = substr($addressCode, 0, 4).'00';
-        $addressInfo['city'] = $this->_getAddress($cityAddressCode);
+        $addressInfo['city'] = $this->_getAddress($cityAddressCode, $birthdayCode);
 
         // 县级信息
-        $addressInfo['district'] = $this->_getAddress($addressCode);
+        $addressInfo['district'] = $this->_getAddress($addressCode, $birthdayCode);
 
         return empty($addressInfo) ? false : $addressInfo;
     }
@@ -47,12 +48,26 @@ trait Helper
      * 获取省市区地址码.
      *
      * @param string $addressCode 地址码
+     * @param string $birthdayCode 出生日期码
      *
      * @return string
      */
-    private function _getAddress($addressCode)
+    private function _getAddress($addressCode, $birthdayCode)
     {
-        return isset($this->_addressCodeList[$addressCode]) ? $this->_addressCodeList[$addressCode] : (isset($this->_abandonedAddressCodeList[$addressCode]) ? $this->_abandonedAddressCodeList[$addressCode] : '');
+        $year = substr($birthdayCode, 0, 4);
+
+        if (isset($this->_addressCodeList[$addressCode])) {
+            return $this->_addressCodeList[$addressCode];
+        } else {
+            if (isset($this->_addressCodeTimeline[$addressCode])) {
+                foreach ($this->_addressCodeTimeline[$addressCode] as $val) {
+                    if ($year >= $val['star_year'] && $year <= $val['end_year']) {
+                        return $val['address'];
+                    }
+                }
+            }
+            return '';
+        }
     }
 
     /**
