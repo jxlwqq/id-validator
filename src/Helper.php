@@ -10,7 +10,7 @@ trait Helper
     /**
      * 获取地址码信息.
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
      *
      * @return bool|mixed|string
@@ -47,7 +47,7 @@ trait Helper
     /**
      * 获取省市区地址码.
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
      *
      * @return string
@@ -67,6 +67,7 @@ trait Helper
                 }
             }
         }
+
         return $address;
     }
 
