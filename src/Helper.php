@@ -54,13 +54,15 @@ trait Helper
      */
     private function _getAddress($addressCode, $birthdayCode)
     {
-        $year = substr($birthdayCode, 0, 4);
         $address = '';
-        if (isset($this->_addressCodeList[$addressCode])) {
-            $address = $this->_addressCodeList[$addressCode];
-        } else {
-            if (isset($this->_addressCodeTimeline[$addressCode])) {
-                foreach ($this->_addressCodeTimeline[$addressCode] as $val) {
+        if (isset($this->_addressCodeTimeline[$addressCode])) {
+            $timeline = $this->_addressCodeTimeline[$addressCode];
+            $firstStartYear = $timeline[0]['start_year'];
+            $year = substr($birthdayCode, 0, 4);
+            if ($year < $firstStartYear) {
+                $address = $timeline[0]['address'];
+            } else {
+                foreach ($timeline as $val) {
                     if ($year >= $val['star_year']) {
                         $address = $val['address'];
                     }
