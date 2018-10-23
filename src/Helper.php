@@ -63,7 +63,7 @@ trait Helper
                 $address = $timeline[0]['address'];
             } else {
                 foreach ($timeline as $val) {
-                    if ($year >= $val['star_year']) {
+                    if ($year >= $val['start_year']) {
                         $address = $val['address'];
                     }
                 }
