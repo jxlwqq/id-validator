@@ -65607,7 +65607,7 @@ return [
 
             [
                 'address' => '香港特别行政区',
-                'start_year' => 2013,
+                'start_year' => '',
                 'end_year' => '',
             ],
         ],
@@ -65616,7 +65616,7 @@ return [
 
             [
                 'address' => '澳门特别行政区',
-                'start_year' => 2013,
+                'start_year' => '',
                 'end_year' => '',
             ],
         ],
@@ -65625,7 +65625,7 @@ return [
 
             [
                 'address' => '台湾省',
-                'start_year' => 2013,
+                'start_year' => '',
                 'end_year' => '',
             ],
         ],
