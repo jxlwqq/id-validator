@@ -75,7 +75,7 @@ trait Checker
     /**
      * 检查地址码
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
      *
      * @return bool
