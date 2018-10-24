@@ -50,7 +50,7 @@ trait Generator
             $day = $this->_datePad(rand(1, 28), 'day');
         }
 
-        if (!checkdate($month, $day, $year)) {
+        if (!checkdate((int) $month, (int) $day, (int) $year)) {
             $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
             $month = $this->_datePad(rand(1, 12), 'month');
             $day = $this->_datePad(rand(1, 28), 'day');
