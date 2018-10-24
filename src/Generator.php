@@ -175,8 +175,9 @@ trait Generator
      */
     private function _datePad($date, $type = 'year')
     {
-        $padLength = $type == 'year' ? 4: 2;
+        $padLength = $type == 'year' ? 4 : 2;
         $newDate = str_pad($date, $padLength, '0', STR_PAD_LEFT);
+
         return $newDate;
     }
 }
