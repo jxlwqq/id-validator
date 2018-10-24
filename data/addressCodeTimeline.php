@@ -16,6 +16,7 @@
 return [
     110000 =>
         [
+
             [
                 'address' => '北京市',
                 'start_year' => '',
@@ -449,15 +450,15 @@ return [
         [
 
             [
-                'address' => '东丽区',
-                'start_year' => 1992,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '东郊区',
                 'start_year' => '',
                 'end_year' => 1991,
+            ],
+
+            [
+                'address' => '东丽区',
+                'start_year' => 1992,
+                'end_year' => '',
             ],
         ],
     120111 =>
@@ -494,15 +495,15 @@ return [
         [
 
             [
-                'address' => '北辰区',
-                'start_year' => 1992,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '北郊区',
                 'start_year' => '',
                 'end_year' => 1991,
+            ],
+
+            [
+                'address' => '北辰区',
+                'start_year' => 1992,
+                'end_year' => '',
             ],
         ],
     120114 =>
@@ -794,15 +795,15 @@ return [
         [
 
             [
-                'address' => '栾城县',
-                'start_year' => 1993,
-                'end_year' => 2013,
-            ],
-
-            [
                 'address' => '正定县',
                 'start_year' => 1986,
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '栾城县',
+                'start_year' => 1993,
+                'end_year' => 2013,
             ],
         ],
     130125 =>
@@ -1112,30 +1113,30 @@ return [
         [
 
             [
-                'address' => '玉田县',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '迁西县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '玉田县',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     130230 =>
         [
 
             [
-                'address' => '唐海县',
-                'start_year' => 1984,
-                'end_year' => 2011,
-            ],
-
-            [
                 'address' => '遵化县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '唐海县',
+                'start_year' => 1984,
+                'end_year' => 2011,
             ],
         ],
     130281 =>
@@ -2879,15 +2880,15 @@ return [
         [
 
             [
-                'address' => '南宫市',
-                'start_year' => 1986,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '邢台市',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '南宫市',
+                'start_year' => 1986,
+                'end_year' => 1992,
             ],
         ],
     132202 =>
@@ -4196,15 +4197,15 @@ return [
         [
 
             [
-                'address' => '任丘市',
-                'start_year' => 1986,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '运河区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '任丘市',
+                'start_year' => 1986,
+                'end_year' => 1992,
             ],
         ],
     132904 =>
@@ -4226,15 +4227,15 @@ return [
         [
 
             [
-                'address' => '河间市',
-                'start_year' => 1990,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '泊头市',
                 'start_year' => 1982,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '河间市',
+                'start_year' => 1990,
+                'end_year' => 1992,
             ],
         ],
     132921 =>
@@ -6008,15 +6009,15 @@ return [
         [
 
             [
-                'address' => '天镇县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '阳高县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '天镇县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142123 =>
@@ -6053,45 +6054,45 @@ return [
         [
 
             [
-                'address' => '浑源县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '灵丘县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '浑源县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142126 =>
         [
 
             [
-                'address' => '应县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '浑源县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '应县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142127 =>
         [
 
             [
-                'address' => '山阴县',
-                'start_year' => 1982,
-                'end_year' => 1987,
-            ],
-
-            [
                 'address' => '怀仁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '山阴县',
+                'start_year' => 1982,
+                'end_year' => 1987,
             ],
         ],
     142128 =>
@@ -6128,45 +6129,45 @@ return [
         [
 
             [
-                'address' => '左云县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '朔县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '左云县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142131 =>
         [
 
             [
-                'address' => '右玉县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '平鲁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '右玉县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142132 =>
         [
 
             [
-                'address' => '大同县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '左云县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大同县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142133 =>
@@ -6245,30 +6246,30 @@ return [
         [
 
             [
-                'address' => '五台县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '代县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '五台县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142224 =>
         [
 
             [
-                'address' => '原平县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '繁峙县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '原平县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     142225 =>
@@ -6305,15 +6306,15 @@ return [
         [
 
             [
-                'address' => '宁武县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '静乐县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宁武县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142228 =>
@@ -6359,15 +6360,15 @@ return [
         [
 
             [
-                'address' => '岢岚县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '河曲县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '岢岚县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142232 =>
@@ -6389,60 +6390,60 @@ return [
         [
 
             [
-                'address' => '保德县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '神池县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '保德县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142234 =>
         [
 
             [
-                'address' => '偏关县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宁武县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '偏关县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142300 =>
         [
 
             [
-                'address' => '吕梁地区',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '晋中地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '吕梁地区',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142301 =>
         [
 
             [
-                'address' => '孝义市',
-                'start_year' => 1992,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '榆次市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '孝义市',
+                'start_year' => 1992,
+                'end_year' => 2002,
             ],
         ],
     142302 =>
@@ -6497,60 +6498,60 @@ return [
         [
 
             [
-                'address' => '交城县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '盂县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '交城县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142324 =>
         [
 
             [
-                'address' => '孝义县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '平定县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '孝义县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     142325 =>
         [
 
             [
-                'address' => '兴县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '昔阳县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '兴县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142326 =>
         [
 
             [
-                'address' => '临县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '和顺县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142327 =>
@@ -6602,15 +6603,15 @@ return [
         [
 
             [
-                'address' => '方山县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '祁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '方山县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142331 =>
@@ -6632,30 +6633,30 @@ return [
         [
 
             [
-                'address' => '中阳县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '介休县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '中阳县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142333 =>
         [
 
             [
-                'address' => '交口县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '灵石县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '交口县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     142400 =>
@@ -6695,15 +6696,15 @@ return [
         [
 
             [
-                'address' => '榆社县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '离石县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '榆社县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     142422 =>
@@ -6755,45 +6756,45 @@ return [
         [
 
             [
-                'address' => '平定县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '方山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '平定县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     142426 =>
         [
 
             [
-                'address' => '盂县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '石楼县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '盂县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     142427 =>
         [
 
             [
-                'address' => '寿阳县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '岚县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '寿阳县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     142428 =>
@@ -6845,30 +6846,30 @@ return [
         [
 
             [
-                'address' => '平遥县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '文水县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '平遥县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     142432 =>
         [
 
             [
-                'address' => '介休县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '柳林县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '介休县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     142433 =>
@@ -6926,15 +6927,15 @@ return [
         [
 
             [
-                'address' => '屯留县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '襄垣县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '屯留县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142524 =>
@@ -6956,15 +6957,15 @@ return [
         [
 
             [
-                'address' => '沁水县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '黎城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '沁水县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142526 =>
@@ -7016,45 +7017,45 @@ return [
         [
 
             [
-                'address' => '陵川县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '高平县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '陵川县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142530 =>
         [
 
             [
-                'address' => '壶关县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '晋城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '壶关县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142531 =>
         [
 
             [
-                'address' => '平顺县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '阳城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '平顺县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142532 =>
@@ -7076,15 +7077,15 @@ return [
         [
 
             [
-                'address' => '武乡县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '长子县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '武乡县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142534 =>
@@ -7106,15 +7107,15 @@ return [
         [
 
             [
-                'address' => '沁县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '沁源县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '沁县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     142536 =>
@@ -7187,15 +7188,15 @@ return [
         [
 
             [
-                'address' => '翼城县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '隰县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '翼城县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142623 =>
@@ -7217,15 +7218,15 @@ return [
         [
 
             [
-                'address' => '临汾县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '永和县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临汾县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     142625 =>
@@ -7271,75 +7272,75 @@ return [
         [
 
             [
-                'address' => '安泽县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '霍县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安泽县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142629 =>
         [
 
             [
-                'address' => '浮山县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '翼城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '浮山县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142630 =>
         [
 
             [
-                'address' => '吉县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '浮山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '吉县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142631 =>
         [
 
             [
-                'address' => '乡宁县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '曲沃县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乡宁县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142632 =>
         [
 
             [
-                'address' => '蒲县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '襄汾县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '蒲县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142633 =>
@@ -7391,15 +7392,15 @@ return [
         [
 
             [
-                'address' => '汾西县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '蒲县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '汾西县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142700 =>
@@ -7466,45 +7467,45 @@ return [
         [
 
             [
-                'address' => '芮城县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '闻喜县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '芮城县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142724 =>
         [
 
             [
-                'address' => '临猗县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '绛县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临猗县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142725 =>
         [
 
             [
-                'address' => '万荣县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '垣曲县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万荣县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142726 =>
@@ -7526,15 +7527,15 @@ return [
         [
 
             [
-                'address' => '稷山县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '芮城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '稷山县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142728 =>
@@ -7601,30 +7602,30 @@ return [
         [
 
             [
-                'address' => '平陆县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '稷山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '平陆县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     142733 =>
         [
 
             [
-                'address' => '垣曲县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '河津县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '垣曲县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     149001 =>
@@ -7703,15 +7704,15 @@ return [
         [
 
             [
-                'address' => '赛罕区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '赛罕区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     150121 =>
@@ -7799,15 +7800,15 @@ return [
         [
 
             [
-                'address' => '石拐区',
-                'start_year' => 1999,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '石拐矿区',
                 'start_year' => '',
                 'end_year' => 1998,
+            ],
+
+            [
+                'address' => '石拐区',
+                'start_year' => 1999,
+                'end_year' => '',
             ],
         ],
     150206 =>
@@ -7829,15 +7830,15 @@ return [
         [
 
             [
-                'address' => '九原区',
-                'start_year' => 1999,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1998,
+            ],
+
+            [
+                'address' => '九原区',
+                'start_year' => 1999,
+                'end_year' => '',
             ],
         ],
     150221 =>
@@ -7934,15 +7935,15 @@ return [
         [
 
             [
-                'address' => '松山区',
-                'start_year' => 1993,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '松山区',
+                'start_year' => 1993,
+                'end_year' => '',
             ],
         ],
     150421 =>
@@ -9032,30 +9033,30 @@ return [
         [
 
             [
-                'address' => '苏尼特右旗',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鄂托克前旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '苏尼特右旗',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     152525 =>
         [
 
             [
-                'address' => '东乌珠穆沁旗',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鄂托克旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东乌珠穆沁旗',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     152526 =>
@@ -9134,15 +9135,15 @@ return [
         [
 
             [
-                'address' => '乌兰察布盟',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '锡林郭勒盟',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乌兰察布盟',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152601 =>
@@ -9173,60 +9174,60 @@ return [
         [
 
             [
-                'address' => '武川县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '阿巴哈纳尔旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '武川县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     152622 =>
         [
 
             [
-                'address' => '和林格尔县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '阿巴嘎旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '和林格尔县',
+                'start_year' => 1982,
+                'end_year' => 1994,
             ],
         ],
     152623 =>
         [
 
             [
-                'address' => '清水河县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '苏尼特左旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '清水河县',
+                'start_year' => 1982,
+                'end_year' => 1994,
             ],
         ],
     152624 =>
         [
 
             [
-                'address' => '卓资县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '苏尼特右旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '卓资县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152625 =>
@@ -9248,75 +9249,75 @@ return [
         [
 
             [
-                'address' => '商都县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '西乌珠穆沁旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '商都县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152627 =>
         [
 
             [
-                'address' => '兴和县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '太仆寺旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '兴和县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152628 =>
         [
 
             [
-                'address' => '丰镇县',
-                'start_year' => 1982,
-                'end_year' => 1989,
-            ],
-
-            [
                 'address' => '镶黄旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '丰镇县',
+                'start_year' => 1982,
+                'end_year' => 1989,
             ],
         ],
     152629 =>
         [
 
             [
-                'address' => '凉城县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '正镶白旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '凉城县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152630 =>
         [
 
             [
-                'address' => '察哈尔右翼前旗',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '正蓝旗',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '察哈尔右翼前旗',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152631 =>
@@ -9365,15 +9366,15 @@ return [
         [
 
             [
-                'address' => '伊克昭盟',
-                'start_year' => 1982,
-                'end_year' => 2000,
-            ],
-
-            [
                 'address' => '巴彦淖尔盟',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '伊克昭盟',
+                'start_year' => 1982,
+                'end_year' => 2000,
             ],
         ],
     152701 =>
@@ -9389,15 +9390,15 @@ return [
         [
 
             [
-                'address' => '东胜县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '临河县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东胜县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     152722 =>
@@ -9419,15 +9420,15 @@ return [
         [
 
             [
-                'address' => '准格尔旗',
-                'start_year' => 1982,
-                'end_year' => 2000,
-            ],
-
-            [
                 'address' => '磴口县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '准格尔旗',
+                'start_year' => 1982,
+                'end_year' => 2000,
             ],
         ],
     152724 =>
@@ -9485,9 +9486,9 @@ return [
         [
 
             [
-                'address' => '乌审旗',
-                'start_year' => 1982,
-                'end_year' => 2000,
+                'address' => '潮格旗',
+                'start_year' => '',
+                'end_year' => 1980,
             ],
 
             [
@@ -9497,9 +9498,9 @@ return [
             ],
 
             [
-                'address' => '潮格旗',
-                'start_year' => '',
-                'end_year' => 1980,
+                'address' => '乌审旗',
+                'start_year' => 1982,
+                'end_year' => 2000,
             ],
         ],
     152728 =>
@@ -9530,45 +9531,45 @@ return [
         [
 
             [
-                'address' => '临河市',
-                'start_year' => 1984,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '集宁市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临河市',
+                'start_year' => 1984,
+                'end_year' => 2002,
             ],
         ],
     152821 =>
         [
 
             [
-                'address' => '临河县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '武川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临河县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     152822 =>
         [
 
             [
-                'address' => '五原县',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '和林格尔县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '五原县',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152823 =>
@@ -9590,45 +9591,45 @@ return [
         [
 
             [
-                'address' => '乌拉特前旗',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '卓资县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乌拉特前旗',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152825 =>
         [
 
             [
-                'address' => '乌拉特中旗',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '化德县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乌拉特中旗',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152826 =>
         [
 
             [
-                'address' => '乌拉特后旗',
-                'start_year' => 1982,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '商都县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乌拉特后旗',
+                'start_year' => 1982,
+                'end_year' => 2002,
             ],
         ],
     152827 =>
@@ -9914,15 +9915,15 @@ return [
         [
 
             [
-                'address' => '大连市',
-                'start_year' => 1981,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '旅大市',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '大连市',
+                'start_year' => 1981,
+                'end_year' => '',
             ],
         ],
     210202 =>
@@ -10109,9 +10110,9 @@ return [
         [
 
             [
-                'address' => '千山区',
-                'start_year' => 1996,
-                'end_year' => '',
+                'address' => '郊区',
+                'start_year' => '',
+                'end_year' => 1983,
             ],
 
             [
@@ -10121,9 +10122,9 @@ return [
             ],
 
             [
-                'address' => '郊区',
-                'start_year' => '',
-                'end_year' => 1983,
+                'address' => '千山区',
+                'start_year' => 1996,
+                'end_year' => '',
             ],
         ],
     210319 =>
@@ -10193,15 +10194,15 @@ return [
         [
 
             [
-                'address' => '东洲区',
-                'start_year' => 1999,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '露天区',
                 'start_year' => '',
                 'end_year' => 1998,
+            ],
+
+            [
+                'address' => '东洲区',
+                'start_year' => 1999,
+                'end_year' => '',
             ],
         ],
     210404 =>
@@ -10316,15 +10317,15 @@ return [
         [
 
             [
-                'address' => '南芬区',
-                'start_year' => 1985,
-                'end_year' => 1985,
-            ],
-
-            [
                 'address' => '立新区',
                 'start_year' => '',
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '南芬区',
+                'start_year' => 1985,
+                'end_year' => 1985,
             ],
         ],
     210521 =>
@@ -10523,15 +10524,15 @@ return [
         [
 
             [
-                'address' => '太和区',
-                'start_year' => 1983,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '太和区',
+                'start_year' => 1983,
+                'end_year' => '',
             ],
         ],
     210719 =>
@@ -10676,15 +10677,15 @@ return [
         [
 
             [
-                'address' => '老边区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '老边区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     210821 =>
@@ -10790,15 +10791,15 @@ return [
         [
 
             [
-                'address' => '细河区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '细河区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     210921 =>
@@ -10868,15 +10869,15 @@ return [
         [
 
             [
-                'address' => '太子河区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '太子河区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     211021 =>
@@ -10919,15 +10920,15 @@ return [
         [
 
             [
-                'address' => '双台子区',
-                'start_year' => 1986,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '盘山区',
                 'start_year' => 1984,
                 'end_year' => 1985,
+            ],
+
+            [
+                'address' => '双台子区',
+                'start_year' => 1986,
+                'end_year' => '',
             ],
         ],
     211103 =>
@@ -11069,15 +11070,15 @@ return [
         [
 
             [
-                'address' => '调兵山市',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '铁法市',
                 'start_year' => 1995,
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '调兵山市',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     211282 =>
@@ -11201,15 +11202,15 @@ return [
         [
 
             [
-                'address' => '葫芦岛市',
-                'start_year' => 1994,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '锦西市',
                 'start_year' => 1989,
                 'end_year' => 1993,
+            ],
+
+            [
+                'address' => '葫芦岛市',
+                'start_year' => 1994,
+                'end_year' => '',
             ],
         ],
     211402 =>
@@ -11621,15 +11622,15 @@ return [
         [
 
             [
-                'address' => '二道区',
-                'start_year' => 1995,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '二道河子区',
                 'start_year' => '',
                 'end_year' => 1994,
+            ],
+
+            [
+                'address' => '二道区',
+                'start_year' => 1995,
+                'end_year' => '',
             ],
         ],
     220106 =>
@@ -11780,15 +11781,15 @@ return [
         [
 
             [
-                'address' => '丰满区',
-                'start_year' => 1992,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1991,
+            ],
+
+            [
+                'address' => '丰满区',
+                'start_year' => 1992,
+                'end_year' => '',
             ],
         ],
     220221 =>
@@ -11840,15 +11841,15 @@ return [
         [
 
             [
-                'address' => '桦甸市',
-                'start_year' => 2003,
-                'end_year' => 2003,
-            ],
-
-            [
                 'address' => '蛟河市',
                 'start_year' => 1995,
                 'end_year' => '',
+            ],
+
+            [
+                'address' => '桦甸市',
+                'start_year' => 2003,
+                'end_year' => 2003,
             ],
         ],
     220282 =>
@@ -12269,15 +12270,15 @@ return [
         [
 
             [
-                'address' => '宁江区',
-                'start_year' => 1995,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '扶余区',
                 'start_year' => 1992,
                 'end_year' => 1994,
+            ],
+
+            [
+                'address' => '宁江区',
+                'start_year' => 1995,
+                'end_year' => '',
             ],
         ],
     220721 =>
@@ -13145,15 +13146,15 @@ return [
         [
 
             [
-                'address' => '呼兰县',
-                'start_year' => 1984,
-                'end_year' => 2003,
-            ],
-
-            [
                 'address' => '阿城县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '呼兰县',
+                'start_year' => 1984,
+                'end_year' => 2003,
             ],
         ],
     230122 =>
@@ -13580,75 +13581,75 @@ return [
         [
 
             [
-                'address' => '向阳区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '萨尔图区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '向阳区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230403 =>
         [
 
             [
-                'address' => '工农区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '龙凤区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '工农区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230404 =>
         [
 
             [
-                'address' => '南山区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '让胡路区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南山区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230405 =>
         [
 
             [
-                'address' => '兴安区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '红岗区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '兴安区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230406 =>
         [
 
             [
-                'address' => '东山区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '大同区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东山区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230407 =>
@@ -13682,15 +13683,15 @@ return [
         [
 
             [
-                'address' => '双鸭山市',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鹤岗市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '双鸭山市',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230502 =>
@@ -13712,15 +13713,15 @@ return [
         [
 
             [
-                'address' => '岭东区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '工农区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '岭东区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230504 =>
@@ -13892,15 +13893,15 @@ return [
         [
 
             [
-                'address' => '大同区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '宝山区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大同区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     230621 =>
@@ -14744,15 +14745,15 @@ return [
         [
 
             [
-                'address' => '松花江地区',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '绥化地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '松花江地区',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     232101 =>
@@ -14801,60 +14802,60 @@ return [
         [
 
             [
-                'address' => '宾县',
-                'start_year' => 1982,
-                'end_year' => 1990,
-            ],
-
-            [
                 'address' => '肇东县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宾县',
+                'start_year' => 1982,
+                'end_year' => 1990,
             ],
         ],
     232123 =>
         [
 
             [
-                'address' => '呼兰县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '绥化县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '呼兰县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232124 =>
         [
 
             [
-                'address' => '双城县',
-                'start_year' => 1982,
-                'end_year' => 1987,
-            ],
-
-            [
                 'address' => '安达县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '双城县',
+                'start_year' => 1982,
+                'end_year' => 1987,
             ],
         ],
     232125 =>
         [
 
             [
-                'address' => '五常县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '望奎县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '五常县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     232126 =>
@@ -14876,15 +14877,15 @@ return [
         [
 
             [
-                'address' => '木兰县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '青冈县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '木兰县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     232128 =>
@@ -14906,15 +14907,15 @@ return [
         [
 
             [
-                'address' => '尚志县',
-                'start_year' => 1982,
-                'end_year' => 1987,
-            ],
-
-            [
                 'address' => '肇州县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '尚志县',
+                'start_year' => 1982,
+                'end_year' => 1987,
             ],
         ],
     232130 =>
@@ -14936,15 +14937,15 @@ return [
         [
 
             [
-                'address' => '延寿县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '明水县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '延寿县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     232132 =>
@@ -14960,15 +14961,15 @@ return [
         [
 
             [
-                'address' => '嫩江地区',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '松花江地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '嫩江地区',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232221 =>
@@ -15005,15 +15006,15 @@ return [
         [
 
             [
-                'address' => '依安县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '巴彦县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '依安县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232224 =>
@@ -15050,30 +15051,30 @@ return [
         [
 
             [
-                'address' => '杜尔伯特蒙古族自治县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '阿城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '杜尔伯特蒙古族自治县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232227 =>
         [
 
             [
-                'address' => '富裕县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '尚志县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '富裕县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232228 =>
@@ -15095,45 +15096,45 @@ return [
         [
 
             [
-                'address' => '克山县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '延寿县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '克山县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232230 =>
         [
 
             [
-                'address' => '克东县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '通河县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '克东县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232231 =>
         [
 
             [
-                'address' => '拜泉县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '方正县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '拜泉县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232300 =>
@@ -15191,15 +15192,15 @@ return [
         [
 
             [
-                'address' => '海伦县',
-                'start_year' => 1982,
-                'end_year' => 1988,
-            ],
-
-            [
                 'address' => '讷河县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '海伦县',
+                'start_year' => 1982,
+                'end_year' => 1988,
             ],
         ],
     232322 =>
@@ -15275,15 +15276,15 @@ return [
         [
 
             [
-                'address' => '安达县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '泰来县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安达县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232328 =>
@@ -15320,30 +15321,30 @@ return [
         [
 
             [
-                'address' => '庆安县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '林甸县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '庆安县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     232331 =>
         [
 
             [
-                'address' => '明水县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '杜尔伯特蒙古族自治县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '明水县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     232332 =>
@@ -15431,60 +15432,60 @@ return [
         [
 
             [
-                'address' => '富锦县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '桦南县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '富锦县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232422 =>
         [
 
             [
-                'address' => '桦南县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '集贤县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '桦南县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232423 =>
         [
 
             [
-                'address' => '依兰县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '宝清县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '依兰县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232424 =>
         [
 
             [
-                'address' => '勃利县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '富锦县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '勃利县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232425 =>
@@ -15521,15 +15522,15 @@ return [
         [
 
             [
-                'address' => '宝清县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '汤原县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宝清县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232428 =>
@@ -15551,15 +15552,15 @@ return [
         [
 
             [
-                'address' => '绥滨县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '萝北县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '绥滨县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232430 =>
@@ -15581,15 +15582,15 @@ return [
         [
 
             [
-                'address' => '同江县',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '饶河县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '同江县',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     232432 =>
@@ -15653,45 +15654,45 @@ return [
         [
 
             [
-                'address' => '东凤区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '先锋区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东凤区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232504 =>
         [
 
             [
-                'address' => '先锋区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '爱民区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '先锋区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232505 =>
         [
 
             [
-                'address' => '爱民区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '阳明区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '爱民区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232506 =>
@@ -15716,15 +15717,15 @@ return [
         [
 
             [
-                'address' => '宁安县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '海林县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宁安县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232522 =>
@@ -15761,30 +15762,30 @@ return [
         [
 
             [
-                'address' => '东宁县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '密山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东宁县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232525 =>
         [
 
             [
-                'address' => '林口县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '穆棱县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '林口县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232526 =>
@@ -15806,15 +15807,15 @@ return [
         [
 
             [
-                'address' => '密山县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '鸡东县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '密山县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     232528 =>
@@ -16709,15 +16710,15 @@ return [
         [
 
             [
-                'address' => '锡山区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '马山区',
                 'start_year' => 1987,
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '锡山区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     320206 =>
@@ -16733,15 +16734,15 @@ return [
         [
 
             [
-                'address' => '滨湖区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '滨湖区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     320213 =>
@@ -16847,15 +16848,15 @@ return [
         [
 
             [
-                'address' => '九里区',
-                'start_year' => 1995,
-                'end_year' => 2009,
-            ],
-
-            [
                 'address' => '矿区',
                 'start_year' => '',
                 'end_year' => 1994,
+            ],
+
+            [
+                'address' => '九里区',
+                'start_year' => 1995,
+                'end_year' => 2009,
             ],
         ],
     320305 =>
@@ -16871,15 +16872,15 @@ return [
         [
 
             [
-                'address' => '泉山区',
-                'start_year' => 1993,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '泉山区',
+                'start_year' => 1993,
+                'end_year' => '',
             ],
         ],
     320312 =>
@@ -17012,15 +17013,15 @@ return [
         [
 
             [
-                'address' => '新北区',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '新北区',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     320412 =>
@@ -17327,15 +17328,15 @@ return [
         [
 
             [
-                'address' => '港闸区',
-                'start_year' => 1991,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1990,
+            ],
+
+            [
+                'address' => '港闸区',
+                'start_year' => 1991,
+                'end_year' => '',
             ],
         ],
     320612 =>
@@ -17459,15 +17460,15 @@ return [
         [
 
             [
-                'address' => '新海区',
-                'start_year' => 1983,
-                'end_year' => 1985,
-            ],
-
-            [
                 'address' => '连云港区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '新海区',
+                'start_year' => 1983,
+                'end_year' => 1985,
             ],
         ],
     320703 =>
@@ -17489,30 +17490,30 @@ return [
         [
 
             [
-                'address' => '云台区',
-                'start_year' => 1983,
-                'end_year' => 2000,
-            ],
-
-            [
                 'address' => '新浦区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '云台区',
+                'start_year' => 1983,
+                'end_year' => 2000,
             ],
         ],
     320705 =>
         [
 
             [
-                'address' => '新浦区',
-                'start_year' => 1986,
-                'end_year' => 2013,
-            ],
-
-            [
                 'address' => '海州区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '新浦区',
+                'start_year' => 1986,
+                'end_year' => 2013,
             ],
         ],
     320706 =>
@@ -17582,15 +17583,15 @@ return [
         [
 
             [
-                'address' => '淮安市',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '淮阴市',
                 'start_year' => 1983,
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '淮安市',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     320802 =>
@@ -17783,15 +17784,15 @@ return [
         [
 
             [
-                'address' => '亭湖区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '城区',
                 'start_year' => 1983,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '亭湖区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     320903 =>
@@ -17942,15 +17943,15 @@ return [
         [
 
             [
-                'address' => '维扬区',
-                'start_year' => 2002,
-                'end_year' => 2010,
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1984,
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '维扬区',
+                'start_year' => 2002,
+                'end_year' => 2010,
             ],
         ],
     321012 =>
@@ -18128,30 +18129,30 @@ return [
         [
 
             [
-                'address' => '京口区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '城区',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '京口区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     321111 =>
         [
 
             [
-                'address' => '润州区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '润州区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     321112 =>
@@ -19553,15 +19554,15 @@ return [
         [
 
             [
-                'address' => '北仑区',
-                'start_year' => 1987,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '滨海区',
                 'start_year' => 1985,
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '北仑区',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     330211 =>
@@ -19796,15 +19797,15 @@ return [
         [
 
             [
-                'address' => '乐清县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '瑞安县',
                 'start_year' => 1981,
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乐清县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     330324 =>
@@ -19871,30 +19872,30 @@ return [
         [
 
             [
-                'address' => '文成县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '瓯海县',
                 'start_year' => 1981,
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '文成县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     330329 =>
         [
 
             [
-                'address' => '泰顺县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '苍南县',
                 'start_year' => 1981,
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '泰顺县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     330381 =>
@@ -19928,12 +19929,6 @@ return [
         [
 
             [
-                'address' => '南湖区',
-                'start_year' => 2005,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '城区',
                 'start_year' => 1983,
                 'end_year' => 1992,
@@ -19944,20 +19939,26 @@ return [
                 'start_year' => 1993,
                 'end_year' => 2004,
             ],
+
+            [
+                'address' => '南湖区',
+                'start_year' => 2005,
+                'end_year' => '',
+            ],
         ],
     330411 =>
         [
 
             [
-                'address' => '秀洲区',
-                'start_year' => 1999,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 1998,
+            ],
+
+            [
+                'address' => '秀洲区',
+                'start_year' => 1999,
+                'end_year' => '',
             ],
         ],
     330421 =>
@@ -20045,15 +20046,15 @@ return [
         [
 
             [
-                'address' => '吴兴区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '城区',
                 'start_year' => 1983,
                 'end_year' => 1987,
+            ],
+
+            [
+                'address' => '吴兴区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     330503 =>
@@ -20750,30 +20751,30 @@ return [
         [
 
             [
-                'address' => '桐乡县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '海盐县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '桐乡县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     332126 =>
         [
 
             [
-                'address' => '德清县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '桐乡县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '德清县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     332127 =>
@@ -20918,15 +20919,15 @@ return [
         [
 
             [
-                'address' => '上虞县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '绍兴县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '上虞县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     332322 =>
@@ -21020,15 +21021,15 @@ return [
         [
 
             [
-                'address' => '兰溪县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '洞头县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '兰溪县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     332422 =>
@@ -21050,45 +21051,45 @@ return [
         [
 
             [
-                'address' => '武义县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '瑞安县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '武义县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     332424 =>
         [
 
             [
-                'address' => '东阳县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '文成县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '东阳县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     332425 =>
         [
 
             [
-                'address' => '义乌县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '平阳县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '义乌县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     332426 =>
@@ -21110,15 +21111,15 @@ return [
         [
 
             [
-                'address' => '常山县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '泰顺县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '常山县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     332428 =>
@@ -21161,30 +21162,30 @@ return [
         [
 
             [
-                'address' => '丽水地区',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '金华地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '丽水地区',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     332501 =>
         [
 
             [
-                'address' => '丽水市',
-                'start_year' => 1986,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '金华市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '丽水市',
+                'start_year' => 1986,
+                'end_year' => 1994,
             ],
         ],
     332502 =>
@@ -21206,15 +21207,15 @@ return [
         [
 
             [
-                'address' => '丽水县',
-                'start_year' => 1982,
-                'end_year' => 1985,
-            ],
-
-            [
                 'address' => '金华县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '丽水县',
+                'start_year' => 1982,
+                'end_year' => 1985,
             ],
         ],
     332522 =>
@@ -21236,15 +21237,15 @@ return [
         [
 
             [
-                'address' => '云和县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '永康县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '云和县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     332524 =>
@@ -21311,15 +21312,15 @@ return [
         [
 
             [
-                'address' => '松阳县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '衢县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '松阳县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     332529 =>
@@ -21419,15 +21420,15 @@ return [
         [
 
             [
-                'address' => '临海县',
-                'start_year' => 1982,
-                'end_year' => 1985,
-            ],
-
-            [
                 'address' => '丽水县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临海县',
+                'start_year' => 1982,
+                'end_year' => 1985,
             ],
         ],
     332622 =>
@@ -21464,60 +21465,60 @@ return [
         [
 
             [
-                'address' => '仙居县',
-                'start_year' => 1982,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '龙泉县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '仙居县',
+                'start_year' => 1982,
+                'end_year' => 1993,
             ],
         ],
     332625 =>
         [
 
             [
-                'address' => '天台县',
-                'start_year' => 1982,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '庆元县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '天台县',
+                'start_year' => 1982,
+                'end_year' => 1993,
             ],
         ],
     332626 =>
         [
 
             [
-                'address' => '三门县',
-                'start_year' => 1982,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '缙云县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '三门县',
+                'start_year' => 1982,
+                'end_year' => 1993,
             ],
         ],
     332627 =>
         [
 
             [
-                'address' => '玉环县',
-                'start_year' => 1982,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '遂昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '玉环县',
+                'start_year' => 1982,
+                'end_year' => 1993,
             ],
         ],
     332700 =>
@@ -21563,30 +21564,30 @@ return [
         [
 
             [
-                'address' => '普陀县',
-                'start_year' => 1982,
-                'end_year' => 1986,
-            ],
-
-            [
                 'address' => '黄岩县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '普陀县',
+                'start_year' => 1982,
+                'end_year' => 1986,
             ],
         ],
     332723 =>
         [
 
             [
-                'address' => '岱山县',
-                'start_year' => 1982,
-                'end_year' => 1986,
-            ],
-
-            [
                 'address' => '温岭县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '岱山县',
+                'start_year' => 1982,
+                'end_year' => 1986,
             ],
         ],
     332724 =>
@@ -21734,30 +21735,30 @@ return [
         [
 
             [
-                'address' => '义乌市',
-                'start_year' => 1988,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '安徽省',
                 'start_year' => 1987,
                 'end_year' => 1987,
+            ],
+
+            [
+                'address' => '义乌市',
+                'start_year' => 1988,
+                'end_year' => 1994,
             ],
         ],
     339008 =>
         [
 
             [
-                'address' => '东阳市',
-                'start_year' => 1988,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '合肥市',
                 'start_year' => 1987,
                 'end_year' => 1987,
+            ],
+
+            [
+                'address' => '东阳市',
+                'start_year' => 1988,
+                'end_year' => 1994,
             ],
         ],
     339009 =>
@@ -21929,30 +21930,30 @@ return [
         [
 
             [
-                'address' => '蜀山区',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '西市区',
                 'start_year' => '',
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '蜀山区',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     340111 =>
         [
 
             [
-                'address' => '包河区',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '包河区',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     340121 =>
@@ -22022,15 +22023,15 @@ return [
         [
 
             [
-                'address' => '弋江区',
-                'start_year' => 2005,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '马塘区',
                 'start_year' => '',
                 'end_year' => 2004,
+            ],
+
+            [
+                'address' => '弋江区',
+                'start_year' => 2005,
+                'end_year' => '',
             ],
         ],
     340204 =>
@@ -22181,30 +22182,30 @@ return [
         [
 
             [
-                'address' => '禹会区',
-                'start_year' => 2004,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '西市区',
                 'start_year' => '',
                 'end_year' => 2003,
+            ],
+
+            [
+                'address' => '禹会区',
+                'start_year' => 2004,
+                'end_year' => '',
             ],
         ],
     340311 =>
         [
 
             [
-                'address' => '淮上区',
-                'start_year' => 2004,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 2003,
+            ],
+
+            [
+                'address' => '淮上区',
+                'start_year' => 2004,
+                'end_year' => '',
             ],
         ],
     340321 =>
@@ -22562,15 +22563,15 @@ return [
         [
 
             [
-                'address' => '宜秀区',
-                'start_year' => 2005,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 2004,
+            ],
+
+            [
+                'address' => '宜秀区',
+                'start_year' => 2005,
+                'end_year' => '',
             ],
         ],
     340821 =>
@@ -24197,15 +24198,15 @@ return [
         [
 
             [
-                'address' => '晋安区',
-                'start_year' => 1995,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1994,
+            ],
+
+            [
+                'address' => '晋安区',
+                'start_year' => 1995,
+                'end_year' => '',
             ],
         ],
     350112 =>
@@ -25151,15 +25152,15 @@ return [
         [
 
             [
-                'address' => '南平地区',
-                'start_year' => 1988,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '建阳地区',
                 'start_year' => 1982,
                 'end_year' => 1987,
+            ],
+
+            [
+                'address' => '南平地区',
+                'start_year' => 1988,
+                'end_year' => 1993,
             ],
         ],
     352101 =>
@@ -25283,15 +25284,15 @@ return [
         [
 
             [
-                'address' => '宁德地区',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '建阳地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宁德地区',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     352201 =>
@@ -25331,15 +25332,15 @@ return [
         [
 
             [
-                'address' => '宁德县',
-                'start_year' => 1982,
-                'end_year' => 1987,
-            ],
-
-            [
                 'address' => '顺昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宁德县',
+                'start_year' => 1982,
+                'end_year' => 1987,
             ],
         ],
     352222 =>
@@ -25436,30 +25437,30 @@ return [
         [
 
             [
-                'address' => '屏南县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '松溪县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '屏南县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     352229 =>
         [
 
             [
-                'address' => '寿宁县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '政和县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '寿宁县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     352230 =>
@@ -25514,15 +25515,15 @@ return [
         [
 
             [
-                'address' => '永泰县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '连江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永泰县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352323 =>
@@ -25544,30 +25545,30 @@ return [
         [
 
             [
-                'address' => '福清县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '福鼎县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '福清县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352325 =>
         [
 
             [
-                'address' => '平潭县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '霞浦县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '平潭县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352326 =>
@@ -25589,15 +25590,15 @@ return [
         [
 
             [
-                'address' => '仙游县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '古田县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '仙游县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352328 =>
@@ -25640,15 +25641,15 @@ return [
         [
 
             [
-                'address' => '晋江地区',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '莆田地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '晋江地区',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352401 =>
@@ -25664,60 +25665,60 @@ return [
         [
 
             [
-                'address' => '惠安县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '闽清县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '惠安县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352422 =>
         [
 
             [
-                'address' => '晋江县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '永泰县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '晋江县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352423 =>
         [
 
             [
-                'address' => '南安县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '长乐县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南安县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352424 =>
         [
 
             [
-                'address' => '安溪县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '福清县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安溪县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352425 =>
@@ -25739,15 +25740,15 @@ return [
         [
 
             [
-                'address' => '德化县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '莆田县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '德化县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352427 =>
@@ -25814,15 +25815,15 @@ return [
         [
 
             [
-                'address' => '云霄县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '晋江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '云霄县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352523 =>
@@ -25874,30 +25875,30 @@ return [
         [
 
             [
-                'address' => '东山县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '德化县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东山县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352527 =>
         [
 
             [
-                'address' => '南靖县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '金门县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南靖县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     352528 =>
@@ -25922,15 +25923,15 @@ return [
         [
 
             [
-                'address' => '龙岩地区',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '龙溪地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '龙岩地区',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     352601 =>
@@ -25985,45 +25986,45 @@ return [
         [
 
             [
-                'address' => '永定县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '漳浦县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永定县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     352624 =>
         [
 
             [
-                'address' => '上杭县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '诏安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上杭县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     352625 =>
         [
 
             [
-                'address' => '武平县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '长泰县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '武平县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     352626 =>
@@ -26078,60 +26079,60 @@ return [
         [
 
             [
-                'address' => '三明地区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '龙岩地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '三明地区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352701 =>
         [
 
             [
-                'address' => '三明市',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '龙岩市',
                 'start_year' => 1981,
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '三明市',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352721 =>
         [
 
             [
-                'address' => '明溪县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '龙岩县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '明溪县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352722 =>
         [
 
             [
-                'address' => '永安县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '长汀县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永安县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352723 =>
@@ -26168,45 +26169,45 @@ return [
         [
 
             [
-                'address' => '大田县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '武平县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大田县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352726 =>
         [
 
             [
-                'address' => '尤溪县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '漳平县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '尤溪县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352727 =>
         [
 
             [
-                'address' => '沙县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '连城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '沙县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     352728 =>
@@ -26525,15 +26526,15 @@ return [
         [
 
             [
-                'address' => '南昌县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '新建县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南昌县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     360122 =>
@@ -27698,90 +27699,90 @@ return [
         [
 
             [
-                'address' => '南康县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '永修县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南康县',
+                'start_year' => 1982,
+                'end_year' => 1994,
             ],
         ],
     362123 =>
         [
 
             [
-                'address' => '信丰县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '彭泽县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '信丰县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362124 =>
         [
 
             [
-                'address' => '大余县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '德安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大余县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362125 =>
         [
 
             [
-                'address' => '上犹县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '湖口县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上犹县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362126 =>
         [
 
             [
-                'address' => '崇义县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '瑞昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '崇义县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362127 =>
         [
 
             [
-                'address' => '安远县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '都昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安远县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362128 =>
@@ -27803,15 +27804,15 @@ return [
         [
 
             [
-                'address' => '定南县',
-                'start_year' => 1982,
-                'end_year' => 1997,
-            ],
-
-            [
                 'address' => '星子县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '定南县',
+                'start_year' => 1982,
+                'end_year' => 1997,
             ],
         ],
     362130 =>
@@ -27935,15 +27936,15 @@ return [
         [
 
             [
-                'address' => '丰城市',
-                'start_year' => 1988,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '鹰潭市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '丰城市',
+                'start_year' => 1988,
+                'end_year' => 1999,
             ],
         ],
     362203 =>
@@ -28028,15 +28029,15 @@ return [
         [
 
             [
-                'address' => '宜春县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '德兴县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宜春县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     362226 =>
@@ -28058,75 +28059,75 @@ return [
         [
 
             [
-                'address' => '万载县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '玉山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万载县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362228 =>
         [
 
             [
-                'address' => '上高县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '乐平县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上高县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362229 =>
         [
 
             [
-                'address' => '宜丰县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '广丰县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '宜丰县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362230 =>
         [
 
             [
-                'address' => '分宜县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '波阳县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '分宜县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362231 =>
         [
 
             [
-                'address' => '安义县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '铅山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安义县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362232 =>
@@ -28172,75 +28173,75 @@ return [
         [
 
             [
-                'address' => '上饶地区',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宜春地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上饶地区',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362301 =>
         [
 
             [
-                'address' => '上饶市',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宜春市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上饶市',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362302 =>
         [
 
             [
-                'address' => '德兴市',
-                'start_year' => 1990,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '鹰潭市',
                 'start_year' => 1982,
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '德兴市',
+                'start_year' => 1990,
+                'end_year' => 1999,
             ],
         ],
     362321 =>
         [
 
             [
-                'address' => '上饶县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宜春县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '上饶县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362322 =>
         [
 
             [
-                'address' => '广丰县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '高安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '广丰县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362323 =>
@@ -28277,30 +28278,30 @@ return [
         [
 
             [
-                'address' => '横峰县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '铜鼓县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '横峰县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362326 =>
         [
 
             [
-                'address' => '弋阳县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '清江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '弋阳县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362327 =>
@@ -28322,15 +28323,15 @@ return [
         [
 
             [
-                'address' => '余江县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '新余县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '余江县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362329 =>
@@ -28367,30 +28368,30 @@ return [
         [
 
             [
-                'address' => '万年县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '安义县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万年县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362332 =>
         [
 
             [
-                'address' => '乐平县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '靖安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乐平县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362333 =>
@@ -28421,30 +28422,30 @@ return [
         [
 
             [
-                'address' => '吉安地区',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '抚州地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '吉安地区',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362401 =>
         [
 
             [
-                'address' => '吉安市',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '抚州市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '吉安市',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362402 =>
@@ -28475,30 +28476,30 @@ return [
         [
 
             [
-                'address' => '吉水县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宜黄县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '吉水县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362423 =>
         [
 
             [
-                'address' => '峡江县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '金溪县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '峡江县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362424 =>
@@ -28520,15 +28521,15 @@ return [
         [
 
             [
-                'address' => '永丰县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '资溪县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永丰县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362426 =>
@@ -28550,30 +28551,30 @@ return [
         [
 
             [
-                'address' => '遂川县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '黎川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '遂川县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362428 =>
         [
 
             [
-                'address' => '万安县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '东乡县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万安县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362429 =>
@@ -28595,15 +28596,15 @@ return [
         [
 
             [
-                'address' => '永新县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '进贤县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永新县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362431 =>
@@ -28658,12 +28659,6 @@ return [
         [
 
             [
-                'address' => '临川市',
-                'start_year' => 1987,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '吉安市',
                 'start_year' => '',
                 'end_year' => 1981,
@@ -28674,20 +28669,26 @@ return [
                 'start_year' => 1982,
                 'end_year' => 1986,
             ],
+
+            [
+                'address' => '临川市',
+                'start_year' => 1987,
+                'end_year' => 1999,
+            ],
         ],
     362521 =>
         [
 
             [
-                'address' => '临川县',
-                'start_year' => 1982,
-                'end_year' => 1986,
-            ],
-
-            [
                 'address' => '吉安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临川县',
+                'start_year' => 1982,
+                'end_year' => 1986,
             ],
         ],
     362522 =>
@@ -28724,15 +28725,15 @@ return [
         [
 
             [
-                'address' => '南丰县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '遂川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南丰县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362525 =>
@@ -28754,15 +28755,15 @@ return [
         [
 
             [
-                'address' => '乐安县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '宁冈县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乐安县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362527 =>
@@ -28829,15 +28830,15 @@ return [
         [
 
             [
-                'address' => '东乡县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '泰和县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东乡县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     362532 =>
@@ -28868,15 +28869,15 @@ return [
         [
 
             [
-                'address' => '九江地区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '赣州地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '九江地区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362601 =>
@@ -28892,15 +28893,15 @@ return [
         [
 
             [
-                'address' => '九江县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '广昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '九江县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362622 =>
@@ -28922,30 +28923,30 @@ return [
         [
 
             [
-                'address' => '武宁县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '石城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '武宁县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362624 =>
         [
 
             [
-                'address' => '修水县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '龙南县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '修水县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362625 =>
@@ -29027,15 +29028,15 @@ return [
         [
 
             [
-                'address' => '彭泽县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '赣县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '彭泽县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     362631 =>
@@ -29609,15 +29610,15 @@ return [
         [
 
             [
-                'address' => '山亭区',
-                'start_year' => 1983,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '齐村区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '山亭区',
+                'start_year' => 1983,
+                'end_year' => '',
             ],
         ],
     370421 =>
@@ -30137,15 +30138,15 @@ return [
         [
 
             [
-                'address' => '任城区',
-                'start_year' => 1993,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '市郊区',
                 'start_year' => 1983,
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '任城区',
+                'start_year' => 1993,
+                'end_year' => '',
             ],
         ],
     370812 =>
@@ -30305,15 +30306,15 @@ return [
         [
 
             [
-                'address' => '岱岳区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1985,
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '岱岳区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     370921 =>
@@ -30590,15 +30591,15 @@ return [
         [
 
             [
-                'address' => '兰陵县',
-                'start_year' => 2014,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '苍山县',
                 'start_year' => 1994,
                 'end_year' => 2013,
+            ],
+
+            [
+                'address' => '兰陵县',
+                'start_year' => 2014,
+                'end_year' => '',
             ],
         ],
     371325 =>
@@ -31607,15 +31608,15 @@ return [
         [
 
             [
-                'address' => '聊城县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '阳谷县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '聊城县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     372522 =>
@@ -31667,30 +31668,30 @@ return [
         [
 
             [
-                'address' => '东阿县',
-                'start_year' => 1982,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '冠县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '东阿县',
+                'start_year' => 1982,
+                'end_year' => 1996,
             ],
         ],
     372526 =>
         [
 
             [
-                'address' => '冠县',
-                'start_year' => 1982,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '高唐县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '冠县',
+                'start_year' => 1982,
+                'end_year' => 1996,
             ],
         ],
     372527 =>
@@ -31712,15 +31713,15 @@ return [
         [
 
             [
-                'address' => '临清县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '聊城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '临清县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     372600 =>
@@ -31784,15 +31785,15 @@ return [
         [
 
             [
-                'address' => '新泰县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '莱芜县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '新泰县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     372623 =>
@@ -32567,15 +32568,15 @@ return [
         [
 
             [
-                'address' => '惠济区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '邙山区',
                 'start_year' => 1987,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '惠济区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     410111 =>
@@ -32885,15 +32886,15 @@ return [
         [
 
             [
-                'address' => '洛龙区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '洛龙区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     410321 =>
@@ -33026,15 +33027,15 @@ return [
         [
 
             [
-                'address' => '湛河区',
-                'start_year' => 1994,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1993,
+            ],
+
+            [
+                'address' => '湛河区',
+                'start_year' => 1994,
+                'end_year' => '',
             ],
         ],
     410412 =>
@@ -33122,45 +33123,45 @@ return [
         [
 
             [
-                'address' => '安阳市',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鹤壁市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安阳市',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     410502 =>
         [
 
             [
-                'address' => '文峰区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鹤山区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '文峰区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     410503 =>
         [
 
             [
-                'address' => '北关区',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '山城区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '北关区',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     410504 =>
@@ -33329,15 +33330,15 @@ return [
         [
 
             [
-                'address' => '淇滨区',
-                'start_year' => 2001,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 2000,
+            ],
+
+            [
+                'address' => '淇滨区',
+                'start_year' => 2001,
+                'end_year' => '',
             ],
         ],
     410621 =>
@@ -33380,45 +33381,45 @@ return [
         [
 
             [
-                'address' => '卫滨区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '新华区',
                 'start_year' => 1983,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '卫滨区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     410704 =>
         [
 
             [
-                'address' => '凤泉区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '北站区',
                 'start_year' => 1983,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '凤泉区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     410711 =>
         [
 
             [
-                'address' => '牧野区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1983,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '牧野区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     410721 =>
@@ -33551,15 +33552,15 @@ return [
         [
 
             [
-                'address' => '山阳区',
-                'start_year' => 1990,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1982,
                 'end_year' => 1989,
+            ],
+
+            [
+                'address' => '山阳区',
+                'start_year' => 1990,
+                'end_year' => '',
             ],
         ],
     410821 =>
@@ -33665,15 +33666,15 @@ return [
         [
 
             [
-                'address' => '华龙区',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '市区',
                 'start_year' => 1985,
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '华龙区',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     410911 =>
@@ -35012,15 +35013,15 @@ return [
         [
 
             [
-                'address' => '巩县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '新郑县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '巩县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     412427 =>
@@ -35042,15 +35043,15 @@ return [
         [
 
             [
-                'address' => '新郑县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '登封县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '新郑县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     412429 =>
@@ -36446,15 +36447,15 @@ return [
         [
 
             [
-                'address' => '宜都市',
-                'start_year' => 1998,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '枝城市',
                 'start_year' => 1996,
                 'end_year' => 1997,
+            ],
+
+            [
+                'address' => '宜都市',
+                'start_year' => 1998,
+                'end_year' => '',
             ],
         ],
     420582 =>
@@ -36536,15 +36537,15 @@ return [
         [
 
             [
-                'address' => '襄州区',
-                'start_year' => 2010,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '襄阳区',
                 'start_year' => 2001,
                 'end_year' => 2009,
+            ],
+
+            [
+                'address' => '襄州区',
+                'start_year' => 2010,
+                'end_year' => '',
             ],
         ],
     420611 =>
@@ -36659,15 +36660,15 @@ return [
         [
 
             [
-                'address' => '华容区',
-                'start_year' => 1987,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '黄州区',
                 'start_year' => 1984,
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '华容区',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     420704 =>
@@ -36854,15 +36855,15 @@ return [
         [
 
             [
-                'address' => '荆州市',
-                'start_year' => 1996,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '荆沙市',
                 'start_year' => 1994,
                 'end_year' => 1995,
+            ],
+
+            [
+                'address' => '荆州市',
+                'start_year' => 1996,
+                'end_year' => '',
             ],
         ],
     421001 =>
@@ -37538,15 +37539,15 @@ return [
         [
 
             [
-                'address' => '仙桃市',
-                'start_year' => 1986,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '荆门市',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '仙桃市',
+                'start_year' => 1986,
+                'end_year' => 1993,
             ],
         ],
     422402 =>
@@ -38006,12 +38007,6 @@ return [
         [
 
             [
-                'address' => '恩施土家族苗族自治州',
-                'start_year' => 1993,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '恩施地区',
                 'start_year' => '',
                 'end_year' => 1982,
@@ -38021,6 +38016,12 @@ return [
                 'address' => '鄂西土家族苗族自治州',
                 'start_year' => 1983,
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '恩施土家族苗族自治州',
+                'start_year' => 1993,
+                'end_year' => '',
             ],
         ],
     422801 =>
@@ -38099,30 +38100,30 @@ return [
         [
 
             [
-                'address' => '来凤县',
-                'start_year' => 1983,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '来凤土家族自治县',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '来凤县',
+                'start_year' => 1983,
+                'end_year' => '',
             ],
         ],
     422828 =>
         [
 
             [
-                'address' => '鹤峰县',
-                'start_year' => 1983,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '鹤峰土家族自治县',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '鹤峰县',
+                'start_year' => 1983,
+                'end_year' => '',
             ],
         ],
     422921 =>
@@ -38318,15 +38319,15 @@ return [
         [
 
             [
-                'address' => '东区',
-                'start_year' => 1983,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '城东区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '东区',
+                'start_year' => 1983,
+                'end_year' => 1995,
             ],
 
             [
@@ -38339,15 +38340,15 @@ return [
         [
 
             [
-                'address' => '南区',
-                'start_year' => 1983,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '城南区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '南区',
+                'start_year' => 1983,
+                'end_year' => 1995,
             ],
 
             [
@@ -38366,30 +38367,30 @@ return [
             ],
 
             [
-                'address' => '岳麓区',
-                'start_year' => 1996,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '西区',
                 'start_year' => 1983,
                 'end_year' => 1995,
+            ],
+
+            [
+                'address' => '岳麓区',
+                'start_year' => 1996,
+                'end_year' => '',
             ],
         ],
     430105 =>
         [
 
             [
-                'address' => '北区',
-                'start_year' => 1983,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '城北区',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '北区',
+                'start_year' => 1983,
+                'end_year' => 1995,
             ],
 
             [
@@ -38534,15 +38535,15 @@ return [
         [
 
             [
-                'address' => '天元区',
-                'start_year' => 1997,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1996,
+            ],
+
+            [
+                'address' => '天元区',
+                'start_year' => 1997,
+                'end_year' => '',
             ],
         ],
     430219 =>
@@ -38594,15 +38595,15 @@ return [
         [
 
             [
-                'address' => '炎陵县',
-                'start_year' => 1994,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '酃县',
                 'start_year' => 1983,
                 'end_year' => 1993,
+            ],
+
+            [
+                'address' => '炎陵县',
+                'start_year' => 1994,
+                'end_year' => '',
             ],
         ],
     430281 =>
@@ -38633,15 +38634,15 @@ return [
         [
 
             [
-                'address' => '东区',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '雨湖区',
                 'start_year' => '',
                 'end_year' => '',
+            ],
+
+            [
+                'address' => '东区',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     430303 =>
@@ -38705,15 +38706,15 @@ return [
         [
 
             [
-                'address' => '湘潭县',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '邵东县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '湘潭县',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     430322 =>
@@ -38753,15 +38754,15 @@ return [
         [
 
             [
-                'address' => '湘潭市',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '衡阳市',
                 'start_year' => '',
                 'end_year' => '',
+            ],
+
+            [
+                'address' => '湘潭市',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     430402 =>
@@ -38966,15 +38967,15 @@ return [
         [
 
             [
-                'address' => '衡阳市',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '邵阳市',
                 'start_year' => '',
                 'end_year' => '',
+            ],
+
+            [
+                'address' => '衡阳市',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     430502 =>
@@ -38987,19 +38988,25 @@ return [
             ],
 
             [
-                'address' => '双清区',
-                'start_year' => 1997,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '江东区',
                 'start_year' => 1982,
                 'end_year' => 1983,
             ],
+
+            [
+                'address' => '双清区',
+                'start_year' => 1997,
+                'end_year' => '',
+            ],
         ],
     430503 =>
         [
+
+            [
+                'address' => '西区',
+                'start_year' => '',
+                'end_year' => 1996,
+            ],
 
             [
                 'address' => '城南区',
@@ -39012,41 +39019,35 @@ return [
                 'start_year' => 1997,
                 'end_year' => '',
             ],
-
-            [
-                'address' => '西区',
-                'start_year' => '',
-                'end_year' => 1996,
-            ],
         ],
     430504 =>
         [
-
-            [
-                'address' => '城北区',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
 
             [
                 'address' => '桥头区',
                 'start_year' => '',
                 'end_year' => 1986,
             ],
+
+            [
+                'address' => '城北区',
+                'start_year' => 1982,
+                'end_year' => 1983,
+            ],
         ],
     430511 =>
         [
 
             [
-                'address' => '北塔区',
-                'start_year' => 1997,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1996,
+            ],
+
+            [
+                'address' => '北塔区',
+                'start_year' => 1997,
+                'end_year' => '',
             ],
         ],
     430521 =>
@@ -39068,15 +39069,15 @@ return [
         [
 
             [
-                'address' => '新邵县',
-                'start_year' => 1984,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '衡南县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '新邵县',
+                'start_year' => 1984,
+                'end_year' => '',
             ],
         ],
     430523 =>
@@ -39128,30 +39129,30 @@ return [
         [
 
             [
-                'address' => '武冈县',
-                'start_year' => 1986,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '祁东县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '武冈县',
+                'start_year' => 1986,
+                'end_year' => 1993,
             ],
         ],
     430527 =>
         [
 
             [
-                'address' => '绥宁县',
-                'start_year' => 1986,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '耒阳县',
                 'start_year' => 1983,
                 'end_year' => 1983,
+            ],
+
+            [
+                'address' => '绥宁县',
+                'start_year' => 1986,
+                'end_year' => '',
             ],
         ],
     430528 =>
@@ -39209,30 +39210,30 @@ return [
         [
 
             [
-                'address' => '云溪区',
-                'start_year' => 1996,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '北区',
                 'start_year' => 1984,
                 'end_year' => 1995,
+            ],
+
+            [
+                'address' => '云溪区',
+                'start_year' => 1996,
+                'end_year' => '',
             ],
         ],
     430611 =>
         [
 
             [
-                'address' => '君山区',
-                'start_year' => 1996,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => 1984,
                 'end_year' => 1995,
+            ],
+
+            [
+                'address' => '君山区',
+                'start_year' => 1996,
+                'end_year' => '',
             ],
         ],
     430621 =>
@@ -40232,15 +40233,15 @@ return [
         [
 
             [
-                'address' => '娄底地区',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '涟源地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '娄底地区',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     432501 =>
@@ -40706,30 +40707,30 @@ return [
         [
 
             [
-                'address' => '怀化地区',
-                'start_year' => 1981,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '黔阳地区',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '怀化地区',
+                'start_year' => 1981,
+                'end_year' => 1996,
             ],
         ],
     433001 =>
         [
 
             [
-                'address' => '怀化市',
-                'start_year' => 1982,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '洪江市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '怀化市',
+                'start_year' => 1982,
+                'end_year' => 1996,
             ],
         ],
     433002 =>
@@ -40811,15 +40812,15 @@ return [
         [
 
             [
-                'address' => '芷江侗族自治县',
-                'start_year' => 1986,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '芷江县',
                 'start_year' => '',
                 'end_year' => 1985,
+            ],
+
+            [
+                'address' => '芷江侗族自治县',
+                'start_year' => 1986,
+                'end_year' => 1996,
             ],
         ],
     433028 =>
@@ -41138,15 +41139,15 @@ return [
         [
 
             [
-                'address' => '天河区',
-                'start_year' => 1988,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '芳村区',
                 'start_year' => 1985,
                 'end_year' => 1987,
+            ],
+
+            [
+                'address' => '天河区',
+                'start_year' => 1988,
+                'end_year' => '',
             ],
         ],
     440107 =>
@@ -41168,15 +41169,15 @@ return [
         [
 
             [
-                'address' => '白云区',
-                'start_year' => 1987,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '白云区',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     440112 =>
@@ -41372,15 +41373,15 @@ return [
         [
 
             [
-                'address' => '武江区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '浈江区',
                 'start_year' => 1984,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '武江区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     440204 =>
@@ -41948,15 +41949,15 @@ return [
         [
 
             [
-                'address' => '城区',
-                'start_year' => 1987,
-                'end_year' => 2001,
-            ],
-
-            [
                 'address' => '汾江区',
                 'start_year' => 1984,
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '城区',
+                'start_year' => 1987,
+                'end_year' => 2001,
             ],
         ],
     440603 =>
@@ -43598,15 +43599,15 @@ return [
         [
 
             [
-                'address' => '梅县市',
-                'start_year' => 1983,
-                'end_year' => 1987,
-            ],
-
-            [
                 'address' => '梅州市',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '梅县市',
+                'start_year' => 1983,
+                'end_year' => 1987,
             ],
         ],
     442421 =>
@@ -43802,14 +43803,14 @@ return [
         [
 
             [
-                'address' => '佛山地区',
-                'start_year' => 1982,
+                'address' => '韶关地区',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '韶关地区',
-                'start_year' => '',
+                'address' => '佛山地区',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43817,14 +43818,14 @@ return [
         [
 
             [
-                'address' => '三水县',
-                'start_year' => 1982,
+                'address' => '始兴县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '始兴县',
-                'start_year' => '',
+                'address' => '三水县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43832,14 +43833,14 @@ return [
         [
 
             [
-                'address' => '南海县',
-                'start_year' => 1982,
+                'address' => '南雄县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '南雄县',
-                'start_year' => '',
+                'address' => '南海县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43862,14 +43863,14 @@ return [
         [
 
             [
-                'address' => '中山县',
-                'start_year' => 1982,
+                'address' => '乐昌县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '乐昌县',
-                'start_year' => '',
+                'address' => '中山县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43877,14 +43878,14 @@ return [
         [
 
             [
-                'address' => '斗门县',
-                'start_year' => 1982,
+                'address' => '连县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '连县',
-                'start_year' => '',
+                'address' => '斗门县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43892,14 +43893,14 @@ return [
         [
 
             [
-                'address' => '新会县',
-                'start_year' => 1982,
+                'address' => '阳山县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '阳山县',
-                'start_year' => '',
+                'address' => '新会县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43907,14 +43908,14 @@ return [
         [
 
             [
-                'address' => '台山县',
-                'start_year' => 1982,
+                'address' => '英德县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '英德县',
-                'start_year' => '',
+                'address' => '台山县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -43922,14 +43923,14 @@ return [
         [
 
             [
-                'address' => '恩平县',
-                'start_year' => 1982,
+                'address' => '清远县',
+                'start_year' => '',
                 'end_year' => 1982,
             ],
 
             [
-                'address' => '清远县',
-                'start_year' => '',
+                'address' => '恩平县',
+                'start_year' => 1982,
                 'end_year' => 1982,
             ],
         ],
@@ -45314,6 +45315,12 @@ return [
         [
 
             [
+                'address' => '鸳江区',
+                'start_year' => '',
+                'end_year' => 1983,
+            ],
+
+            [
                 'address' => '市郊区',
                 'start_year' => 1984,
                 'end_year' => 2002,
@@ -45323,12 +45330,6 @@ return [
                 'address' => '长洲区',
                 'start_year' => 2003,
                 'end_year' => '',
-            ],
-
-            [
-                'address' => '鸳江区',
-                'start_year' => '',
-                'end_year' => 1983,
             ],
         ],
     450406 =>
@@ -46853,15 +46854,15 @@ return [
         [
 
             [
-                'address' => '罗城仫佬族自治县',
-                'start_year' => 1983,
-                'end_year' => 2001,
-            ],
-
-            [
                 'address' => '罗城县',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '罗城仫佬族自治县',
+                'start_year' => 1983,
+                'end_year' => 2001,
             ],
         ],
     452724 =>
@@ -47036,15 +47037,15 @@ return [
         [
 
             [
-                'address' => '五指山市',
-                'start_year' => 2001,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '通什市',
                 'start_year' => 1988,
                 'end_year' => 2000,
+            ],
+
+            [
+                'address' => '五指山市',
+                'start_year' => 2001,
+                'end_year' => 2002,
             ],
         ],
     460002 =>
@@ -48407,15 +48408,15 @@ return [
         [
 
             [
-                'address' => '万盛区',
-                'start_year' => 1993,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '南桐矿区',
                 'start_year' => '',
                 'end_year' => 1992,
+            ],
+
+            [
+                'address' => '万盛区',
+                'start_year' => 1993,
+                'end_year' => 1996,
             ],
         ],
     510217 =>
@@ -48647,15 +48648,15 @@ return [
         [
 
             [
-                'address' => '攀枝花市',
-                'start_year' => 1987,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '渡口市',
                 'start_year' => '',
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '攀枝花市',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     510402 =>
@@ -48680,15 +48681,15 @@ return [
         [
 
             [
-                'address' => '仁和区',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '仁和区',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     510421 =>
@@ -49049,15 +49050,15 @@ return [
         [
 
             [
-                'address' => '利州区',
-                'start_year' => 2007,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '市中区',
                 'start_year' => 1985,
                 'end_year' => 2006,
+            ],
+
+            [
+                'address' => '利州区',
+                'start_year' => 2007,
+                'end_year' => '',
             ],
         ],
     510811 =>
@@ -50195,60 +50196,60 @@ return [
         [
 
             [
-                'address' => '永川地区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '温江地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '永川地区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512121 =>
         [
 
             [
-                'address' => '江津县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '温江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '江津县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512122 =>
         [
 
             [
-                'address' => '合川县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '郫县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '合川县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512123 =>
         [
 
             [
-                'address' => '潼南县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '灌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '潼南县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512124 =>
@@ -50285,15 +50286,15 @@ return [
         [
 
             [
-                'address' => '大足县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '广汉县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大足县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512127 =>
@@ -50366,30 +50367,30 @@ return [
         [
 
             [
-                'address' => '万县地区',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '绵阳地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万县地区',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512201 =>
         [
 
             [
-                'address' => '万县市',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '绵阳市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万县市',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512202 =>
@@ -50405,30 +50406,30 @@ return [
         [
 
             [
-                'address' => '万县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '江油县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512222 =>
         [
 
             [
-                'address' => '开县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '青川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '开县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512223 =>
@@ -50465,15 +50466,15 @@ return [
         [
 
             [
-                'address' => '云阳县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '旺苍县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '云阳县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512226 =>
@@ -50495,15 +50496,15 @@ return [
         [
 
             [
-                'address' => '巫山县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '梓潼县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '巫山县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512228 =>
@@ -50525,15 +50526,15 @@ return [
         [
 
             [
-                'address' => '城口县',
-                'start_year' => 1982,
-                'end_year' => 1991,
-            ],
-
-            [
                 'address' => '盐亭县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '城口县',
+                'start_year' => 1982,
+                'end_year' => 1991,
             ],
         ],
     512230 =>
@@ -50681,34 +50682,40 @@ return [
         [
 
             [
-                'address' => '南川县',
-                'start_year' => 1982,
-                'end_year' => 1993,
-            ],
-
-            [
                 'address' => '安岳县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南川县',
+                'start_year' => 1982,
+                'end_year' => 1993,
             ],
         ],
     512324 =>
         [
 
             [
-                'address' => '丰都县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '威远县',
                 'start_year' => '',
                 'end_year' => 1981,
             ],
+
+            [
+                'address' => '丰都县',
+                'start_year' => 1982,
+                'end_year' => 1994,
+            ],
         ],
     512325 =>
         [
+
+            [
+                'address' => '资中县',
+                'start_year' => '',
+                'end_year' => 1981,
+            ],
 
             [
                 'address' => '石柱县',
@@ -50721,30 +50728,30 @@ return [
                 'start_year' => 1983,
                 'end_year' => 1987,
             ],
-
-            [
-                'address' => '资中县',
-                'start_year' => '',
-                'end_year' => 1981,
-            ],
         ],
     512326 =>
         [
-
-            [
-                'address' => '武隆县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
 
             [
                 'address' => '资阳县',
                 'start_year' => '',
                 'end_year' => 1981,
             ],
+
+            [
+                'address' => '武隆县',
+                'start_year' => 1982,
+                'end_year' => 1994,
+            ],
         ],
     512327 =>
         [
+
+            [
+                'address' => '简阳县',
+                'start_year' => '',
+                'end_year' => 1981,
+            ],
 
             [
                 'address' => '彭水县',
@@ -50756,12 +50763,6 @@ return [
                 'address' => '彭水苗族土家族自治县',
                 'start_year' => 1983,
                 'end_year' => 1987,
-            ],
-
-            [
-                'address' => '简阳县',
-                'start_year' => '',
-                'end_year' => 1981,
             ],
         ],
     512328 =>
@@ -50813,30 +50814,30 @@ return [
         [
 
             [
-                'address' => '内江地区',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '宜宾地区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '内江地区',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512401 =>
         [
 
             [
-                'address' => '内江市',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '宜宾市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '内江市',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512402 =>
@@ -50852,15 +50853,15 @@ return [
         [
 
             [
-                'address' => '内江县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '宜宾县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '内江县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512422 =>
@@ -50882,15 +50883,15 @@ return [
         [
 
             [
-                'address' => '资阳县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '隆昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '资阳县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512424 =>
@@ -50912,15 +50913,15 @@ return [
         [
 
             [
-                'address' => '威远县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '江安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '威远县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512426 =>
@@ -50942,30 +50943,30 @@ return [
         [
 
             [
-                'address' => '安岳县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '泸县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安岳县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512428 =>
         [
 
             [
-                'address' => '乐至县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '合江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乐至县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512429 =>
@@ -51098,15 +51099,15 @@ return [
         [
 
             [
-                'address' => '富顺县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '洪雅县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '富顺县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512523 =>
@@ -51128,45 +51129,45 @@ return [
         [
 
             [
-                'address' => '纳溪县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '青神县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '纳溪县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512525 =>
         [
 
             [
-                'address' => '叙永县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '眉山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '叙永县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512526 =>
         [
 
             [
-                'address' => '古蔺县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '彭山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '古蔺县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512527 =>
@@ -51203,15 +51204,15 @@ return [
         [
 
             [
-                'address' => '江安县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '犍为县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '江安县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     512530 =>
@@ -51248,15 +51249,15 @@ return [
         [
 
             [
-                'address' => '筠连县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '金口河工农区',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '筠连县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     512533 =>
@@ -51278,15 +51279,15 @@ return [
         [
 
             [
-                'address' => '兴文县',
-                'start_year' => 1982,
-                'end_year' => 1995,
-            ],
-
-            [
                 'address' => '马边县',
                 'start_year' => 1981,
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '兴文县',
+                'start_year' => 1982,
+                'end_year' => 1995,
             ],
         ],
     512535 =>
@@ -51302,9 +51303,9 @@ return [
         [
 
             [
-                'address' => '乐山地区',
-                'start_year' => 1982,
-                'end_year' => 1984,
+                'address' => '江津地区',
+                'start_year' => '',
+                'end_year' => 1980,
             ],
 
             [
@@ -51314,9 +51315,9 @@ return [
             ],
 
             [
-                'address' => '江津地区',
-                'start_year' => '',
-                'end_year' => 1980,
+                'address' => '乐山地区',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512601 =>
@@ -51332,15 +51333,15 @@ return [
         [
 
             [
-                'address' => '仁寿县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '永川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '仁寿县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512622 =>
@@ -51362,60 +51363,60 @@ return [
         [
 
             [
-                'address' => '犍为县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '铜梁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '犍为县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512624 =>
         [
 
             [
-                'address' => '井研县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '合川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '井研县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512625 =>
         [
 
             [
-                'address' => '峨眉县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '潼南县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '峨眉县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512626 =>
         [
 
             [
-                'address' => '夹江县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '璧山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '夹江县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512627 =>
@@ -51437,15 +51438,15 @@ return [
         [
 
             [
-                'address' => '彭山县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '荣昌县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '彭山县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512629 =>
@@ -51578,90 +51579,90 @@ return [
         [
 
             [
-                'address' => '广汉县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '石柱县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '广汉县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512725 =>
         [
 
             [
-                'address' => '什邡县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '秀山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '什邡县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512726 =>
         [
 
             [
-                'address' => '彭县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '酉阳县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '彭县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512727 =>
         [
 
             [
-                'address' => '灌县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '黔江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '灌县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512728 =>
         [
 
             [
-                'address' => '崇庆县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '彭水县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '崇庆县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512729 =>
         [
 
             [
-                'address' => '大邑县',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '武隆县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大邑县',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     512730 =>
@@ -51815,15 +51816,15 @@ return [
         [
 
             [
-                'address' => '剑阁县',
-                'start_year' => 1982,
-                'end_year' => 1984,
-            ],
-
-            [
                 'address' => '奉节县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '剑阁县',
+                'start_year' => 1982,
+                'end_year' => 1984,
             ],
         ],
     512827 =>
@@ -51992,30 +51993,30 @@ return [
         [
 
             [
-                'address' => '南部县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '苍溪县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南部县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     512923 =>
         [
 
             [
-                'address' => '岳池县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '阆中县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '岳池县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     512924 =>
@@ -52052,45 +52053,45 @@ return [
         [
 
             [
-                'address' => '蓬安县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '西充县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '蓬安县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     512927 =>
         [
 
             [
-                'address' => '仪陇县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '营山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '仪陇县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     512928 =>
         [
 
             [
-                'address' => '武胜县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '蓬安县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '武胜县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     512929 =>
@@ -52229,60 +52230,60 @@ return [
         [
 
             [
-                'address' => '万源县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '开江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '万源县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     513025 =>
         [
 
             [
-                'address' => '通江县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '邻水县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '通江县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     513026 =>
         [
 
             [
-                'address' => '南江县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '大竹县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '南江县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     513027 =>
         [
 
             [
-                'address' => '巴中县',
-                'start_year' => 1982,
-                'end_year' => 1992,
-            ],
-
-            [
                 'address' => '渠县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '巴中县',
+                'start_year' => 1982,
+                'end_year' => 1992,
             ],
         ],
     513028 =>
@@ -52304,15 +52305,15 @@ return [
         [
 
             [
-                'address' => '大竹县',
-                'start_year' => 1982,
-                'end_year' => 1998,
-            ],
-
-            [
                 'address' => '巴中县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '大竹县',
+                'start_year' => 1982,
+                'end_year' => 1998,
             ],
         ],
     513030 =>
@@ -52385,15 +52386,15 @@ return [
         [
 
             [
-                'address' => '名山县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '芦山县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '名山县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     513123 =>
@@ -52415,15 +52416,15 @@ return [
         [
 
             [
-                'address' => '汉源县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '荥经县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '汉源县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     513125 =>
@@ -52445,15 +52446,15 @@ return [
         [
 
             [
-                'address' => '天全县',
-                'start_year' => 1982,
-                'end_year' => 1999,
-            ],
-
-            [
                 'address' => '石棉县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '天全县',
+                'start_year' => 1982,
+                'end_year' => 1999,
             ],
         ],
     513127 =>
@@ -52484,15 +52485,15 @@ return [
         [
 
             [
-                'address' => '阿坝藏族羌族自治州',
-                'start_year' => 1987,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '阿坝藏族自治州',
                 'start_year' => '',
                 'end_year' => 1986,
+            ],
+
+            [
+                'address' => '阿坝藏族羌族自治州',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     513201 =>
@@ -52514,39 +52515,39 @@ return [
         [
 
             [
-                'address' => '汶川县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '马尔康县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '汶川县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513222 =>
         [
 
             [
-                'address' => '理县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '红原县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '理县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513223 =>
         [
 
             [
-                'address' => '茂县',
-                'start_year' => 1987,
-                'end_year' => '',
+                'address' => '阿坝县',
+                'start_year' => '',
+                'end_year' => 1981,
             ],
 
             [
@@ -52556,33 +52557,33 @@ return [
             ],
 
             [
-                'address' => '阿坝县',
-                'start_year' => '',
-                'end_year' => 1981,
+                'address' => '茂县',
+                'start_year' => 1987,
+                'end_year' => '',
             ],
         ],
     513224 =>
         [
 
             [
-                'address' => '松潘县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '若尔盖县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '松潘县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513225 =>
         [
 
             [
-                'address' => '九寨沟县',
-                'start_year' => 1997,
-                'end_year' => '',
+                'address' => '黑水县',
+                'start_year' => '',
+                'end_year' => 1981,
             ],
 
             [
@@ -52592,9 +52593,9 @@ return [
             ],
 
             [
-                'address' => '黑水县',
-                'start_year' => '',
-                'end_year' => 1981,
+                'address' => '九寨沟县',
+                'start_year' => 1997,
+                'end_year' => '',
             ],
         ],
     513226 =>
@@ -52661,15 +52662,15 @@ return [
         [
 
             [
-                'address' => '壤塘县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '理县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '壤塘县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513231 =>
@@ -52691,15 +52692,15 @@ return [
         [
 
             [
-                'address' => '若尔盖县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '金川县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '若尔盖县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513233 =>
@@ -52748,45 +52749,45 @@ return [
         [
 
             [
-                'address' => '泸定县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '炉霍县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '泸定县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513323 =>
         [
 
             [
-                'address' => '丹巴县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '甘孜县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '丹巴县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513324 =>
         [
 
             [
-                'address' => '九龙县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '新龙县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '九龙县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513325 =>
@@ -52823,45 +52824,45 @@ return [
         [
 
             [
-                'address' => '炉霍县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '石渠县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '炉霍县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513328 =>
         [
 
             [
-                'address' => '甘孜县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '色达县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '甘孜县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513329 =>
         [
 
             [
-                'address' => '新龙县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '泸定县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '新龙县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513330 =>
@@ -52898,30 +52899,30 @@ return [
         [
 
             [
-                'address' => '石渠县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '雅江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '石渠县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513333 =>
         [
 
             [
-                'address' => '色达县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '道孚县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '色达县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513334 =>
@@ -52952,15 +52953,15 @@ return [
         [
 
             [
-                'address' => '乡城县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '稻城县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '乡城县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513337 =>
@@ -53063,30 +53064,30 @@ return [
         [
 
             [
-                'address' => '会理县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '马边县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '会理县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513426 =>
         [
 
             [
-                'address' => '会东县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '雷波县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '会东县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513427 =>
@@ -53147,45 +53148,45 @@ return [
         [
 
             [
-                'address' => '昭觉县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '美姑县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '昭觉县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513432 =>
         [
 
             [
-                'address' => '喜德县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '金阳县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '喜德县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513433 =>
         [
 
             [
-                'address' => '冕宁县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '布拖县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '冕宁县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513434 =>
@@ -53222,15 +53223,15 @@ return [
         [
 
             [
-                'address' => '美姑县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '越西县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '美姑县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     513437 =>
@@ -54365,30 +54366,30 @@ return [
         [
 
             [
-                'address' => '道真仡佬族苗族自治县',
-                'start_year' => 1986,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '道真县',
                 'start_year' => '',
                 'end_year' => 1985,
+            ],
+
+            [
+                'address' => '道真仡佬族苗族自治县',
+                'start_year' => 1986,
+                'end_year' => 1996,
             ],
         ],
     522126 =>
         [
 
             [
-                'address' => '务川仡佬族苗族自治县',
-                'start_year' => 1986,
-                'end_year' => 1996,
-            ],
-
-            [
                 'address' => '务川县',
                 'start_year' => '',
                 'end_year' => 1985,
+            ],
+
+            [
+                'address' => '务川仡佬族苗族自治县',
+                'start_year' => 1986,
+                'end_year' => 1996,
             ],
         ],
     522127 =>
@@ -54485,15 +54486,15 @@ return [
         [
 
             [
-                'address' => '玉屏侗族自治县',
-                'start_year' => 1983,
-                'end_year' => 2010,
-            ],
-
-            [
                 'address' => '玉屏县',
                 'start_year' => '',
                 'end_year' => 1982,
+            ],
+
+            [
+                'address' => '玉屏侗族自治县',
+                'start_year' => 1983,
+                'end_year' => 2010,
             ],
         ],
     522224 =>
@@ -54635,60 +54636,60 @@ return [
         [
 
             [
-                'address' => '贞丰县',
-                'start_year' => 1981,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '贞丰布依族苗族自治县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '贞丰县',
+                'start_year' => 1981,
+                'end_year' => '',
             ],
         ],
     522326 =>
         [
 
             [
-                'address' => '望谟县',
-                'start_year' => 1981,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '望谟布依族苗族自治县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '望谟县',
+                'start_year' => 1981,
+                'end_year' => '',
             ],
         ],
     522327 =>
         [
 
             [
-                'address' => '册亨县',
-                'start_year' => 1981,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '册亨布依族自治县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '册亨县',
+                'start_year' => 1981,
+                'end_year' => '',
             ],
         ],
     522328 =>
         [
 
             [
-                'address' => '安龙县',
-                'start_year' => 1981,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '安龙布依族苗族自治县',
                 'start_year' => '',
                 'end_year' => 1980,
+            ],
+
+            [
+                'address' => '安龙县',
+                'start_year' => 1981,
+                'end_year' => '',
             ],
         ],
     522400 =>
@@ -55286,15 +55287,15 @@ return [
         [
 
             [
-                'address' => '呈贡县',
-                'start_year' => 1982,
-                'end_year' => 2010,
-            ],
-
-            [
                 'address' => '安宁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '呈贡县',
+                'start_year' => 1982,
+                'end_year' => 2010,
             ],
         ],
     530122 =>
@@ -55316,30 +55317,30 @@ return [
         [
 
             [
-                'address' => '安宁县',
-                'start_year' => 1982,
-                'end_year' => 1994,
-            ],
-
-            [
                 'address' => '富民县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '安宁县',
+                'start_year' => 1982,
+                'end_year' => 1994,
             ],
         ],
     530124 =>
         [
 
             [
-                'address' => '富民县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '晋宁县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '富民县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     530125 =>
@@ -55355,15 +55356,15 @@ return [
         [
 
             [
-                'address' => '石林彝族自治县',
-                'start_year' => 1998,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '路南彝族自治县',
                 'start_year' => 1983,
                 'end_year' => 1997,
+            ],
+
+            [
+                'address' => '石林彝族自治县',
+                'start_year' => 1998,
+                'end_year' => '',
             ],
         ],
     530127 =>
@@ -55877,30 +55878,30 @@ return [
         [
 
             [
-                'address' => '思茅区',
-                'start_year' => 2007,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '翠云区',
                 'start_year' => 2003,
                 'end_year' => 2006,
+            ],
+
+            [
+                'address' => '思茅区',
+                'start_year' => 2007,
+                'end_year' => '',
             ],
         ],
     530821 =>
         [
 
             [
-                'address' => '宁洱哈尼族彝族自治县',
-                'start_year' => 2007,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '普洱哈尼族彝族自治县',
                 'start_year' => 2003,
                 'end_year' => 2006,
+            ],
+
+            [
+                'address' => '宁洱哈尼族彝族自治县',
+                'start_year' => 2007,
+                'end_year' => '',
             ],
         ],
     530822 =>
@@ -56852,15 +56853,15 @@ return [
         [
 
             [
-                'address' => '景谷傣族彝族自治县',
-                'start_year' => 1985,
-                'end_year' => 2002,
-            ],
-
-            [
                 'address' => '景谷县',
                 'start_year' => '',
                 'end_year' => 1984,
+            ],
+
+            [
+                'address' => '景谷傣族彝族自治县',
+                'start_year' => 1985,
+                'end_year' => 2002,
             ],
         ],
     532726 =>
@@ -57323,45 +57324,45 @@ return [
         [
 
             [
-                'address' => '泸水县',
-                'start_year' => 1982,
-                'end_year' => 2015,
-            ],
-
-            [
                 'address' => '碧江县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '泸水县',
+                'start_year' => 1982,
+                'end_year' => 2015,
             ],
         ],
     533322 =>
         [
 
             [
-                'address' => '碧江县',
-                'start_year' => 1982,
-                'end_year' => 1985,
-            ],
-
-            [
                 'address' => '福贡县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '碧江县',
+                'start_year' => 1982,
+                'end_year' => 1985,
             ],
         ],
     533323 =>
         [
 
             [
-                'address' => '福贡县',
-                'start_year' => 1982,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '贡山独龙族怒族自治县',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '福贡县',
+                'start_year' => 1982,
+                'end_year' => '',
             ],
         ],
     533324 =>
@@ -57440,15 +57441,15 @@ return [
         [
 
             [
-                'address' => '维西傈僳族自治县',
-                'start_year' => 1985,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '维西县',
                 'start_year' => '',
                 'end_year' => 1984,
+            ],
+
+            [
+                'address' => '维西傈僳族自治县',
+                'start_year' => 1985,
+                'end_year' => '',
             ],
         ],
     533500 =>
@@ -58469,15 +58470,15 @@ return [
         [
 
             [
-                'address' => '琼结县',
-                'start_year' => 1986,
-                'end_year' => 2015,
-            ],
-
-            [
                 'address' => '穷结县',
                 'start_year' => '',
                 'end_year' => 1985,
+            ],
+
+            [
+                'address' => '琼结县',
+                'start_year' => 1986,
+                'end_year' => 2015,
             ],
         ],
     542226 =>
@@ -59264,15 +59265,15 @@ return [
         [
 
             [
-                'address' => '印台区',
-                'start_year' => 2000,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 1999,
+            ],
+
+            [
+                'address' => '印台区',
+                'start_year' => 2000,
+                'end_year' => '',
             ],
         ],
     610204 =>
@@ -63443,15 +63444,15 @@ return [
         [
 
             [
-                'address' => '兴庆区',
-                'start_year' => 2002,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '郊区',
                 'start_year' => '',
                 'end_year' => 2001,
+            ],
+
+            [
+                'address' => '兴庆区',
+                'start_year' => 2002,
+                'end_year' => '',
             ],
         ],
     640105 =>
@@ -63536,12 +63537,6 @@ return [
         [
 
             [
-                'address' => '惠农区',
-                'start_year' => 2003,
-                'end_year' => '',
-            ],
-
-            [
                 'address' => '石咀山区',
                 'start_year' => '',
                 'end_year' => 1986,
@@ -63551,6 +63546,12 @@ return [
                 'address' => '石嘴山区',
                 'start_year' => 1987,
                 'end_year' => 2002,
+            ],
+
+            [
+                'address' => '惠农区',
+                'start_year' => 2003,
+                'end_year' => '',
             ],
         ],
     640211 =>
@@ -64385,30 +64386,30 @@ return [
         [
 
             [
-                'address' => '伊宁市',
-                'start_year' => 1982,
-                'end_year' => 1983,
-            ],
-
-            [
                 'address' => '奎屯市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '伊宁市',
+                'start_year' => 1982,
+                'end_year' => 1983,
             ],
         ],
     652402 =>
         [
 
             [
-                'address' => '一区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
-
-            [
                 'address' => '伊宁市',
                 'start_year' => '',
                 'end_year' => 1981,
+            ],
+
+            [
+                'address' => '一区',
+                'start_year' => 1982,
+                'end_year' => 1982,
             ],
         ],
     652403 =>
