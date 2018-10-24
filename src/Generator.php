@@ -35,27 +35,27 @@ trait Generator
     private function _generatorBirthdayCode($birthday)
     {
         if ($birthday && is_numeric($birthday)) {
-            $year = $this->_getStrPad(substr($birthday, 0, 4), 4);
-            $month = $this->_getStrPad(substr($birthday, 4, 2), 2);
-            $day = $this->_getStrPad(substr($birthday, 6, 2), 2);
+            $year = str_pad(substr($birthday, 0, 4), 4, '0', false);
+            $month = str_pad(substr($birthday, 4, 2), 2, '0', false);
+            $day = str_pad(substr($birthday, 6, 2), 2, '0', false);
         }
         if (!isset($year) || empty($year) || $year < 1800 || $year > date('Y')) {
-            $year = $this->_getStrPad(rand(50, 99), 2, '0');
+            $year = str_pad(rand(50, 99), 2, '0', false);
             $year = '19'.$year;
         }
 
         if (!isset($month) || empty($month) || $month < 1 || $month > 12) {
-            $month = $this->_getStrPad(rand(1, 12), 2, '0');
+            $month = str_pad(rand(1, 12), 2, '0', false);
         }
 
         if (!isset($day) || empty($day) || $day < 1 || $day > 31) {
-            $day = $this->_getStrPad(rand(1, 28), 2, '0');
+            $day = str_pad(rand(1, 28), 2, '0', false);
         }
 
         if (!checkdate($month, $day, $year)) {
-            $year = $this->_getStrPad(rand(50, 99), 2, '0');
-            $month = $this->_getStrPad(rand(1, 12), 2, '0');
-            $day = $this->_getStrPad(rand(1, 28), 2, '0');
+            $year = str_pad(rand(50, 99), 2, '0', false);
+            $month = str_pad(rand(1, 12), 2, '0', false);
+            $day = str_pad(rand(1, 28), 2, '0', false);
         }
 
         return $year.$month.$day;

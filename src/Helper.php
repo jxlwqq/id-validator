@@ -114,20 +114,4 @@ trait Helper
 
         return $chineseZodiacList[$key];
     }
-
-
-    /**
-     * 获取数字补位.
-     *
-     * @param string|int $str   字符串
-     * @param int        $len   长度
-     * @param string     $chr   补位值
-     * @param bool       $right 左右
-     *
-     * @return string
-     */
-    private function _getStrPad($str, $len = 2, $chr = '0', $right = false)
-    {
-        return str_pad((string) $str, $len, $chr, $right === true ? STR_PAD_RIGHT : STR_PAD_LEFT);
-    }
 }
