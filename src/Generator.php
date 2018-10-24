@@ -32,30 +32,28 @@ trait Generator
      *
      * @return string
      */
-    private function _generatorBirthdayCode($birthday)
+    public function _generatorBirthdayCode($birthday)
     {
-        if ($birthday && is_numeric($birthday)) {
-            $year = str_pad(substr($birthday, 0, 4), 4, '0', STR_PAD_LEFT);
-            $month = str_pad(substr($birthday, 4, 2), 2, '0', STR_PAD_LEFT);
-            $day = str_pad(substr($birthday, 6, 2), 2, '0', STR_PAD_LEFT);
-        }
-        if (!isset($year) || empty($year) || $year < 1800 || $year > date('Y')) {
-            $year = str_pad(rand(50, 99), 2, '0', STR_PAD_LEFT);
-            $year = '19'.$year;
+        $year = $this->_datePad(substr($birthday, 0, 4), 'year');
+        $month = $this->_datePad(substr($birthday, 4, 2), 'month');
+        $day = $this->_datePad(substr($birthday, 6, 2), 'day');
+
+        if ($year < 1800 || $year > date('Y')) {
+            $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
         }
 
-        if (!isset($month) || empty($month) || $month < 1 || $month > 12) {
-            $month = str_pad(rand(1, 12), 2, '0', STR_PAD_LEFT);
+        if ($month < 1 || $month > 12) {
+            $month = $this->_datePad(rand(1, 12), 'month');
         }
 
-        if (!isset($day) || empty($day) || $day < 1 || $day > 31) {
-            $day = str_pad(rand(1, 28), 2, '0', STR_PAD_LEFT);
+        if ($day < 1 || $day > 31) {
+            $day = $this->_datePad(rand(1, 28), 'day');
         }
 
         if (!checkdate($month, $day, $year)) {
-            $year = str_pad(rand(50, 99), 2, '0', STR_PAD_LEFT);
-            $month = str_pad(rand(1, 12), 2, '0', STR_PAD_LEFT);
-            $day = str_pad(rand(1, 28), 2, '0', STR_PAD_LEFT);
+            $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
+            $month = $this->_datePad(rand(1, 12), 'month');
+            $day = $this->_datePad(rand(1, 28), 'day');
         }
 
         return $year.$month.$day;
@@ -165,5 +163,20 @@ trait Generator
         $result = preg_grep($pattern, $keys);
 
         return $result[array_rand($result)];
+    }
+
+    /**
+     * 日期补全.
+     *
+     * @param string|int $date 日期
+     * @param string     $type 类型
+     *
+     * @return string
+     */
+    private function _datePad($date, $type = 'year')
+    {
+        $padLength = $type == 'year' ? 4: 2;
+        $newDate = str_pad($date, $padLength, '0', STR_PAD_LEFT);
+        return $newDate;
     }
 }
