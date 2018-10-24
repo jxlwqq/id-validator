@@ -4,6 +4,7 @@
 
 * [Python 版本](https://github.com/jxlwqq/id-validator.py)
 * [Ruby 版本](https://github.com/renyijiu/id_validator)
+* [JavaScript 版本](https://github.com/mc-zone/IDValidator)
 
 
 [![Build Status](https://travis-ci.org/jxlwqq/id-validator.svg?branch=master)](https://travis-ci.org/jxlwqq/id-validator)
@@ -99,11 +100,6 @@ $idValidator->upgradeId('610104620927690'); // 15 位号码升级为 18 位
 ```
 
 ## 参考资料
-* ~~GB 11643-1999 公民身份证号码~~
-
-* ~~GB 2260-1995 中华人民共和国行政区划代码~~
-
-* [IDValidator JavaScript 版本](https://github.com/mc-zone/IDValidator)
 
 * [中华人民共和国公民身份号码](https://zh.wikipedia.org/wiki/中华人民共和国公民身份号码)
 
