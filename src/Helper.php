@@ -115,18 +115,6 @@ trait Helper
         return $chineseZodiacList[$key];
     }
 
-    /**
-     * 生成随机数.
-     *
-     * @param int $max 最大值
-     * @param int $min 最小值
-     *
-     * @return int
-     */
-    private function _getRandInt($max, $min = 1)
-    {
-        return rand($min, $max);
-    }
 
     /**
      * 获取数字补位.

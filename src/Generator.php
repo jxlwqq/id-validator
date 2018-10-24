@@ -16,7 +16,7 @@ trait Generator
      */
     private function _generatorOrderCode($sex)
     {
-        $orderCode = $this->_getRandInt(999, 111);
+        $orderCode = rand(111, 999);
 
         if ($sex !== null && $sex !== $orderCode % 2) {
             $orderCode -= 1;
@@ -40,22 +40,22 @@ trait Generator
             $day = $this->_getStrPad(substr($birthday, 6, 2), 2);
         }
         if (!isset($year) || empty($year) || $year < 1800 || $year > date('Y')) {
-            $year = $this->_getStrPad($this->_getRandInt(99, 50), 2, '0');
+            $year = $this->_getStrPad(rand(50, 99), 2, '0');
             $year = '19'.$year;
         }
 
         if (!isset($month) || empty($month) || $month < 1 || $month > 12) {
-            $month = $this->_getStrPad($this->_getRandInt(12, 1), 2, '0');
+            $month = $this->_getStrPad(rand(1, 12), 2, '0');
         }
 
         if (!isset($day) || empty($day) || $day < 1 || $day > 31) {
-            $day = $this->_getStrPad($this->_getRandInt(28, 1), 2, '0');
+            $day = $this->_getStrPad(rand(1, 28), 2, '0');
         }
 
         if (!checkdate($month, $day, $year)) {
-            $year = $this->_getStrPad($this->_getRandInt(99, 50), 2, '0');
-            $month = $this->_getStrPad($this->_getRandInt(12, 1), 2, '0');
-            $day = $this->_getStrPad($this->_getRandInt(28, 1), 2, '0');
+            $year = $this->_getStrPad(rand(50, 99), 2, '0');
+            $month = $this->_getStrPad(rand(1, 12), 2, '0');
+            $day = $this->_getStrPad(rand(1, 28), 2, '0');
         }
 
         return $year.$month.$day;
