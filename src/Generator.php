@@ -32,7 +32,7 @@ trait Generator
      *
      * @return string
      */
-    public function _generatorBirthdayCode($birthday)
+    private function _generatorBirthdayCode($birthday)
     {
         $year = $this->_datePad(substr($birthday, 0, 4), 'year');
         $month = $this->_datePad(substr($birthday, 4, 2), 'month');
