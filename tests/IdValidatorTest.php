@@ -27,9 +27,9 @@ class IdValidatorTest extends TestCase
     {
         $this->assertFalse($this->idValidator->isValid('44030819990110'));     // 号码位数不合法
         $this->assertFalse($this->idValidator->isValid('111111199901101512')); // 地址码不合法
-        $this->assertFalse($this->idValidator->isValid('440308199902301512')); // 出生日期码错不合法
+        $this->assertFalse($this->idValidator->isValid('440308199902301512')); // 出生日期码不合法
         $this->assertFalse($this->idValidator->isValid('440308199901101513')); // 验证码不合法
-        $this->assertFalse($this->idValidator->isValid('610104620932690'));    // 验证码不合法
+        $this->assertFalse($this->idValidator->isValid('610104620932690'));    // 出生日期码不合法
         $this->assertTrue($this->idValidator->isValid('440308199901101512'));
         $this->assertTrue($this->idValidator->isValid('500154199301135886'));
         $this->assertTrue($this->idValidator->isValid('610104620927690'));
