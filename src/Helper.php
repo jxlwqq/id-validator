@@ -57,15 +57,12 @@ trait Helper
         $address = '';
         if (isset($this->_addressCodeTimeline[$addressCode])) {
             $timeline = $this->_addressCodeTimeline[$addressCode];
-            $firstStartYear = $timeline[0]['start_year'];
             $year = substr($birthdayCode, 0, 4);
-            if ($year < $firstStartYear) {
-                $address = $timeline[0]['address'];
-            } else {
-                foreach ($timeline as $val) {
-                    if ($year >= $val['start_year']) {
-                        $address = $val['address'];
-                    }
+            foreach ($timeline as $key => $val) {
+                if (($key == 0 && $year < $val['start_year']) || $year >= $val['start_year']) {
+                    $address = $val['address'];
+                } else {
+                    break;
                 }
             }
         }
