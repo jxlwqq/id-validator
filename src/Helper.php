@@ -61,8 +61,6 @@ trait Helper
             foreach ($timeline as $key => $val) {
                 if (($key == 0 && $year < $val['start_year']) || $year >= $val['start_year']) {
                     $address = $val['address'];
-                } else {
-                    break;
                 }
             }
         }
