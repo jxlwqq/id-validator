@@ -54,15 +54,16 @@ $idValidator->getInfo('610104620927690');    // 15 位
 
 ```php
 [
-'addressCode'   => '440308',          // 地址码   
-'abandoned'     => 0,                 // 地址码是否废弃，1 为废弃的，0 为正在使用的
-'address'       => '广东省深圳市盐田区', // 地址
-'birthdayCode'  => '1999-01-10',      // 出生日期
-'constellation' => '水瓶座',           // 星座
-'chineseZodiac' => '卯兔',             // 生肖
-'sex'           => 1,                 // 性别，1 为男性，0 为女性
-'length'        => 18,                // 号码长度
-'checkBit'      => '2',               // 校验码
+'addressCode'   => '440308',                    // 地址码   
+'abandoned'     => 0,                           // 地址码是否废弃，1 为废弃的，0 为正在使用的
+'address'       => '广东省深圳市盐田区',           // 地址
+'address_tree'  => ['广东省', '深圳市', '盐田区']  // 省市区三级列表
+'birthdayCode'  => '1999-01-10',                // 出生日期
+'constellation' => '水瓶座',                     // 星座
+'chineseZodiac' => '卯兔',                       // 生肖
+'sex'           => 1,                           // 性别，1 为男性，0 为女性
+'length'        => 18,                          // 号码长度
+'checkBit'      => '2',                         // 校验码
 ]
 ```
 
@@ -124,6 +125,8 @@ $idValidator->upgradeId('610104620927690'); // 15 位号码升级为 18 位
 * 1.4.2 `fakeId()` 方法增加可选参数；
 
 * 1.4.11 支持 15 位身份证号码升级为 18 位；
+
+* 1.4.18 `getInfo()` 返回值新增省市区三级列表
 
 ## License
 MIT
