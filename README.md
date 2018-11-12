@@ -57,7 +57,7 @@ $idValidator->getInfo('610104620927690');    // 15 位
 'addressCode'   => '440308',                    // 地址码   
 'abandoned'     => 0,                           // 地址码是否废弃，1 为废弃的，0 为正在使用的
 'address'       => '广东省深圳市盐田区',           // 地址
-'address_tree'  => ['广东省', '深圳市', '盐田区']  // 省市区三级列表
+'addressTree'  => ['广东省', '深圳市', '盐田区']  // 省市区三级列表
 'birthdayCode'  => '1999-01-10',                // 出生日期
 'constellation' => '水瓶座',                     // 星座
 'chineseZodiac' => '卯兔',                       // 生肖

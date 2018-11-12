@@ -73,7 +73,7 @@ class IdValidator
             'addressCode'   => $code['addressCode'],
             'abandoned'     => isset($this->_addressCodeList[$code['addressCode']]) ? 0 : 1,
             'address'       => is_array($addressInfo) ? implode($addressInfo) : '',
-            'address_tree'  => array_values($addressInfo),
+            'addressTree'  => array_values($addressInfo),
             'birthdayCode'  => date('Y-m-d', strtotime($code['birthdayCode'])),
             'constellation' => $this->_getConstellation($code['birthdayCode']),
             'chineseZodiac' => $this->_getChineseZodiac($code['birthdayCode']),
