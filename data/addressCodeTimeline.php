@@ -1043,7 +1043,7 @@ return [
             [
                 'address' => '滦县',
                 'start_year' => 1983,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     130224 =>
@@ -1163,6 +1163,15 @@ return [
             [
                 'address' => '迁安市',
                 'start_year' => 1996,
+                'end_year' => '',
+            ],
+        ],
+    130284 =>
+        [
+
+            [
+                'address' => '滦州市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -5051,6 +5060,42 @@ return [
             [
                 'address' => '城区',
                 'start_year' => '',
+                'end_year' => 2017,
+            ],
+        ],
+    140403 =>
+        [
+
+            [
+                'address' => '潞州区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
+    140404 =>
+        [
+
+            [
+                'address' => '上党区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
+    140405 =>
+        [
+
+            [
+                'address' => '屯留区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
+    140406 =>
+        [
+
+            [
+                'address' => '潞城区',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -5060,7 +5105,7 @@ return [
             [
                 'address' => '郊区',
                 'start_year' => '',
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     140421 =>
@@ -5069,7 +5114,7 @@ return [
             [
                 'address' => '长治县',
                 'start_year' => 1983,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     140422 =>
@@ -5096,7 +5141,7 @@ return [
             [
                 'address' => '屯留县',
                 'start_year' => 1985,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     140425 =>
@@ -5168,7 +5213,7 @@ return [
             [
                 'address' => '潞城市',
                 'start_year' => 1995,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     140500 =>
@@ -7425,7 +7470,7 @@ return [
         [
 
             [
-                'address' => '河津市',
+                'address' => '永济市',
                 'start_year' => 1994,
                 'end_year' => 1999,
             ],
@@ -7434,7 +7479,7 @@ return [
         [
 
             [
-                'address' => '永济市',
+                'address' => '河津市',
                 'start_year' => 1994,
                 'end_year' => 1999,
             ],
@@ -22607,7 +22652,7 @@ return [
             [
                 'address' => '潜山县',
                 'start_year' => 1988,
-                'end_year' => '',
+                'end_year' => 2018,
             ],
         ],
     340825 =>
@@ -22652,6 +22697,15 @@ return [
             [
                 'address' => '桐城市',
                 'start_year' => 1996,
+                'end_year' => '',
+            ],
+        ],
+    340882 =>
+        [
+
+            [
+                'address' => '潜山市',
+                'start_year' => 2019,
                 'end_year' => '',
             ],
         ],
@@ -29219,6 +29273,15 @@ return [
                 'end_year' => '',
             ],
         ],
+    370115 =>
+        [
+
+            [
+                'address' => '济阳区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
     370121 =>
         [
 
@@ -29261,7 +29324,7 @@ return [
             [
                 'address' => '济阳县',
                 'start_year' => 1989,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     370126 =>
@@ -30923,6 +30986,15 @@ return [
             [
                 'address' => '邹平县',
                 'start_year' => 2000,
+                'end_year' => 2017,
+            ],
+        ],
+    371681 =>
+        [
+
+            [
+                'address' => '邹平市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -38546,6 +38618,15 @@ return [
                 'end_year' => '',
             ],
         ],
+    430212 =>
+        [
+
+            [
+                'address' => '渌口区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
     430219 =>
         [
 
@@ -38561,7 +38642,7 @@ return [
             [
                 'address' => '株洲县',
                 'start_year' => '',
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     430222 =>
@@ -43807,12 +43888,6 @@ return [
                 'start_year' => '',
                 'end_year' => 1982,
             ],
-
-            [
-                'address' => '佛山地区',
-                'start_year' => 1982,
-                'end_year' => 1982,
-            ],
         ],
     442621 =>
         [
@@ -44003,7 +44078,7 @@ return [
             [
                 'address' => '佛山地区',
                 'start_year' => '',
-                'end_year' => 1981,
+                'end_year' => 1982,
             ],
         ],
     442721 =>
@@ -45263,7 +45338,7 @@ return [
             [
                 'address' => '荔浦县',
                 'start_year' => 1998,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     450332 =>
@@ -45272,6 +45347,15 @@ return [
             [
                 'address' => '恭城瑶族自治县',
                 'start_year' => 1998,
+                'end_year' => '',
+            ],
+        ],
+    450381 =>
+        [
+
+            [
+                'address' => '荔浦市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -49778,13 +49862,22 @@ return [
                 'end_year' => '',
             ],
         ],
+    511504 =>
+        [
+
+            [
+                'address' => '叙州区',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
     511521 =>
         [
 
             [
                 'address' => '宜宾县',
                 'start_year' => 1996,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     511522 =>
@@ -54596,6 +54689,15 @@ return [
                 'end_year' => '',
             ],
         ],
+    522302 =>
+        [
+
+            [
+                'address' => '兴仁市',
+                'start_year' => 2018,
+                'end_year' => '',
+            ],
+        ],
     522321 =>
         [
 
@@ -54611,7 +54713,7 @@ return [
             [
                 'address' => '兴仁县',
                 'start_year' => '',
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     522323 =>
@@ -55802,6 +55904,15 @@ return [
             [
                 'address' => '水富县',
                 'start_year' => 2001,
+                'end_year' => 2017,
+            ],
+        ],
+    530681 =>
+        [
+
+            [
+                'address' => '水富市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -61592,7 +61703,7 @@ return [
             [
                 'address' => '华亭县',
                 'start_year' => 2002,
-                'end_year' => '',
+                'end_year' => 2017,
             ],
         ],
     620825 =>
@@ -61610,6 +61721,15 @@ return [
             [
                 'address' => '静宁县',
                 'start_year' => 2002,
+                'end_year' => '',
+            ],
+        ],
+    620881 =>
+        [
+
+            [
+                'address' => '华亭市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
@@ -63374,6 +63494,15 @@ return [
             [
                 'address' => '德令哈市',
                 'start_year' => 1988,
+                'end_year' => '',
+            ],
+        ],
+    632803 =>
+        [
+
+            [
+                'address' => '茫崖市',
+                'start_year' => 2018,
                 'end_year' => '',
             ],
         ],
