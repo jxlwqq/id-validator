@@ -96,7 +96,7 @@ trait Generator
      *
      * @param string $body 身份证号 body 部分
      *
-     * @return int|string
+     * @return string
      */
     private function _generatorCheckBit($body)
     {
@@ -118,7 +118,7 @@ trait Generator
         // 生成校验码
         $checkBit = (12 - ($bodySum % 11)) % 11;
 
-        return $checkBit == 10 ? 'X' : $checkBit;
+        return $checkBit == 10 ? 'X' : (string)$checkBit;
     }
 
     /**
