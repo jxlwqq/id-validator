@@ -118,7 +118,7 @@ trait Generator
         // 生成校验码
         $checkBit = (12 - ($bodySum % 11)) % 11;
 
-        return $checkBit == 10 ? 'X' : (string)$checkBit;
+        return $checkBit == 10 ? 'X' : (string) $checkBit;
     }
 
     /**
