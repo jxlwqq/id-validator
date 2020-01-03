@@ -35,6 +35,8 @@ class IdValidatorTest extends TestCase
         $this->assertTrue($this->idValidator->isValid('440308199901101512'));
         $this->assertTrue($this->idValidator->isValid('500154199301135886'));
         $this->assertTrue($this->idValidator->isValid('610104620927690'));
+        $this->assertTrue($this->idValidator->isValid('810000199408230021')); // 港澳居民居住证 18 位
+        $this->assertTrue($this->idValidator->isValid('830000199201300022')); // 台湾居民居住证 18 位
     }
 
     public function testFakeId()
