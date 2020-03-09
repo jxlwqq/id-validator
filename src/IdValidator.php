@@ -7,8 +7,9 @@ namespace Jxlwqq\IdValidator;
  */
 class IdValidator
 {
-    use Helper, Generator, Checker;
-
+    use Helper;
+    use Generator;
+    use Checker;
     private $_addressCodeList = []; // 现行地址码数据
     private $_addressCodeTimeline = []; // 地址码变更时间线
 
