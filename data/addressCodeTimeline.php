@@ -4203,6 +4203,13 @@ return [
             "end_year" => ""
         ]
     ],
+    140703 => [
+        [
+            "address" => "太谷区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     140721 => [
         [
             "address" => "榆社县",
@@ -4242,7 +4249,7 @@ return [
         [
             "address" => "太谷县",
             "start_year" => 1999,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     140727 => [
@@ -10968,49 +10975,49 @@ return [
         [
             "address" => "伊春区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230703 => [
         [
             "address" => "南岔区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230704 => [
         [
             "address" => "友好区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230705 => [
         [
             "address" => "西林区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230706 => [
         [
             "address" => "翠峦区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230707 => [
         [
             "address" => "新青区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230708 => [
         [
             "address" => "美溪区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230709 => [
@@ -11022,14 +11029,14 @@ return [
         [
             "address" => "金山屯区",
             "start_year" => 1984,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230710 => [
         [
             "address" => "五营区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230711 => [
@@ -11041,7 +11048,7 @@ return [
         [
             "address" => "乌马河区",
             "start_year" => 1984,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230712 => [
@@ -11053,34 +11060,55 @@ return [
         [
             "address" => "汤旺河区",
             "start_year" => 1984,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230713 => [
         [
             "address" => "带岭区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230714 => [
         [
             "address" => "乌伊岭区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230715 => [
         [
             "address" => "红星区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     230716 => [
         [
             "address" => "上甘岭区",
             "start_year" => "",
+            "end_year" => 2018
+        ]
+    ],
+    230717 => [
+        [
+            "address" => "伊美区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230718 => [
+        [
+            "address" => "乌翠区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230719 => [
+        [
+            "address" => "友好区",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -11095,6 +11123,41 @@ return [
         [
             "address" => "嘉荫县",
             "start_year" => "",
+            "end_year" => ""
+        ]
+    ],
+    230723 => [
+        [
+            "address" => "汤旺县",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230724 => [
+        [
+            "address" => "丰林县",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230725 => [
+        [
+            "address" => "大箐山县",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230726 => [
+        [
+            "address" => "南岔县",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
+    230751 => [
+        [
+            "address" => "金林区",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -11466,7 +11529,7 @@ return [
         [
             "address" => "嫩江县",
             "start_year" => 1993,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     231122 => [
@@ -11501,6 +11564,13 @@ return [
         [
             "address" => "五大连池市",
             "start_year" => 1995,
+            "end_year" => ""
+        ]
+    ],
+    231183 => [
+        [
+            "address" => "嫩江市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -15637,6 +15707,13 @@ return [
             "end_year" => ""
         ]
     ],
+    330383 => [
+        [
+            "address" => "龙港市",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     330400 => [
         [
             "address" => "嘉兴市",
@@ -17382,6 +17459,13 @@ return [
         [
             "address" => "无为县",
             "start_year" => 2011,
+            "end_year" => 2018
+        ]
+    ],
+    340281 => [
+        [
+            "address" => "无为市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -18268,7 +18352,7 @@ return [
         [
             "address" => "广德县",
             "start_year" => 2000,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     341823 => [
@@ -18296,6 +18380,13 @@ return [
         [
             "address" => "宁国市",
             "start_year" => 2000,
+            "end_year" => ""
+        ]
+    ],
+    341882 => [
+        [
+            "address" => "广德市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -20800,7 +20891,7 @@ return [
         [
             "address" => "湾里区",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     360111 => [
@@ -20819,6 +20910,13 @@ return [
         [
             "address" => "新建区",
             "start_year" => 2015,
+            "end_year" => ""
+        ]
+    ],
+    360113 => [
+        [
+            "address" => "红谷滩区",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -21610,11 +21708,18 @@ return [
             "end_year" => ""
         ]
     ],
+    361104 => [
+        [
+            "address" => "广信区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     361121 => [
         [
             "address" => "上饶县",
             "start_year" => 2000,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     361122 => [
@@ -24187,6 +24292,13 @@ return [
             "end_year" => ""
         ]
     ],
+    371503 => [
+        [
+            "address" => "茌平区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     371521 => [
         [
             "address" => "阳谷县",
@@ -24205,7 +24317,7 @@ return [
         [
             "address" => "茌平县",
             "start_year" => 1997,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     371524 => [
@@ -26311,7 +26423,7 @@ return [
         [
             "address" => "长垣县",
             "start_year" => 1986,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     410781 => [
@@ -26325,6 +26437,13 @@ return [
         [
             "address" => "辉县市",
             "start_year" => 1995,
+            "end_year" => ""
+        ]
+    ],
+    410783 => [
+        [
+            "address" => "长垣市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -26961,6 +27080,13 @@ return [
             "end_year" => ""
         ]
     ],
+    411603 => [
+        [
+            "address" => "淮阳区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     411621 => [
         [
             "address" => "扶沟县",
@@ -27000,7 +27126,7 @@ return [
         [
             "address" => "淮阳县",
             "start_year" => 2000,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     411627 => [
@@ -30670,7 +30796,7 @@ return [
         [
             "address" => "邵东县",
             "start_year" => 1984,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     430522 => [
@@ -30763,6 +30889,13 @@ return [
         [
             "address" => "武冈市",
             "start_year" => 1995,
+            "end_year" => ""
+        ]
+    ],
+    430582 => [
+        [
+            "address" => "邵东市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -35823,11 +35956,18 @@ return [
             "end_year" => ""
         ]
     ],
+    451003 => [
+        [
+            "address" => "田阳区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     451021 => [
         [
             "address" => "田阳县",
             "start_year" => 2002,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     451022 => [
@@ -35841,7 +35981,7 @@ return [
         [
             "address" => "平果县",
             "start_year" => 2002,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     451024 => [
@@ -35904,6 +36044,13 @@ return [
         [
             "address" => "靖西市",
             "start_year" => 2015,
+            "end_year" => ""
+        ]
+    ],
+    451082 => [
+        [
+            "address" => "平果市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -38558,13 +38705,20 @@ return [
         [
             "address" => "射洪县",
             "start_year" => 1985,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     510923 => [
         [
             "address" => "大英县",
             "start_year" => 1997,
+            "end_year" => ""
+        ]
+    ],
+    510981 => [
+        [
+            "address" => "射洪市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -43616,7 +43770,7 @@ return [
         [
             "address" => "澄江县",
             "start_year" => 1997,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     530423 => [
@@ -43658,6 +43812,13 @@ return [
         [
             "address" => "元江哈尼族彝族傣族自治县",
             "start_year" => 1997,
+            "end_year" => ""
+        ]
+    ],
+    530481 => [
+        [
+            "address" => "澄江市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -46895,7 +47056,7 @@ return [
         [
             "address" => "子长县",
             "start_year" => 1996,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     610624 => [
@@ -46963,6 +47124,13 @@ return [
         [
             "address" => "黄陵县",
             "start_year" => 1996,
+            "end_year" => ""
+        ]
+    ],
+    610681 => [
+        [
+            "address" => "子长市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
@@ -49305,6 +49473,13 @@ return [
             "end_year" => ""
         ]
     ],
+    630106 => [
+        [
+            "address" => "湟中区",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     630111 => [
         [
             "address" => "郊区",
@@ -49328,7 +49503,7 @@ return [
         [
             "address" => "湟中县",
             "start_year" => 1999,
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     630123 => [
@@ -50847,6 +51022,13 @@ return [
             "end_year" => ""
         ]
     ],
+    652902 => [
+        [
+            "address" => "库车市",
+            "start_year" => 2019,
+            "end_year" => ""
+        ]
+    ],
     652921 => [
         [
             "address" => "阿克苏县",
@@ -50865,7 +51047,7 @@ return [
         [
             "address" => "库车县",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2018
         ]
     ],
     652924 => [
@@ -51446,6 +51628,13 @@ return [
         [
             "address" => "昆玉市",
             "start_year" => 2016,
+            "end_year" => ""
+        ]
+    ],
+    659010 => [
+        [
+            "address" => "胡杨河市",
+            "start_year" => 2019,
             "end_year" => ""
         ]
     ],
