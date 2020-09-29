@@ -1180,6 +1180,11 @@ return [
         [
             "address" => "桥东区",
             "start_year" => 1983,
+            "end_year" => 2019
+        ],
+        [
+            "address" => "襄都区",
+            "start_year" => 2020,
             "end_year" => ""
         ]
     ],
@@ -1187,6 +1192,11 @@ return [
         [
             "address" => "桥西区",
             "start_year" => 1983,
+            "end_year" => 2019
+        ],
+        [
+            "address" => "信都区",
+            "start_year" => 2020,
             "end_year" => ""
         ]
     ],
@@ -1197,11 +1207,25 @@ return [
             "end_year" => 1987
         ]
     ],
+    130505 => [
+        [
+            "address" => "任泽区",
+            "start_year" => 2020,
+            "end_year" => ""
+        ]
+    ],
+    130506 => [
+        [
+            "address" => "南和区",
+            "start_year" => 2020,
+            "end_year" => ""
+        ]
+    ],
     130521 => [
         [
             "address" => "邢台县",
             "start_year" => 1986,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     130522 => [
@@ -1236,14 +1260,14 @@ return [
         [
             "address" => "任县",
             "start_year" => 1993,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     130527 => [
         [
             "address" => "南和县",
             "start_year" => 1993,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     130528 => [
@@ -9243,6 +9267,13 @@ return [
             "end_year" => ""
         ]
     ],
+    220184 => [
+        [
+            "address" => "公主岭市",
+            "start_year" => 2020,
+            "end_year" => ""
+        ]
+    ],
     220200 => [
         [
             "address" => "吉林市",
@@ -9433,7 +9464,7 @@ return [
         [
             "address" => "公主岭市",
             "start_year" => 1995,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     220382 => [
@@ -21348,7 +21379,7 @@ return [
         [
             "address" => "龙南县",
             "start_year" => 1998,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     360728 => [
@@ -21419,6 +21450,13 @@ return [
             "address" => "南康市",
             "start_year" => 1998,
             "end_year" => 2012
+        ]
+    ],
+    360783 => [
+        [
+            "address" => "龙南市",
+            "start_year" => 2020,
+            "end_year" => ""
         ]
     ],
     360800 => [
@@ -37926,6 +37964,13 @@ return [
             "end_year" => ""
         ]
     ],
+    510118 => [
+        [
+            "address" => "新津区",
+            "start_year" => 2020,
+            "end_year" => ""
+        ]
+    ],
     510121 => [
         [
             "address" => "金堂县",
@@ -38007,7 +38052,7 @@ return [
         [
             "address" => "新津县",
             "start_year" => 1983,
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     510181 => [
@@ -49679,11 +49724,18 @@ return [
             "end_year" => ""
         ]
     ],
+    632301 => [
+        [
+            "address" => "同仁市",
+            "start_year" => 2020,
+            "end_year" => ""
+        ]
+    ],
     632321 => [
         [
             "address" => "同仁县",
             "start_year" => "",
-            "end_year" => ""
+            "end_year" => 2019
         ]
     ],
     632322 => [
