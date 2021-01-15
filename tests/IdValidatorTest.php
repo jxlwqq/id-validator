@@ -34,7 +34,9 @@ class IdValidatorTest extends TestCase
     public function testFakeId()
     {
         $idValidator = new IdValidator();
-        $this->assertTrue($idValidator->isValid($idValidator->fakeId()));
+        for ($i = 0; $i < 10000; $i++) {
+            $this->assertTrue($idValidator->isValid($idValidator->fakeId()));
+        }
         $this->assertTrue($idValidator->isValid($idValidator->fakeId(false)));
         $this->assertTrue($idValidator->isValid($idValidator->fakeId(true, '上海市', '2000', 1)));
         $this->assertTrue($idValidator->isValid($idValidator->fakeId(true, '黄浦区', '2001', 0)));

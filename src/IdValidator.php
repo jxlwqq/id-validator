@@ -97,10 +97,16 @@ class IdValidator
     public function fakeId($isEighteen = true, $address = null, $birthday = null, $sex = null)
     {
         // 生成地址码
-        $addressCode = $this->_generatorAddressCode($address);
+        if (empty($address)) {
+            $addressCode = array_rand($this->_addressCodeList);
+            $address = $this->_addressCodeList[$addressCode];
+        } else {
+            $addressCode = $this->_generatorAddressCode($address);
+        }
+
 
         // 出生日期码
-        $birthdayCode = $this->_generatorBirthdayCode($birthday);
+        $birthdayCode = $this->_generatorBirthdayCode($addressCode, $address, $birthday);
 
         // 顺序码
         $orderCode = $this->_generatorOrderCode($sex);

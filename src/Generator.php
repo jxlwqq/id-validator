@@ -28,18 +28,40 @@ trait Generator
     /**
      * 生成出生日期码
      *
+     * @param $addressCode
+     * @param $address
      * @param int|string $birthday 出生日期
      *
      * @return string
      */
-    private function _generatorBirthdayCode($birthday)
+    private function _generatorBirthdayCode($addressCode, $address, $birthday)
     {
+
+        $start_year = '0001';
+        $end_year = '9999';
         $year = $this->_datePad(substr($birthday, 0, 4), 'year');
         $month = $this->_datePad(substr($birthday, 4, 2), 'month');
         $day = $this->_datePad(substr($birthday, 6, 2), 'day');
 
         if ($year < 1800 || $year > date('Y')) {
             $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
+        }
+
+        if (isset($this->_addressCodeTimeline[$addressCode])) {
+            $timeline = $this->_addressCodeTimeline[$addressCode];
+            foreach ($timeline as $key => $val) {
+                if ($val['address'] == $address) {
+                    $start_year = $val['start_year'] != '' ? $val['start_year'] : $start_year;
+                    $end_year = $val['end_year'] != '' ? $val['end_year'] : $end_year;
+                }
+            }
+        }
+
+        if ($year < $start_year) {
+            $year = $start_year;
+        }
+        if ($year > $end_year) {
+            $year = $end_year;
         }
 
         if ($month < 1 || $month > 12) {
@@ -51,7 +73,7 @@ trait Generator
         }
 
         if (!checkdate((int) $month, (int) $day, (int) $year)) {
-            $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
+            $year = $this->_datePad(rand(max($start_year, 1950), min($end_year, date('Y')) - 1), 'year');
             $month = $this->_datePad(rand(1, 12), 'month');
             $day = $this->_datePad(rand(1, 28), 'day');
         }
