@@ -59,8 +59,8 @@ trait Helper
             $timeline = $this->_addressCodeTimeline[$addressCode];
             $year = substr($birthdayCode, 0, 4);
             foreach ($timeline as $key => $val) {
-                $start_year = $val['start_year'] != "" ? $val['start_year'] : '0001';
-                $end_year = $val['end_year'] != "" ? $val['end_year'] : '9999';
+                $start_year = $val['start_year'] != '' ? $val['start_year'] : '0001';
+                $end_year = $val['end_year'] != '' ? $val['end_year'] : '9999';
                 if ($year >= $start_year and $year <= $end_year) {
                     $address = $val['address'];
                 }
