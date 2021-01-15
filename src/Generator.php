@@ -36,7 +36,6 @@ trait Generator
      */
     private function _generatorBirthdayCode($addressCode, $address, $birthday)
     {
-
         $start_year = '0001';
         $end_year = '9999';
         $year = $this->_datePad(substr($birthday, 0, 4), 'year');
