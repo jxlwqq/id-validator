@@ -22,9 +22,10 @@ class IdValidatorTest extends TestCase
         $this->assertFalse($idValidator->isValid('440308199901101513')); // 验证码不合法
         $this->assertFalse($idValidator->isValid('610104620932690'));    // 出生日期码不合法
         $this->assertFalse($idValidator->isValid('11010119900307867X')); // 校验位不合法
+        $this->assertFalse($idValidator->isValid('500154199301135886')); // 出生日期在地址码发布之前
         $this->assertTrue($idValidator->isValid('110101199003078670'));
         $this->assertTrue($idValidator->isValid('440308199901101512'));
-        $this->assertTrue($idValidator->isValid('500154199301135886'));
+        $this->assertTrue($idValidator->isValid('500154199804106120'));
         $this->assertTrue($idValidator->isValid('610104620927690'));
         $this->assertTrue($idValidator->isValid('810000199408230021')); // 港澳居民居住证 18 位
         $this->assertTrue($idValidator->isValid('830000199201300022')); // 台湾居民居住证 18 位
