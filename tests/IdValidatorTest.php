@@ -129,17 +129,17 @@ class IdValidatorTest extends TestCase
         $this->assertFalse($idValidator->isValid('610104620932690'));
 
         $this->assertEquals(
-         [
-             'addressCode'   => '430302',
-             'abandoned'     => 0,
-             'address'       => '湖南省湘潭市雨湖区',
-             'addressTree'   => ['湖南省', '湘潭市', '雨湖区'],
-             'birthdayCode'  => '1993-12-19',
-             'constellation' => '射手座',
-             'chineseZodiac' => '酉鸡',
-             'sex'           => 1,
-             'length'        => 18,
-             'checkBit'      => '9',],
+            [
+                'addressCode'   => '430302',
+                'abandoned'     => 0,
+                'address'       => '湖南省湘潭市雨湖区',
+                'addressTree'   => ['湖南省', '湘潭市', '雨湖区'],
+                'birthdayCode'  => '1993-12-19',
+                'constellation' => '射手座',
+                'chineseZodiac' => '酉鸡',
+                'sex'           => 1,
+                'length'        => 18,
+                'checkBit'      => '9', ],
             $idValidator->getInfo('430302199312194239')
         );
     }
