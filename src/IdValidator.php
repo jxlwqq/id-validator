@@ -104,7 +104,6 @@ class IdValidator
             $addressCode = $this->_generatorAddressCode($address);
         }
 
-
         // 出生日期码
         $birthdayCode = $this->_generatorBirthdayCode($addressCode, $address, $birthday);
 
