@@ -1,1 +1,0 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":320:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:4:{s:53:"Jxlwqq\IdValidator\Tests\IdValidatorTest::testIsValid";d:0.023;s:52:"Jxlwqq\IdValidator\Tests\IdValidatorTest::testFakeId";d:0.024;s:53:"Jxlwqq\IdValidator\Tests\IdValidatorTest::testGetInfo";d:0.02;s:55:"Jxlwqq\IdValidator\Tests\IdValidatorTest::testUpgradeId";d:0.021;}}}
