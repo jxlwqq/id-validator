@@ -2,6 +2,7 @@
 
 **中华人民共和国居民身份证**、**中华人民共和国港澳居民居住证**以及**中华人民共和国台湾居民居住证**号码验证工具（PHP Composer 版）支持 15 位与 18 位号码。
 
+* [Go 版本](https://github.com/guanguans/id-validator)
 * [Python 版本](https://github.com/jxlwqq/id-validator.py)
 * [Ruby 版本](https://github.com/renyijiu/id_validator)
 * [JavaScript 版本](https://github.com/mc-zone/IDValidator)
