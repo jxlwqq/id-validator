@@ -12,10 +12,11 @@ trait Helper
      *
      * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
+     * @param bool   $strictMode   是否启动严格模式检查
      *
      * @return bool|mixed|string
      */
-    private function _getAddressInfo($addressCode, $birthdayCode)
+    private function _getAddressInfo($addressCode, $birthdayCode, $strictMode = false)
     {
         $addressInfo = [
             'province' => '',
@@ -25,7 +26,7 @@ trait Helper
 
         // 省级信息
         $provinceAddressCode = substr($addressCode, 0, 2).'0000';
-        $addressInfo['province'] = $this->_getAddress($provinceAddressCode, $birthdayCode);
+        $addressInfo['province'] = $this->_getAddress($provinceAddressCode, $birthdayCode, $strictMode);
 
         $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
 
@@ -36,12 +37,12 @@ trait Helper
 
         // 市级信息
         $cityAddressCode = substr($addressCode, 0, 4).'00';
-        $addressInfo['city'] = $this->_getAddress($cityAddressCode, $birthdayCode);
+        $addressInfo['city'] = $this->_getAddress($cityAddressCode, $birthdayCode, $strictMode);
 
         // 县级信息
-        $addressInfo['district'] = $this->_getAddress($addressCode, $birthdayCode);
+        $addressInfo['district'] = $this->_getAddress($addressCode, $birthdayCode, $strictMode);
 
-        return empty($addressInfo['province']) ? false : $addressInfo;
+        return empty($addressInfo['district']) ? false : $addressInfo;
     }
 
     /**
@@ -49,20 +50,34 @@ trait Helper
      *
      * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
+     * @param bool   $strictMode   是否启动严格模式检查
      *
      * @return string
      */
-    private function _getAddress($addressCode, $birthdayCode)
+    private function _getAddress($addressCode, $birthdayCode, $strictMode = false)
     {
         $address = '';
         if (isset($this->_addressCodeTimeline[$addressCode])) {
             $timeline = $this->_addressCodeTimeline[$addressCode];
             $year = substr($birthdayCode, 0, 4);
+            // 严格模式下，会检查【地址码正式启用的年份】与【身份证上的出生年份】
             foreach ($timeline as $key => $val) {
                 $start_year = $val['start_year'] != '' ? $val['start_year'] : '0001';
                 $end_year = $val['end_year'] != '' ? $val['end_year'] : '9999';
                 if ($year >= $start_year and $year <= $end_year) {
                     $address = $val['address'];
+                }
+            }
+
+            // 非严格模式下，则不会检查【地址码正式启用的年份】与【身份证上的出生年份】的关系
+            if (empty($address) and !$strictMode) {
+                foreach ($timeline as $key => $val) {
+                    // 由于较晚申请户口或身份证等原因，导致会出现地址码正式启用于2000年，但实际1999年出生的新生儿，由于晚了一年报户口，导致身份证上的出生年份早于地址码正式启用的年份
+                    $end_year = $val['end_year'] != '' ? $val['end_year'] : '9999';
+                    if ($year <= $end_year) {
+                        $address = $val['address'];
+                        break;
+                    }
                 }
             }
         }

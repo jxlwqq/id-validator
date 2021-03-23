@@ -22,10 +22,13 @@ class IdValidatorTest extends TestCase
         $this->assertFalse($idValidator->isValid('440308199901101513')); // 验证码不合法
         $this->assertFalse($idValidator->isValid('610104620932690'));    // 出生日期码不合法
         $this->assertFalse($idValidator->isValid('11010119900307867X')); // 校验位不合法
-        $this->assertFalse($idValidator->isValid('500154199301135886')); // 出生日期在地址码发布之前
+        $this->assertFalse($idValidator->isValid('500154199301135886', true)); // 出生日期在地址码发布之前，非严格模式
+        $this->assertTrue($idValidator->isValid('500154199301135886', false)); // 出生日期在地址码发布之前，严格模式
         $this->assertTrue($idValidator->isValid('110101199003078670'));
         $this->assertTrue($idValidator->isValid('440308199901101512'));
         $this->assertTrue($idValidator->isValid('500154199804106120'));
+        $this->assertFalse($idValidator->isValid('411082198901010002', true)); // 严格模式
+        $this->assertTrue($idValidator->isValid('411082198901010002', false)); // 非严格模式：https://github.com/jxlwqq/id-validator/issues/53
         $this->assertTrue($idValidator->isValid('610104620927690'));
         $this->assertTrue($idValidator->isValid('810000199408230021')); // 港澳居民居住证 18 位
         $this->assertTrue($idValidator->isValid('830000199201300022')); // 台湾居民居住证 18 位
@@ -145,6 +148,25 @@ class IdValidatorTest extends TestCase
                 'checkBit'      => '9', ],
             $idValidator->getInfo('430302199312194239')
         );
+
+        // 非严格模式下，合法
+        $this->assertEquals(
+            [
+                'addressCode'   => '411082',
+                'abandoned'     => 0,
+                'address'       => '河南省许昌市长葛市',
+                'addressTree'   => ['河南省', '许昌市', '长葛市'],
+                'birthdayCode'  => '1989-01-01',
+                'constellation' => '摩羯座',
+                'chineseZodiac' => '巳蛇',
+                'sex'           => 0,
+                'length'        => 18,
+                'checkBit'      => '2', ],
+            $idValidator->getInfo('411082198901010002')
+        );
+
+        // 严格模式下，非法
+        $this->assertFalse($idValidator->getInfo('411082198901010002', true));
     }
 
     public function testUpgradeId()

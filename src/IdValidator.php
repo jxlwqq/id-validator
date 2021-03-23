@@ -25,11 +25,12 @@ class IdValidator
     /**
      * 验证身份证号合法性.
      *
-     * @param string $id 身份证号
+     * @param string $id         身份证号
+     * @param bool   $strictMode 是否启动严格模式检查
      *
      * @return bool
      */
-    public function isValid($id)
+    public function isValid($id, $strictMode = false)
     {
         // 基础验证
         $code = $this->_checkIdArgument($id);
@@ -38,7 +39,7 @@ class IdValidator
         }
 
         // 分别验证：*地址码*、*出生日期码*和*顺序码*
-        if (!$this->_checkAddressCode($code['addressCode'], $code['birthdayCode']) || !$this->_checkBirthdayCode($code['birthdayCode']) || !$this->_checkOrderCode($code['order'])) {
+        if (!$this->_checkAddressCode($code['addressCode'], $code['birthdayCode'], $strictMode) || !$this->_checkBirthdayCode($code['birthdayCode']) || !$this->_checkOrderCode($code['order'])) {
             return false;
         }
 
@@ -57,18 +58,19 @@ class IdValidator
     /**
      * 获取身份证信息.
      *
-     * @param string $id 身份证号
+     * @param string $id         身份证号
+     * @param bool   $strictMode 是否启动严格模式检查
      *
      * @return array|bool
      */
-    public function getInfo($id)
+    public function getInfo($id, $strictMode = false)
     {
         // 验证有效性
-        if ($this->isValid($id) === false) {
+        if ($this->isValid($id, $strictMode) === false) {
             return false;
         }
         $code = $this->_checkIdArgument($id);
-        $addressInfo = $this->_getAddressInfo($code['addressCode'], $code['birthdayCode']);
+        $addressInfo = $this->_getAddressInfo($code['addressCode'], $code['birthdayCode'], $strictMode);
 
         return [
             'addressCode'   => $code['addressCode'],

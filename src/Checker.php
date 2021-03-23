@@ -77,12 +77,13 @@ trait Checker
      *
      * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
+     * @param bool   $strictMode   是否启动严格模式检查
      *
      * @return bool
      */
-    private function _checkAddressCode($addressCode, $birthdayCode)
+    private function _checkAddressCode($addressCode, $birthdayCode, $strictMode = false)
     {
-        return (bool) $this->_getAddressInfo($addressCode, $birthdayCode);
+        return (bool) $this->_getAddressInfo($addressCode, $birthdayCode, $strictMode);
     }
 
     /**
