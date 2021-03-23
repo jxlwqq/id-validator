@@ -10,21 +10,22 @@ trait Helper
     /**
      * 获取地址码信息.
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
-     * @param bool $strictMode
+     * @param bool   $strictMode
+     *
      * @return bool|mixed|string
      */
     private function _getAddressInfo($addressCode, $birthdayCode, $strictMode = false)
     {
         $addressInfo = [
             'province' => '',
-            'city' => '',
+            'city'     => '',
             'district' => '',
         ];
 
         // 省级信息
-        $provinceAddressCode = substr($addressCode, 0, 2) . '0000';
+        $provinceAddressCode = substr($addressCode, 0, 2).'0000';
         $addressInfo['province'] = $this->_getAddress($provinceAddressCode, $birthdayCode, $strictMode);
 
         $firstCharacter = substr($addressCode, 0, 1); // 用于判断是否是港澳台居民居住证（8字开头）
@@ -35,7 +36,7 @@ trait Helper
         }
 
         // 市级信息
-        $cityAddressCode = substr($addressCode, 0, 4) . '00';
+        $cityAddressCode = substr($addressCode, 0, 4).'00';
         $addressInfo['city'] = $this->_getAddress($cityAddressCode, $birthdayCode, $strictMode);
 
         // 县级信息
@@ -47,9 +48,10 @@ trait Helper
     /**
      * 获取省市区地址码.
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
-     * @param bool $strictMode
+     * @param bool   $strictMode
+     *
      * @return string
      */
     private function _getAddress($addressCode, $birthdayCode, $strictMode = false)
@@ -90,15 +92,14 @@ trait Helper
      *
      * @return string
      */
-    private
-    function _getConstellation($birthdayCode)
+    private function _getConstellation($birthdayCode)
     {
-        $constellationList = include __DIR__ . '/../data/constellation.php';
-        $month = (int)substr($birthdayCode, 4, 2);
-        $day = (int)substr($birthdayCode, 6, 2);
+        $constellationList = include __DIR__.'/../data/constellation.php';
+        $month = (int) substr($birthdayCode, 4, 2);
+        $day = (int) substr($birthdayCode, 6, 2);
 
         $start_date = $constellationList[$month]['start_date'];
-        $start_day = (int)explode('-', $start_date)[1];
+        $start_day = (int) explode('-', $start_date)[1];
 
         if ($day < $start_day) {
             $tmp_month = $month == 1 ? 12 : $month - 1;
@@ -116,10 +117,9 @@ trait Helper
      *
      * @return mixed
      */
-    private
-    function _getChineseZodiac($birthdayCode)
+    private function _getChineseZodiac($birthdayCode)
     {
-        $chineseZodiacList = include __DIR__ . '/../data/chineseZodiac.php';
+        $chineseZodiacList = include __DIR__.'/../data/chineseZodiac.php';
         $start = 1900; // 子鼠
         $end = substr($birthdayCode, 0, 4);
         $key = ($end - $start) % 12;

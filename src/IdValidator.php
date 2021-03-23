@@ -25,8 +25,9 @@ class IdValidator
     /**
      * 验证身份证号合法性.
      *
-     * @param string $id 身份证号
-     * @param bool $strictMode 是否开启严格模式
+     * @param string $id         身份证号
+     * @param bool   $strictMode 是否开启严格模式
+     *
      * @return bool
      */
     public function isValid($id, $strictMode = false)
@@ -57,8 +58,9 @@ class IdValidator
     /**
      * 获取身份证信息.
      *
-     * @param string $id 身份证号
-     * @param bool $strictMode
+     * @param string $id         身份证号
+     * @param bool   $strictMode
+     *
      * @return array|bool
      */
     public function getInfo($id, $strictMode = false)
@@ -103,7 +105,6 @@ class IdValidator
         } else {
             $addressCode = $this->_generatorAddressCode($address);
         }
-
 
         // 出生日期码
         $birthdayCode = $this->_generatorBirthdayCode($addressCode, $address, $birthday);

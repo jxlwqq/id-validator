@@ -75,9 +75,10 @@ trait Checker
     /**
      * 检查地址码
      *
-     * @param string $addressCode 地址码
+     * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
-     * @param bool $strictMode
+     * @param bool   $strictMode
+     *
      * @return bool
      */
     private function _checkAddressCode($addressCode, $birthdayCode, $strictMode = false)
