@@ -77,7 +77,7 @@ trait Checker
      *
      * @param string $addressCode  地址码
      * @param string $birthdayCode 出生日期码
-     * @param bool   $strictMode
+     * @param bool   $strictMode   是否启动严格模式检查
      *
      * @return bool
      */
