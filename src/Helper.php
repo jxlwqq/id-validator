@@ -42,7 +42,7 @@ trait Helper
         // 县级信息
         $addressInfo['district'] = $this->_getAddress($addressCode, $birthdayCode, $strictMode);
 
-        return empty($addressInfo['district']) ? false : $addressInfo;
+        return (empty($addressInfo['district']) or empty($addressInfo['province'])) ? false : $addressInfo;
     }
 
     /**
