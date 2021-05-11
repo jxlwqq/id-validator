@@ -34,6 +34,7 @@ class IdValidatorTest extends TestCase
         $this->assertTrue($idValidator->isValid('830000199201300022')); // 台湾居民居住证 18 位
         $this->assertTrue($idValidator->isValid('44040119580101000X')); // 历史遗留数据：珠海市市辖区
         $this->assertTrue($idValidator->isValid('140120197901010008')); // 历史遗留数据：太原市市区
+        $this->assertTrue($idValidator->isValid('441282198101011230')); // 历史遗留数据：广东省肇庆市罗定市
     }
 
     public function testFakeId()
