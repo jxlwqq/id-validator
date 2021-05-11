@@ -794,20 +794,6 @@ return [
             "end_year" => ""
         ]
     ],
-    320613 => [
-        [
-            "address" => "崇川区",
-            "start_year" => 2020,
-            "end_year" => ""
-        ]
-    ],
-    320614 => [
-        [
-            "address" => "海门区",
-            "start_year" => 2020,
-            "end_year" => ""
-        ]
-    ],
     320701 => [
         [
             "address" => "市辖区",
@@ -1036,27 +1022,6 @@ return [
         [
             "address" => "市辖区",
             "start_year" => 1983,
-            "end_year" => ""
-        ]
-    ],
-    340209 => [
-        [
-            "address" => "弋江区",
-            "start_year" => 2020,
-            "end_year" => ""
-        ]
-    ],
-    340210 => [
-        [
-            "address" => "湾沚区",
-            "start_year" => 2020,
-            "end_year" => ""
-        ]
-    ],
-    340212 => [
-        [
-            "address" => "繁昌区",
-            "start_year" => 2020,
             "end_year" => ""
         ]
     ],
@@ -1862,13 +1827,6 @@ return [
         [
             "address" => "仙桃市",
             "start_year" => "未曾使用",
-            "end_year" => ""
-        ]
-    ],
-    421088 => [
-        [
-            "address" => "监利市",
-            "start_year" => 2020,
             "end_year" => ""
         ]
     ],
@@ -2740,13 +2698,6 @@ return [
         [
             "address" => "市辖区",
             "start_year" => 1983,
-            "end_year" => ""
-        ]
-    ],
-    520204 => [
-        [
-            "address" => "水城区",
-            "start_year" => 2020,
             "end_year" => ""
         ]
     ],
