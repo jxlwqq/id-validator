@@ -20,6 +20,8 @@ class IdValidator
     {
         $this->_addressCodeList = include __DIR__.'/../data/addressCode.php';
         $this->_addressCodeTimeline = include __DIR__.'/../data/addressCodeTimeline.php';
+        $additionalAddressCodeTimeline = include __DIR__.'/../data/additionalAddressCodeTimeline.php';
+        $this->_addressCodeTimeline = $additionalAddressCodeTimeline + $this->_addressCodeTimeline;
     }
 
     /**
