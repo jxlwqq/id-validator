@@ -56,16 +56,16 @@ $idValidator->getInfo('610104620927690');    // 15 位
 
 ```php
 [
-'addressCode'   => '440308',                    // 地址码   
-'abandoned'     => 0,                           // 地址码是否废弃，1 为废弃的，0 为正在使用的
-'address'       => '广东省深圳市盐田区',           // 地址
-'addressTree'  => ['广东省', '深圳市', '盐田区']  // 省市区三级列表
-'birthdayCode'  => '1999-01-10',                // 出生日期
-'constellation' => '水瓶座',                     // 星座
-'chineseZodiac' => '卯兔',                       // 生肖
-'sex'           => 1,                           // 性别，1 为男性，0 为女性
-'length'        => 18,                          // 号码长度
-'checkBit'      => '2',                         // 校验码
+    'addressCode'   => '440308',                    // 地址码   
+    'abandoned'     => 0,                           // 地址码是否废弃，1 为废弃的，0 为正在使用的
+    'address'       => '广东省深圳市盐田区',           // 地址
+    'addressTree'  => ['广东省', '深圳市', '盐田区']   // 省市区三级列表
+    'birthdayCode'  => '1999-01-10',                // 出生日期
+    'constellation' => '水瓶座',                     // 星座
+    'chineseZodiac' => '卯兔',                       // 生肖
+    'sex'           => 1,                           // 性别，1 为男性，0 为女性
+    'length'        => 18,                          // 号码长度
+    'checkBit'      => '2',                         // 校验码
 ]
 ```
 
@@ -88,8 +88,8 @@ $idValidator->fakeId();                                    // 18 位
 $idValidator->fakeId(false);                               // 15 位
 $idValidator->fakeId(true, '上海市', '2000', 1);            // 生成出生于 2000 年上海市的男性居民身份证
 $idValidator->fakeId(true, '南山区', '1999', 0);            // 生成出生于 1999 年广东省深圳市南山区的女性居民身份证
-$idValidator->fakeId(true, '江苏省', '200001', 1));         // 生成出生于 2000 年 1 月江苏省的男性居民身份证
-$idValidator->fakeId(true, '厦门市', '199701', 0));         // 生成出生于 1997 年 1 月福建省厦门市的女性居民身份证
+$idValidator->fakeId(true, '江苏省', '200001', 1);          // 生成出生于 2000 年 1 月江苏省的男性居民身份证
+$idValidator->fakeId(true, '厦门市', '199701', 0);          // 生成出生于 1997 年 1 月福建省厦门市的女性居民身份证
 $idValidator->fakeId(true, '台湾省', '20131010', 0);        // 生成出生于 2013 年 10 月 10 日台湾省的女性居民居住证
 $idValidator->fakeId(true, '香港特别行政区', '19970701', 0); // 生成出生于 1997 年 7 月 1 日香港特别行政区的女性居民居住证
 ```
