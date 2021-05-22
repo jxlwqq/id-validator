@@ -23,7 +23,9 @@ trait Checker
 
         if ($length === 15) {
             return $this->_generateShortType($id);
-        } elseif ($length === 18) {
+        }
+
+        if ($length === 18) {
             return $this->_generatelongType($id);
         }
 

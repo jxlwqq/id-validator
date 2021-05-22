@@ -16,7 +16,7 @@ trait Generator
      */
     private function _generatorOrderCode($sex)
     {
-        $orderCode = rand(111, 999);
+        $orderCode = mt_rand(111, 999);
 
         if ($sex !== null && $sex !== $orderCode % 2) {
             $orderCode -= 1;
@@ -43,7 +43,7 @@ trait Generator
         $day = $this->_datePad(substr($birthday, 6, 2), 'day');
 
         if ($year < 1800 || $year > date('Y')) {
-            $year = $this->_datePad(rand(1950, date('Y') - 1), 'year');
+            $year = $this->_datePad(mt_rand(1950, date('Y') - 1), 'year');
         }
 
         if (isset($this->_addressCodeTimeline[$addressCode])) {
@@ -64,17 +64,17 @@ trait Generator
         }
 
         if ($month < 1 || $month > 12) {
-            $month = $this->_datePad(rand(1, 12), 'month');
+            $month = $this->_datePad(mt_rand(1, 12), 'month');
         }
 
         if ($day < 1 || $day > 31) {
-            $day = $this->_datePad(rand(1, 28), 'day');
+            $day = $this->_datePad(mt_rand(1, 28), 'day');
         }
 
         if (!checkdate((int) $month, (int) $day, (int) $year)) {
-            $year = $this->_datePad(rand(max($start_year, 1950), min($end_year, date('Y')) - 1), 'year');
-            $month = $this->_datePad(rand(1, 12), 'month');
-            $day = $this->_datePad(rand(1, 28), 'day');
+            $year = $this->_datePad(mt_rand(max($start_year, 1950), min($end_year, date('Y')) - 1), 'year');
+            $month = $this->_datePad(mt_rand(1, 12), 'month');
+            $day = $this->_datePad(mt_rand(1, 28), 'day');
         }
 
         return $year.$month.$day;
@@ -124,7 +124,7 @@ trait Generator
         // 位置加权
         $posWeight = [];
         for ($i = 18; $i > 1; $i--) {
-            $weight = pow(2, $i - 1) % 11;
+            $weight = (2 ** ($i - 1)) % 11;
             $posWeight[$i] = $weight;
         }
 
@@ -133,7 +133,7 @@ trait Generator
         $bodyArray = str_split($body);
         $count = count($bodyArray);
         for ($j = 0; $j < $count; $j++) {
-            $bodySum += (intval($bodyArray[$j]) * $posWeight[18 - $j]);
+            $bodySum += ((int)$bodyArray[$j] * $posWeight[18 - $j]);
         }
 
         // 生成校验码
@@ -196,9 +196,8 @@ trait Generator
      */
     private function _datePad($date, $type = 'year')
     {
-        $padLength = $type == 'year' ? 4 : 2;
-        $newDate = str_pad($date, $padLength, '0', STR_PAD_LEFT);
+        $padLength = $type === 'year' ? 4 : 2;
 
-        return $newDate;
+        return str_pad($date, $padLength, '0', STR_PAD_LEFT);
     }
 }
