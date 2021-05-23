@@ -133,7 +133,7 @@ trait Generator
         $bodyArray = str_split($body);
         $count = count($bodyArray);
         for ($j = 0; $j < $count; $j++) {
-            $bodySum += ((int)$bodyArray[$j] * $posWeight[18 - $j]);
+            $bodySum += ((int) $bodyArray[$j] * $posWeight[18 - $j]);
         }
 
         // 生成校验码
