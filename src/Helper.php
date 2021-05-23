@@ -73,7 +73,7 @@ trait Helper
             }
 
             // 非严格模式下，则不会检查【地址码正式启用的年份】与【身份证上的出生年份】的关系
-            if (empty($address) and ! $strictMode) {
+            if (empty($address) and !$strictMode) {
                 foreach ($timeline as $key => $val) {
                     // 由于较晚申请户口或身份证等原因，导致会出现地址码正式启用于2000年，但实际1999年出生的新生儿，由于晚了一年报户口，导致身份证上的出生年份早于地址码正式启用的年份
                     // 由于某些地区的地址码已经废弃，但是实际上在之后的几年依然在使用
