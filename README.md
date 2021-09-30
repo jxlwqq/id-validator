@@ -7,7 +7,7 @@
 * [Ruby 版本](https://github.com/renyijiu/id_validator)
 * [JavaScript 版本](https://github.com/mc-zone/IDValidator)
 
-[![Testing](https://github.com/jxlwqq/id-validator/actions/workflows/php.yml/badge.svg)](https://github.com/jxlwqq/id-validator/actions/workflows/php.yml)
+[![Testing](https://github.com/jxlwqq/id-validator/actions/workflows/testing.yml/badge.svg)](https://github.com/jxlwqq/id-validator/actions/workflows/testing.yml)
 [![StyleCI](https://github.styleci.io/repos/147758862/shield?branch=master)](https://github.styleci.io/repos/147758862)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jxlwqq/id-validator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jxlwqq/id-validator/?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/98880a5cb713e2652450/maintainability)](https://codeclimate.com/github/jxlwqq/id-validator/maintainability)
