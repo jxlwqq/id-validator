@@ -111,6 +111,6 @@ trait Checker
     {
         $date = DateTime::createFromFormat($format = 'Ymd', $birthdayCode);
 
-        return $date->format($format) === $birthdayCode && (int) $date->format('Y') >= 1800;
+        return $date && $date->format($format) === $birthdayCode && (int) $date->format('Y') >= 1800;
     }
 }
