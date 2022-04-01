@@ -19,14 +19,14 @@ jobs:
         with:
           php-version: ${{ matrix.php-versions }}
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
 
       - name: Cache Composer packages
         id: composer-cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: vendor
           key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
