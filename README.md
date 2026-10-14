@@ -6,6 +6,7 @@
 * [Python 版本](https://github.com/jxlwqq/id-validator.py)
 * [Ruby 版本](https://github.com/renyijiu/id_validator)
 * [JavaScript 版本](https://github.com/mc-zone/IDValidator)
+* [Java 版本](https://github.com/fangfengxiang/chinese-id-validator)
 
 [![Testing](https://github.com/jxlwqq/id-validator/actions/workflows/testing.yml/badge.svg)](https://github.com/jxlwqq/id-validator/actions/workflows/testing.yml)
 [![StyleCI](https://github.styleci.io/repos/147758862/shield?branch=master)](https://github.styleci.io/repos/147758862)
